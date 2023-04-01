@@ -1,0 +1,263 @@
+.header {
+    height: 176px;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-secondary);
+
+    .container {
+        max-width: 1270px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        padding: 72px 100px 32px;
+        align-items: center;
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+
+        &-item {
+            min-width: 538px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: var(--color-secondary);
+                        font-family: 'e-Ukraine';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        letter-spacing: 0.01em;
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 72px;
+            height: 72px;
+            margin-right: 136px;
+        }
+    }
+
+    &-button {
+        button {
+            padding: 16px 68px;
+            border-radius: 4px;
+            background-color: #fff;
+            border: 2px soled #343434;
+            color: var(--color-secondary);
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+.hub {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: #F4F4F4;
+
+    .container {
+        max-width: 1270px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .hub-text {
+        display: flex;
+        justify-content: space-between;
+
+        .hub-text-title {
+            max-width: 622px;
+
+            h2 {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                letter-spacing: 0.04em;
+                line-height: 40px;
+                color: #343434;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: var(--color-secondarys);
+                margin-bottom: 26px;
+
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                /* or 150% */
+
+                letter-spacing: 0.02em;
+
+                /* secondary/black */
+
+                color: #343434;
+            }
+
+            .button__yellow {
+                margin-bottom: 32px;
+            }
+        }
+
+        .hub-img {
+            img {
+                max-height: 472px;
+                border-radius: 60px 60px 60px 0
+            }
+        }
+    }
+}
+
+.about {
+    padding-top: 48px;
+    padding-bottom: 72px;
+    background-color: #fff;
+
+    .container {
+        h1 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #343434;
+            margin-bottom: 72px;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+            max-width: 571px;
+
+            h3 {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: 0.04em;
+                color: #343434;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #343434;
+            }
+        }
+
+        &-img {
+            img {
+                border-radius: 44px 0 44px 0;
+            }
+        }
+    }
+}
+
+.projects {
+    .container {
+        h2 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.04em;
+            margin-bottom: 64px;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            border-radius: 44px 44px 44px 0;
+            margin-bottom: 64px;
+        }
+    }
+
+    &-row {
+        display: flex;
+        max-width: 612px;
+    }
+
+    &-row__first {
+        h3 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 34px;
+            letter-spacing: 0.02em;
+            color: #070707;
+            margin-bottom: 45px;
+        }
+
+        .number {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 128px;
+            line-height: 154px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &-row__second {
+        max-width: 296px;
+        position: relative;
+
+        button {
+            position: absolute;
+            width: 100%;
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: #343434;
+            // кнопку вінести в отдельній файл
+        }
+
+        p {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #070707;
+            margin-bottom: 43px;
+        }
+    }
+}
