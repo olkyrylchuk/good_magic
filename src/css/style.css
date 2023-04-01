@@ -103,9 +103,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  /* or 150% */
   letter-spacing: 0.02em;
-  /* secondary/black */
   color: #343434;
 }
 
@@ -191,6 +189,7 @@
 
 .projects-row {
   display: flex;
+  justify-content: space-between;
   max-width: 612px;
 }
 
@@ -203,6 +202,7 @@
   letter-spacing: 0.02em;
   color: #070707;
   margin-bottom: 45px;
+  padding-right: 25px;
 }
 
 .projects-row__first .number {
