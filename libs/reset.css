@@ -87,6 +87,12 @@ video {
     vertical-align: baseline;
 }
 
+a {
+    text-decoration: none;
+    color: #343434;
+
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

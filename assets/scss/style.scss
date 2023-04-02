@@ -1,3 +1,7 @@
+@import "_var";
+@import "_general";
+
+
 .header {
     height: 176px;
     background-color: var(--color-white);
@@ -49,15 +53,7 @@
     }
 
     &-button {
-        button {
-            padding: 16px 68px;
-            border-radius: 4px;
-            background-color: #fff;
-            border: 2px soled #343434;
-            color: var(--color-secondary);
-            font-weight: 700;
-            cursor: pointer;
-        }
+        border: 2px soled #343434;
     }
 }
 
@@ -72,11 +68,11 @@
         margin: 0 auto;
     }
 
-    .hub-text {
+    &-text {
         display: flex;
         justify-content: space-between;
 
-        .hub-text-title {
+        &-title {
             max-width: 622px;
 
             h2 {
@@ -84,8 +80,7 @@
                 font-style: normal;
                 font-weight: 700;
                 font-size: 32px;
-                letter-spacing: 0.04em;
-                line-height: 40px;
+                letter-spacing: 0.02em;
                 color: #343434;
                 margin-bottom: 32px;
             }
@@ -99,18 +94,17 @@
                 letter-spacing: 0.02em;
                 color: var(--color-secondarys);
                 margin-bottom: 26px;
-
-                font-family: 'e-Ukraine';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.02em;
-                color: #343434;
             }
 
-            .button__yellow {
+            a {
+                display: flex;
                 margin-bottom: 32px;
+            }
+        }
+
+        &-img {
+            img {
+                margin-right: -3px;
             }
         }
 
@@ -179,6 +173,8 @@
 }
 
 .projects {
+    border-bottom: 2px solid var(--color-secondary);
+
     .container {
         h2 {
             font-family: 'e-Ukraine';
@@ -215,7 +211,7 @@
             font-size: 28px;
             line-height: 34px;
             letter-spacing: 0.02em;
-            color: #070707;
+            color: #343434;
             margin-bottom: 45px;
             padding-right: 25px;
         }
@@ -234,18 +230,6 @@
         max-width: 296px;
         position: relative;
 
-        button {
-            position: absolute;
-            width: 100%;
-            font-family: 'e-Ukraine';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 28px;
-            color: #343434;
-            // кнопку вінести в отдельній файл
-        }
-
         p {
             font-family: 'e-Ukraine';
             font-style: normal;
@@ -253,8 +237,286 @@
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.02em;
-            color: #070707;
-            margin-bottom: 43px;
+            color: #343434;
+            margin-bottom: 63px;
         }
+
+        .button {
+            width: 100%;
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: #343434;
+            // кнопки вынести в отдельный файл
+        }
+    }
+}
+
+.projects-two {
+    padding-top: 64px;
+
+    .number {
+        color: var(--color-primary);
+    }
+
+    img {
+        border-radius: 44px 0 0 44px;
+        margin-bottom: 64px;
+    }
+}
+
+.projects-three {
+    border-bottom: none;
+    padding-top: 64px;
+
+    .number {
+        color: #000;
+    }
+
+    img {
+        border-radius: 0 44px 44px 44px;
+        margin-bottom: 64px;
+    }
+}
+
+.join {
+    max-height: 168px;
+    background-color: var(--color-primary);
+    padding: 48px 205px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        .join-title {
+            max-width: 672px;
+
+            h2 {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+                color: #343434;
+            }
+        }
+
+        .button-yellow {
+            border: 2px solid #343434;
+        }
+    }
+}
+
+.partners {
+    padding-top: 80px;
+    margin-bottom: 50px;
+
+    &-wrapper {
+        h2 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 43px;
+            letter-spacing: 0.02em;
+            color: #343434;
+            margin-bottom: 56px;
+        }
+    }
+
+    &-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.news {
+    padding-top: 50px;
+    margin-bottom: 35px;
+
+    .container {
+        .button {
+            text-transform: none;
+            margin-bottom: 56px;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            color: var(--color-secondary);
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 43px;
+            letter-spacing: 0.02em;
+        }
+
+    }
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            max-width: 400px;
+
+            img {
+                margin-bottom: 32px;
+            }
+
+            h4 {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                color: #343434;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                color: #343434;
+                margin-bottom: 20px;
+            }
+
+            span {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0.02em;
+                color: #343434;
+            }
+        }
+    }
+}
+
+.opinions {
+    padding-top: 37px;
+
+    .container {
+        h2 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 43px;
+            letter-spacing: 0.02em;
+            color: #343434;
+            margin-bottom: 32px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+
+            p {
+                margin-right: 10px;
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: #343434;
+            }
+
+            img {
+                width: 24px;
+                height: 10px;
+            }
+        }
+
+    }
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            position: relative;
+            max-width: 351px;
+            max-height: 388px;
+            border: 2px solid var(--color-primary);
+            padding: 48px 20px;
+
+            &-wrapper {
+                display: flex;
+
+                img {
+                    height: 120px;
+                    width: 120px;
+                    margin-right: 12px;
+                }
+
+                h5 {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    margin-bottom: 4px;
+                }
+
+                p {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    margin-bottom: 72px;
+                }
+            }
+
+            span {
+                position: absolute;
+                top: -30px;
+                left: -5px;
+
+                img {}
+            }
+        }
+
+
+    }
+
+    &-text {
+        font-family: 'e-Ukraine';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+
+        letter-spacing: 0.02em;
+
+        /* secondary/black */
+
+        color: #343434;
     }
 }
