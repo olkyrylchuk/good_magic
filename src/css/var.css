@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #FFD249;
+  --color-secondary: #343434;
+  --color-white: #FFF;
+  --color-black: #000;
+}
+
+@font-face {
+  font-family: "e-Ukraine";
+  src: url("libs/Fonts/e-Ukraine/e-Ukraine-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
