@@ -558,8 +558,6 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
-  /* or 143% */
   letter-spacing: 0.02em;
-  /* secondary/black */
   color: #343434;
 }
