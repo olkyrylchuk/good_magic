@@ -1,0 +1,81 @@
+.projects {
+    border-bottom: 2px solid var(--color-secondary);
+
+    .container {
+        h2 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.04em;
+            margin-bottom: 64px;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            border-radius: 44px 44px 44px 0;
+            margin-bottom: 64px;
+        }
+    }
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        max-width: 612px;
+    }
+
+    &-row__first {
+        h3 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 34px;
+            letter-spacing: 0.02em;
+            color: #343434;
+            margin-bottom: 45px;
+            padding-right: 25px;
+        }
+
+        .number {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 128px;
+            line-height: 154px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &-row__second {
+        max-width: 296px;
+        position: relative;
+
+        p {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #343434;
+            margin-bottom: 63px;
+        }
+
+        .button {
+            width: 100%;
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: #343434;
+            // кнопки вынести в отдельный файл
+        }
+    }
+}

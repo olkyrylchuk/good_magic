@@ -1,0 +1,22 @@
+.partners {
+    padding-top: 80px;
+    margin-bottom: 50px;
+
+    &-wrapper {
+        h2 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 43px;
+            letter-spacing: 0.02em;
+            color: #343434;
+            margin-bottom: 56px;
+        }
+    }
+
+    &-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+}

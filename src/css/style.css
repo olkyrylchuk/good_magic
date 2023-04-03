@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "e-Ukraine";
-  src: url("./libs/Fonts/e-Ukraine/e-Ukraine-Regular.otf");
+  src: url("/libs/Fonts/e-Ukraine/e-Ukraine-Regular.otf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "e-Ukraine";
-  src: url("./libs/Fonts/e-Ukraine/e-Ukraine-Bold.otf");
+  src: url("/libs/Fonts/e-Ukraine/e-Ukraine-Bold.otf");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: "e-Ukraine";
-  src: url("./libs/Fonts/e-Ukraine/e-Ukraine-Light.otf");
+  src: url("/libs/Fonts/e-Ukraine/e-Ukraine-Light.otf");
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -31,7 +31,7 @@
 
 @font-face {
   font-family: "e-Ukraine";
-  src: url("./libs/Fonts/e-Ukraine/e-Ukraine-Medium.otf");
+  src: url("/libs/Fonts/e-Ukraine/e-Ukraine-Medium.otf");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -170,9 +170,10 @@ body {
   margin-bottom: 26px;
 }
 
-.hub-text-title a {
+.hub-text-title .button {
   display: flex;
   margin-bottom: 32px;
+  max-width: 160px;
 }
 
 .hub-text-img img {
@@ -464,6 +465,7 @@ body {
 
 .opinions {
   padding-top: 37px;
+  margin-bottom: 36px;
 }
 
 .opinions .container h2 {
@@ -509,9 +511,13 @@ body {
 .opinions-block-item {
   position: relative;
   max-width: 351px;
-  max-height: 388px;
+  max-height: 240px;
   border: 2px solid var(--color-primary);
   padding: 48px 20px;
+}
+
+.opinions-block-item-title {
+  margin-bottom: 24px;
 }
 
 .opinions-block-item-wrapper {
@@ -522,6 +528,7 @@ body {
   height: 120px;
   width: 120px;
   margin-right: 12px;
+  margin-bottom: 24px;
 }
 
 .opinions-block-item-wrapper h5 {
@@ -543,7 +550,6 @@ body {
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #343434;
-  margin-bottom: 72px;
 }
 
 .opinions-block-item span {
@@ -560,4 +566,174 @@ body {
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #343434;
+}
+
+.opinions-text__hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.opinions-text .two-columns {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.press {
+  padding-top: 36px;
+  margin-bottom: 100px;
+}
+
+.press .container h2 {
+  margin-bottom: 64px;
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: #343434;
+}
+
+.press__slider {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding-top: 120px;
+  height: 463px;
+  background: #343434;
+}
+
+.footer .container {
+  display: flex;
+  align-items: first baseline;
+}
+
+.footer-support {
+  max-width: 300px;
+  margin-right: 287px;
+}
+
+.footer-support h3 {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #FFD249;
+  margin-bottom: 16px;
+}
+
+.footer-support p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.footer-support .support-send-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.footer-support .support-send-form-send {
+  position: inherit;
+  width: 96px;
+  min-height: 62px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 12px #F5F5F5;
+  border-radius: 12px;
+  margin-right: 40px;
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #343434;
+  text-align: center;
+}
+
+.footer-support .support-send-form .button-yellow {
+  min-height: 62px;
+  min-width: 253px;
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #343434;
+}
+
+.footer-support .support-send span {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.footer .contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .contacts h3 {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #FFD249;
+  margin-bottom: 16px;
+}
+
+.footer .contacts__tel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 88px;
+  margin-bottom: 16px;
+}
+
+.footer .contacts__tel a {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.footer .contacts__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .contacts__social a {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.02em;
+  /* primary/yellow */
+  color: #FFD249;
+  margin-bottom: 16px;
 }

@@ -1,0 +1,60 @@
+.hub {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: #F4F4F4;
+
+    .container {
+        max-width: 1270px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &-text {
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            max-width: 622px;
+
+            h2 {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                letter-spacing: 0.02em;
+                color: #343434;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: var(--color-secondarys);
+                margin-bottom: 26px;
+            }
+
+            .button {
+                display: flex;
+                margin-bottom: 32px;
+                max-width: 160px;
+            }
+        }
+
+        &-img {
+            img {
+                margin-right: -3px;
+            }
+        }
+
+        .hub-img {
+            img {
+                max-height: 472px;
+                border-radius: 60px 60px 60px 0
+            }
+        }
+    }
+}

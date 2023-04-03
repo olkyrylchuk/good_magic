@@ -6,6 +6,8 @@
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="libs/reset.css">
+    <link rel="stylesheet" href="libs/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="src/css/style.min.css">
     <title>Магія добра</title>
 </head>
@@ -14,10 +16,12 @@
     <header class="header">
         <div class="container wrapper">
             <div class="header-nav">
-                <img class="header-logo" src="./src/img/svg/logo.svg" alt="logo">
+                <a href="index.html">
+                    <img class="header-logo" src="./src/img/svg/logo.svg" alt="logo">
+                </a>
                 <div class="header-nav-item">
                     <ul>
-                        <li><a href="#">Про нас</a></li>
+                        <li><a href="html/aboutus.html">Про нас</a></li>
                         <li><a href="#">Проєкти</a></li>
                         <li><a href="#">Новини</a></li>
                         <li><a href="#">Контакти</a></li>
@@ -206,14 +210,15 @@
                     </span>
                     <div class="opinions-block-item-wrapper">
                         <img src="./src/img/jpg/opinions_photo_01.webp" alt="">
-                        <div>
+                        <div class="opinions-block-item-title">
                             <h5>Надія Ільясова</h5>
                             <p>бізнесвумен, волонтерка, громадська активістка</p>
                         </div>
-
                     </div>
                     <div class="opinions-text">
-                        <p>«Магія добра» це пряма асоціація з її засновницею Ольою Марковець! Бо вона дійсно володіє
+                        <p class="opinions-text__hidden">«Магія добра» це пряма асоціація з її засновницею Ольою
+                            Марковець! Бо вона дійсно
+                            володіє
                             дивовижним магічним даром об'єднувати навколо себе людей, щоб робити дивовижні речі. Олю
                             знаю вже багато років, але відчуття, що ми з нею були знайомі вже цілу вічність. Це жінка, з
                             якою на одній хвилі добрих справ, тому мені завжди легко було взаємодіяти і допомагати
@@ -232,14 +237,13 @@
                             «Магії добра»!</p>
                     </div>
                 </div>
-
                 <div class="opinions-block-item">
                     <span>
                         <img src="./src/img/png/Quotation.webp" alt="">
                     </span>
                     <div class="opinions-block-item-wrapper">
                         <img src="./src/img/jpg/opinions_photo_02.webp" alt="">
-                        <div>
+                        <div class="opinions-block-item-title">
                             <h5>Севіль Абіева</h5>
                             <p>Директор філіалу LEDMAX, проджет-менеджер мовної школи «The Guides», голова
                                 польсько-української громадської організації «AWR» в Польщі
@@ -247,27 +251,29 @@
                         </div>
                     </div>
                     <div class="opinions-text">
-                        <p>«Магія Добра» - це магія, яка народилась в Херсонських степах. Дякую цій ГО та безпосередньо
+                        <p class="opinions-text__hidden two-columns">«Магія Добра» - це магія, яка народилась в
+                            Херсонських степах.
+                            Дякую цій ГО та безпосередньо
                             керівнику за неймовірні ідеї, які вони наважуються реалізувати в житті. Мало організацій,
                             які мають візію. А Оля її має і має одвагу змінювати цей світ, навіть коли всі вважають, що
                             це неможливо!</p>
                     </div>
                 </div>
-
                 <div class="opinions-block-item">
                     <span>
                         <img src="./src/img/png/Quotation.webp" alt="">
                     </span>
                     <div class="opinions-block-item-wrapper">
                         <img src="./src/img/jpg/opinions_photo_03.webp" alt="">
-                        <div>
+                        <div class="opinions-block-item-title">
                             <h5>Василь Дмитрук</h5>
                             <p>Фахівець з інформаційних технологій, соціальних мереж, продажу, реклами</p>
                         </div>
                     </div>
 
                     <div class="opinions-text">
-                        <p>Я мав честь працювати з Ольгою Марковець протягом минулого року, і я постійно вражений її
+                        <p class="opinions-text__hidden">Я мав честь працювати з Ольгою Марковець протягом минулого
+                            року, і я постійно вражений її
                             наполегливою працею та самовідданістю. Вона чесний і надійний член команди, підходить до
                             своєї роботи з креативністю та ентузіазмом. Вона завжди готова зробити все можливе, щоб
                             вкластися в терміни, і швидко пропонує підтримку іншим. Її пристрасть до своєї справи
@@ -277,6 +283,77 @@
             </div>
         </div>
     </section>
+    <section class="press">
+        <div class="container">
+            <h2>ЗМІ про нас</h2>
+            <div class="press__slider">
+                <div>
+                    <a href="#">
+                        <img src="./src/img/png/media_01.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./src/img/png/media_02.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./src/img/png/media_03.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./src/img/png/media_04.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./src/img/png/media_02.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-support">
+                <h3>Підтримати</h3>
+                <p>Кожна пожертва важлива!
+                    Сьогодні я не вип'ю кави,<br>
+                    я створюю магію!</p>
+                <div class="support-send">
+                    <form class="support-send-form" method="get">
+                        <input type="text" class="support-send-form-send" placeholder="50 грн" name="search">
+                        <button class="button-yellow" type="submit"><span>ПЕРЕКАЗАТИ</span>
+                        </button>
+                    </form>
+                    <span>(змінити суму)</span>
+                </div>
+
+            </div>
+            <div class="contacts">
+                <h3>Контакти</h3>
+                <div class="contacts__tel">
+                    <a href="mailto:">e-mail: markovec28@gmail.com</a>
+                    <a href="tel:+">+38 095 829 42 63</a>
+                    <a href="tel:+">+38 096 075 37 38</a>
+                </div>
+                <div class="contacts__social">
+                    <a href="#">Шукай нас у Facebook</a>
+                    <a href="#">Зв'язатись з нами</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="libs/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="src/js/slick.js"></script>
+    <script src="src/js/slick.js"></script>
+
+
 </body>
 
 </html>

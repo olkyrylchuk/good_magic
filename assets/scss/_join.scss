@@ -1,0 +1,32 @@
+.join {
+    max-height: 168px;
+    background-color: var(--color-primary);
+    padding: 48px 205px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        .join-title {
+            max-width: 672px;
+
+            h2 {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+                color: #343434;
+            }
+        }
+
+        .button-yellow {
+            border: 2px solid #343434;
+        }
+    }
+}

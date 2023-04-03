@@ -1,0 +1,22 @@
+.press {
+    padding-top: 36px;
+    margin-bottom: 100px;
+
+    .container {
+        h2 {
+            margin-bottom: 64px;
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 43px;
+            letter-spacing: 0.01em;
+            color: #343434;
+        }
+    }
+
+    &__slider {
+        max-width: 1128px;
+        margin: 0 auto;
+    }
+}
