@@ -24,6 +24,17 @@
                 text-transform: none;
             }
 
+            .block-wrap {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    max-height: 100%;
+                    margin-bottom: 32px;
+                }
+
+                text-align: center;
+            }
         }
     }
 }

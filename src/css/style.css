@@ -184,7 +184,7 @@ body {
 .hub-text-title .button {
   display: flex;
   margin-bottom: 32px;
-  max-width: 160px;
+  max-width: 296px;
 }
 
 .hub-text-img img {
@@ -1145,4 +1145,76 @@ body {
 
 .joinus__blocks-item a {
   text-transform: none;
+}
+
+.joinus__blocks-item .block-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.joinus__blocks-item .block-wrap img {
+  max-height: 100%;
+  margin-bottom: 32px;
+}
+
+.back {
+  padding-top: 72px;
+  margin-bottom: 60px;
+}
+
+.back__wrapp {
+  display: flex;
+}
+
+.back__wrapp img {
+  margin-right: 20px;
+  rotate: 180deg;
+}
+
+.back__wrapp p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #343434;
+}
+
+.pay h2 {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #343434;
+  margin-bottom: 48px;
+}
+
+.pay__button ul {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.pay__button a {
+  padding: 16px 54px;
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #343434;
+  border: 2px solid #343434;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.pay__button .active {
+  flex-direction: row;
+  align-items: flex-start;
+  border: none;
+  background: #FFD249;
+  border-radius: 4px;
 }
