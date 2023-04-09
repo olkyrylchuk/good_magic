@@ -1,0 +1,63 @@
+.contact {
+    padding-top: 72px;
+
+    .container {
+        h2 {
+            margin-bottom: 32px;
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.04em;
+            color: #000000;
+        }
+    }
+
+    &__adress,
+    &__details {
+        display: flex;
+
+        &-leftside {
+            min-width: 257px;
+            margin-right: 56px;
+            margin-bottom: 58px;
+
+            p {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #000000;
+                margin-bottom: 12px;
+            }
+        }
+
+        &-rightside {
+            p {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #000000;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__details {
+        margin-bottom: 42px;
+    }
+
+    &__map {
+        .map {
+            width: 556px;
+            height: 556px;
+            margin-bottom: 72px;
+        }
+    }
+}

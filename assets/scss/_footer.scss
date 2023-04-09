@@ -1,15 +1,14 @@
 .footer {
     .container {
         display: flex;
-        align-items: first baseline;
+
     }
 
     padding-top: 120px;
-    height: 463px;
     background: #343434;
 
     &-support {
-        max-width: 300px;
+        min-width: 300px;
         margin-right: 287px;
 
         h3 {
@@ -35,7 +34,7 @@
         }
 
         .support-send {
-
+            padding-bottom: 120px;
 
             &-form {
                 display: flex;
@@ -58,9 +57,6 @@
                     line-height: 28px;
                     color: #343434;
                     text-align: center;
-
-
-
                 }
 
                 .button-yellow {
@@ -75,7 +71,7 @@
                 }
             }
 
-            span {
+            .change {
                 font-family: 'e-Ukraine';
                 font-style: normal;
                 font-weight: 400;
@@ -129,17 +125,10 @@
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 24px;
-                /* identical to box height, or 150% */
-
                 letter-spacing: 0.02em;
-
-                /* primary/yellow */
-
                 color: #FFD249;
                 margin-bottom: 16px;
             }
         }
-
-
     }
 }
