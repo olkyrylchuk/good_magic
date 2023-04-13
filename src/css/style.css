@@ -1218,3 +1218,39 @@ body {
   background: #FFD249;
   border-radius: 4px;
 }
+
+.news__sec {
+  padding-top: 72px;
+}
+
+.news__sec-link {
+  margin-bottom: 40px;
+}
+
+.news__sec-link ul {
+  display: flex;
+}
+
+.news__sec-link ul li {
+  margin-right: 20px;
+}
+
+.news__sec-link ul li a {
+  padding: 13px 20px;
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #343434;
+  border-radius: 4px;
+}
+
+.news__sec-link ul li .active {
+  flex-direction: row;
+  align-items: flex-start;
+  border: none;
+  background: #FFD249;
+  border-radius: 4px;
+}
