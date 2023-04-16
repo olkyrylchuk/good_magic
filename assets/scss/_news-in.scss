@@ -33,3 +33,129 @@
         }
     }
 }
+
+.news__block-items {
+    display: grid;
+    grid-template-areas: "el-1 el-1 el-2 el-2"
+        "el-1 el-1  el-3 el-3"
+        "el-4 el-5 el-6 el-7";
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-bottom: 100px;
+
+    .news__block-item {
+        img {
+            margin-bottom: 16px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            padding-right: 5px;
+
+            h4 {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.02em;
+                color: #343434;
+                margin-bottom: 8px;
+            }
+
+            h3 {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                color: #343434;
+                margin-bottom: 12px;
+            }
+
+            .one {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #343434;
+                margin-bottom: 16px;
+            }
+
+            .two {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                color: #343434;
+                margin-bottom: 16px;
+            }
+
+            span {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                color: #343434;
+            }
+
+            .date {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0.02em;
+                color: #343434;
+            }
+        }
+
+    }
+
+    .el-1 {
+        grid-area: el-1;
+
+    }
+
+    .el-2 {
+        grid-area: el-2;
+        display: flex;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+
+    .el-3 {
+        grid-area: el-3;
+        display: flex;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+    .el-4 {
+        grid-area: el-4;
+    }
+
+    .el-5 {
+        grid-area: el-5;
+    }
+
+    .el-6 {
+        grid-area: el-6;
+    }
+
+    .el-7 {
+        grid-area: el-7;
+    }
+}

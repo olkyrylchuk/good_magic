@@ -52,7 +52,10 @@
 
         .hub-img {
             img {
-                max-height: 472px;
+                // max-height: 472px;
+                max-width: 584px;
+                // width: 100%;
+                height: auto;
                 border-radius: 60px 60px 60px 0
             }
         }
