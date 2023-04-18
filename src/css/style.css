@@ -1584,6 +1584,53 @@ body {
   margin: 0 auto;
 }
 
+.news__one-text h2 {
+  margin-bottom: 32px;
+}
+
+.news__one-text p {
+  margin-bottom: 16px;
+  margin-left: 55px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #343434;
+  max-width: 370px;
+}
+
+.news__one-text a {
+  display: flex;
+  margin-top: 64px;
+}
+
+.news__one-text .location {
+  display: flex;
+  position: relative;
+}
+
+.news__one-text .location img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+}
+
+.news__one-text .fb {
+  display: flex;
+  position: relative;
+}
+
+.news__one-text .fb img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.news__one-img img {
+  border-radius: 22px 22px 0 0;
+}
+
 .proj-info {
   max-width: 950px;
   margin: 0 auto;
