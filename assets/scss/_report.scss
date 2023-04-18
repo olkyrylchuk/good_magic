@@ -1,0 +1,109 @@
+.foundation {
+    h2 {
+        margin-top: -10px;
+        margin-bottom: 48px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.report {
+    height: 152px;
+    width: 100%;
+    background-color: var(--color-primary);
+    margin-bottom: 24px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 36px;
+        max-width: 1046px;
+        width: 100%;
+
+        h1 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.04em;
+            color: var(--color-black);
+        }
+
+        span {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.04em;
+            color: var(--color-black);
+        }
+    }
+}
+
+.reports {
+    padding-top: 24px;
+
+    h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: var(--color-black);
+        margin-bottom: 32px;
+    }
+
+    &__position {
+        max-width: 844px;
+        width: 100%;
+        margin-bottom: 64px;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+
+            p {
+                max-width: 575px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: var(--color-secondary);
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                color: var(--color-secondary);
+            }
+        }
+    }
+
+    &__download {
+        margin-bottom: 100px;
+
+        li {
+            display: flex;
+            margin-bottom: 24px;
+
+            p {
+                max-width: 575px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: var(--color-secondary);
+                margin-right: 22px;
+            }
+
+            a {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                color: var(--color-secondary);
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

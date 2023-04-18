@@ -45,6 +45,12 @@
   font-style: normal;
 }
 
+body {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  color: var(--color-secondary);
+}
+
 .button {
   font-family: "e-Ukraine";
   font-style: normal;
@@ -142,28 +148,28 @@ body {
   border: 2px soled #343434;
 }
 
-.hub {
+.home {
   padding-top: 64px;
   padding-bottom: 64px;
   background: #F4F4F4;
 }
 
-.hub .container {
+.home .container {
   max-width: 1270px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.hub-text {
+.home-text {
   display: flex;
   justify-content: space-between;
 }
 
-.hub-text-title {
+.home-text-title {
   max-width: 622px;
 }
 
-.hub-text-title h2 {
+.home-text-title h2 {
   font-family: "e-Ukraine";
   font-style: normal;
   font-weight: 700;
@@ -173,7 +179,7 @@ body {
   margin-bottom: 32px;
 }
 
-.hub-text-title p {
+.home-text-title p {
   font-family: "e-Ukraine";
   font-style: normal;
   font-weight: 300;
@@ -184,17 +190,17 @@ body {
   margin-bottom: 26px;
 }
 
-.hub-text-title .button {
+.home-text-title .button {
   display: flex;
   margin-bottom: 32px;
   max-width: 296px;
 }
 
-.hub-text-img img {
+.home-text-img img {
   margin-right: -3px;
 }
 
-.hub-text .hub-img img {
+.home-text .home-img img {
   max-width: 584px;
   height: auto;
   border-radius: 60px 60px 60px 0;
@@ -869,9 +875,54 @@ body {
   align-items: center;
 }
 
-.timeline__item {
+.timeline__wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.timeline__wrapper .timeline__item {
   display: flex;
   flex-direction: column;
+}
+
+.timeline__wrapper .timeline__item img {
+  width: 100%;
+  display: inline-block;
+}
+
+.timeline__wrapper .timeline__item .date {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.timeline__wrapper .timeline__item p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  max-width: 208px;
+}
+
+.timeline__item {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline__item img {
+  width: 100%;
+  display: inline-block;
 }
 
 .timeline__item .date {
@@ -1547,4 +1598,112 @@ body {
   letter-spacing: 0.02em;
   color: #343434;
   margin-bottom: 64px;
+}
+
+.foundation h2 {
+  margin-top: -10px;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+}
+
+.report {
+  height: 152px;
+  width: 100%;
+  background-color: var(--color-primary);
+  margin-bottom: 24px;
+}
+
+.report__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  max-width: 1046px;
+  width: 100%;
+}
+
+.report__wrapper h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: var(--color-black);
+}
+
+.report__wrapper span {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: var(--color-black);
+}
+
+.reports {
+  padding-top: 24px;
+}
+
+.reports h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+  margin-bottom: 32px;
+}
+
+.reports__position {
+  max-width: 844px;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.reports__position li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.reports__position li p {
+  max-width: 575px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-secondary);
+}
+
+.reports__position li span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-secondary);
+}
+
+.reports__download {
+  margin-bottom: 100px;
+}
+
+.reports__download li {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.reports__download li p {
+  max-width: 575px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-secondary);
+  margin-right: 22px;
+}
+
+.reports__download li a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-secondary);
+  transform: rotate(90deg);
 }

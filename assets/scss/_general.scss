@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'e-Ukraine';
     font-style: normal;
+}
+
+body {
+    font-family: 'e-Ukraine';
+    font-style: normal;
+
+    color: var(--color-secondary);
 }
 
 .button {
