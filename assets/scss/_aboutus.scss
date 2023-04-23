@@ -92,20 +92,18 @@
             display: flex;
             flex-direction: column;
 
-            img {
-                width: 100%;
-                display: inline-block;
-            }
-
             .date {
-                font-family: 'e-Ukraine';
-                font-style: normal;
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 29px;
                 letter-spacing: 0.04em;
                 margin-bottom: 5px;
                 text-align: center;
+            }
+
+            img {
+                width: 100%;
+                display: inline-block;
             }
 
             p {
@@ -118,26 +116,6 @@
                 max-width: 208px;
             }
         }
-
-        // .item-01 {
-     //     position: relative;
-
-     //     span {
-     //         position: absolute;
-
-     //         left: 100px;
-     //     }
-     // }
-
-     // .item-02 {
-     //     position: relative;
-
-     //     span {
-     //         position: absolute;
-
-     //         left: 100px;
-     //     }
-     // }
     }
 
     &__item {
@@ -324,6 +302,12 @@
             color: #FFD249;
             margin-right: 50px;
             min-width: 161px;
+        }
+
+        .border {
+            color: #fff;
+            -webkit-text-stroke: #000;
+            -webkit-text-stroke-width: 1px;
         }
 
         .paragraph {

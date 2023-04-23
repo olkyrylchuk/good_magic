@@ -1,0 +1,101 @@
+.feedback {
+    margin-bottom: 100px;
+
+    &__wrapper {
+        width: 812px;
+    }
+
+    .container {
+        display: flex;
+
+        img {
+            width: 559px;
+            height: 506px;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.04em;
+            color: var(--color-secondary);
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 0.02em;
+            color: #343434;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 715px;
+        height: 676px;
+
+        .button {
+            margin-bottom: 64px;
+            border: 0px solid transparent;
+        }
+    }
+
+    &-input {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        padding: 8px;
+        color: var(--color-secondary);
+        border: 0px solid transparent;
+        border-bottom: 1px solid var(--color-secondary);
+        margin-bottom: 40px;
+        background-color: #fff;
+    }
+
+    .input__btn {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #343434;
+
+    }
+
+
+    #phone {
+        color: #BCBCBC;
+    }
+
+    input {
+        max-width: 400px;
+    }
+
+
+
+    .placeholder {
+        color: black;
+    }
+
+    // .textarea {
+    //     margin-bottom: 56px;
+    // }
+
+    input {
+        min-width: 400px;
+        border: 0px solid transparent;
+        border-bottom: 1px solid var(--color-secondary);
+    }
+
+    .textarea {
+        margin-bottom: 56px;
+        border: 1px solid var(--color-secondary);
+    }
+
+    &-tel {
+        color: inherit;
+        color: #BCBCBC;
+    }
+}

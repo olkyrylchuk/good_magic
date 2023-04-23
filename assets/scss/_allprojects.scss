@@ -1,0 +1,91 @@
+.allprojects {
+    box-sizing: border-box;
+
+    &__wrapper {
+        ul {
+      margin-top: 64px;
+  }
+    }
+
+    &__wrap {
+        display: flex;
+        height: 464px;
+        width: 100%;
+
+        margin-bottom: 64px;
+        padding-bottom: 64px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #000;
+        }
+
+        .project__firstside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 296px;
+            max-height: 295px;
+            width: 100%;
+            margin-right: 20px;
+
+            .project__status {
+                width: 192px;
+                height: 60px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                color: #343434;
+                padding: 16px 28px;
+                border: 2px solid #343434;
+                border-radius: 4px;
+            }
+
+            .completed {
+                color: #BCBCBC;
+                border: 2px solid #BCBCBC;
+            }
+
+            h2 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 34px;
+                letter-spacing: 0.02em;
+                color: #070707;
+            }
+        }
+
+        .project__main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 297px;
+            max-height: 295px;
+            width: 100%;
+            margin-right: 120px;
+
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #070707;
+            }
+
+            a {
+                width: 296px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .project__image {
+            .img {
+                align-items: flex-end;
+                border-radius: 44px 44px 44px 0px;
+                max-width: 504px;
+                max-height: 400px;
+            }
+        }
+    }
+}

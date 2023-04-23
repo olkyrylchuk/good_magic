@@ -1,9 +1,33 @@
-.news__one {
+.news__hub {
+    margin-bottom: 64px;
 
-    // &-wrapper {}
+    &-wrapper {
+        display: flex;
+        width: 1132px;
+
+
+
+        &-img {
+            img {
+                border-radius: 22px 22px 0 0;
+            }
+        }
+    }
 
     &-text {
+        max-width: 556px;
+        max-height: 460px;
+        margin-right: 72px;
+
         h2 {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 0.02em;
+            color: #070707;
+            margin-bottom: 8px;
             margin-bottom: 32px;
         }
 
@@ -46,17 +70,7 @@
             }
         }
     }
-
-    &-img {
-        img {
-            border-radius: 22px 22px 0 0;
-        }
-
-    }
 }
-
-
-
 
 .proj-info {
     max-width: 950px;

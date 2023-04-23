@@ -1,0 +1,30 @@
+.fault {
+    padding-top: 232px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            min-width: 644px;
+            min-height: 413px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.04em;
+            color: #000000;
+            margin-bottom: 48px;
+        }
+
+        a {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: #343434;
+        }
+    }
+}

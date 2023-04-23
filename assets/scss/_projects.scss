@@ -43,12 +43,16 @@
         }
 
         .number {
-            font-family: 'e-Ukraine';
-            font-style: normal;
             font-weight: 700;
             font-size: 128px;
             line-height: 154px;
             letter-spacing: 0.02em;
+            color: #fff;
+        }
+
+        .border {
+            -webkit-text-stroke: #000;
+            -webkit-text-stroke-width: 1px;
         }
     }
 
