@@ -7,3 +7,15 @@
         margin-bottom: 64px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .projects-three {
+        border-bottom: none;
+        padding-top: 24px;
+
+        img {
+            border-radius: 0 44px 44px 44px;
+            margin-bottom: 64px;
+        }
+    }
+}

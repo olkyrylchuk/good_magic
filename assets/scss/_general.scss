@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +13,9 @@
 body {
     font-family: 'e-Ukraine';
     font-style: normal;
-
     color: var(--color-secondary);
+    background-color: #fff;
+    box-sizing: border-box;
 }
 
 .button {
@@ -30,7 +35,7 @@ body {
 .button-yellow {
     flex-direction: row;
     align-items: flex-start;
-    width: min-296px;
+    // width: 296px;
     border: none;
     background: #FFD249;
     border-radius: 4px;
@@ -43,13 +48,24 @@ body {
     border: none;
 }
 
-body {
-    background-color: #fff;
-    box-sizing: border-box;
-}
-
 .container {
     max-width: 1270px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .container {
+        max-width: 430px;
+        padding: 0 24px;
+        margin: 0 auto;
+    }
+
+    .desctop {
+        display: none;
+    }
 }

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магія добра</title>
+
     <link rel="stylesheet" href="../libs/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="../src/css/style.min.css">
 </head>
 
@@ -49,16 +51,21 @@
             <div class="feedback__wrapper">
                 <h2>Залишіть Ваші контакти </h2>
                 <form action="" class="form" method="get">
-                    <input type="text" class="feedback-input" placeholder="Ваше ім'я" name="name">
-                    <input type="tel" class="feedback-input feedback-tel" placeholder="+38 000 000 00 00" id="phone">
-                    <input type="email" class="feedback-input" placeholder="Email" name="email">
-                    <input type="text" class="feedback-input" placeholder="Тема" name="theme">
+                    <input type="text" class="feedback-input" placeholder="Ваше ім'я" name="name" id="userName">
+                    <label for="phone">
+                        <input type="text" class="feedback-input feedback-tel" placeholder="+38 000 000 00 00"
+                            id="userPhone">
+                    </label>
+                    <input type="email" class="feedback-input" placeholder="Email" name="email" id="userMail">
+                    <input type="text" class="feedback-input" placeholder="Тема" name="theme" id="userTheme">
                     <textarea name="textarea" class="feedback-input textarea" placeholder=" Введіть текст..." cols="30"
-                        rows="10"></textarea>
-                    <input type="submit" class="button button-yellow input__btn" value="Надіслати">
+                        rows="10" id="userText"></textarea>
+                    <button type="button" id="sendMail" class="button button-yellow input__btn"
+                        value="Надіслати"></button>
                 </form>
-                <h1>Дякуємо за звернення! <br>
-                    Ми зв'яжемося з Вами найближчим часом!</h1>
+                <div id="errorMass"> </div>
+                <!-- <h1 class="thanks-message">Дякуємо за звернення! <br>
+                    Ми зв'яжемося з Вами найближчим часом!</h1> -->
             </div>
             <img src="../src/img/png/bg_logo.webp" alt="">
         </div>
@@ -93,6 +100,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../src/js/formMail.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="../src/js/script.js"></script>
 </body>
 
 </html>

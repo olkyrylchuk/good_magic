@@ -10,3 +10,22 @@
         margin-bottom: 64px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .projects-two {
+        padding-top: 24px;
+
+        .number {
+            color: var(--color-primary);
+        }
+
+        .projects-row__second {
+            min-width: 396px;
+        }
+
+        img {
+            border-radius: 44px 0 0 44px;
+            margin-bottom: 36px;
+        }
+    }
+}

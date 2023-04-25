@@ -29,6 +29,16 @@
             letter-spacing: 0.02em;
             color: #343434;
         }
+
+        .thanks-message {
+            display: none;
+            transition: 0.3s all;
+        }
+
+        .thanks-message-visible {
+            display: flex;
+            transition: 0.3s all;
+        }
     }
 
     .form {
@@ -49,7 +59,7 @@
         line-height: 24px;
         letter-spacing: 0.02em;
         padding: 8px;
-        color: var(--color-secondary);
+        color: #343434;
         border: 0px solid transparent;
         border-bottom: 1px solid var(--color-secondary);
         margin-bottom: 40px;
@@ -61,27 +71,31 @@
         font-size: 20px;
         line-height: 28px;
         color: #343434;
-
-    }
-
-
-    #phone {
-        color: #BCBCBC;
     }
 
     input {
         max-width: 400px;
     }
 
-
-
-    .placeholder {
-        color: black;
+    ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: var(--color-secondary);
     }
 
-    // .textarea {
-    //     margin-bottom: 56px;
-    // }
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: var(--color-secondary);
+    }
+
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: var(--color-secondary);
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: var(--color-secondary);
+    }
 
     input {
         min-width: 400px;
@@ -94,8 +108,11 @@
         border: 1px solid var(--color-secondary);
     }
 
-    &-tel {
-        color: inherit;
-        color: #BCBCBC;
-    }
+    // &-tel {}
+
+    // #phone {
+    //     // color: #BCBCBC;
+    //     // color: inherit;
+    //     // color: #BCBCBC;
+    // }
 }

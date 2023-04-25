@@ -5,8 +5,6 @@
 
     .container {
         h1 {
-            font-family: 'e-Ukraine';
-            font-style: normal;
             font-weight: 700;
             font-size: 32px;
             text-align: center;
@@ -14,6 +12,10 @@
             color: #343434;
             margin-bottom: 72px;
         }
+    }
+
+    &__mobile {
+        display: none;
     }
 
     &-wrapper {
@@ -30,24 +32,84 @@
                 font-size: 32px;
                 line-height: 40px;
                 letter-spacing: 0.04em;
-                color: #343434;
+                color: var(--color-secondary);
                 margin-bottom: 32px;
             }
 
             p {
-                font-family: 'e-Ukraine';
-                font-style: normal;
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0.02em;
-                color: #343434;
+                color: var(--color-secondary);
+
             }
         }
 
         &-img {
             img {
                 border-radius: 44px 0 44px 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .about {
+        padding-top: 48px;
+        margin-bottom: 36px;
+        padding-bottom: 0;
+        background-color: #fff;
+
+        &__title {
+            display: none;
+            margin-bottom: 36px;
+        }
+
+        &__mobile {
+            display: inherit;
+        }
+
+        .container {
+            h1 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+
+            &-text {
+                max-width: 571px;
+
+                h3 {
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 36px;
+                    margin-bottom: 32px;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    padding-bottom: 0;
+                    max-width: 358px;
+                }
+            }
+
+            &-img {
+                img {
+                    max-width: 382px;
+                    border-radius: 44px 0 44px 0;
+                    margin-bottom: 36px;
+                }
             }
         }
     }
