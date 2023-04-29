@@ -33,7 +33,25 @@
             max-width: 400px;
 
             img {
+
                 margin-bottom: 32px;
+            }
+
+            .label {
+                position: relative;
+
+                span {
+                    position: absolute;
+                    background-color: var(--color-primary);
+                    padding: 4px 12px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    top: 16px;
+                    right: 12px;
+                }
             }
 
             h4 {

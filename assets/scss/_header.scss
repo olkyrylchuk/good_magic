@@ -70,10 +70,12 @@
     }
 }
 
+
+
+
 @media only screen and (max-width: 430px) {
     .header {
         height: 76px;
-        // width: 430px;
         border-bottom: none;
 
         .wrapper {
@@ -81,14 +83,15 @@
         }
 
         &-nav {
+            max-width: 100%;
 
             .header-logo {
                 display: none;
             }
 
-            &-item {
-                display: none;
-            }
+            // &-item {
+            //     display: none;
+            // }
 
             img {
                 max-width: 44px;
@@ -99,7 +102,6 @@
 
         &__mobile {
             width: 100%;
-            // min-width: 350px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -123,52 +125,43 @@
     }
 }
 
+// бургер меню
+@media only screen and (max-width: 430px) {
+    .header {
+        height: 100vh;
 
-// @media only screen and (min-width: 320px) and (max-width: 430px) {
-//     .header {
-//         height: 76px;
-//         border-bottom: none;
+        &-nav {
+            flex-direction: column;
+        }
 
-//         .wrapper {
-//             padding: 8px 24px;
-//         }
+        &-nav-item {
+            min-width: 100%;
+            padding-top: 90px;
+            margin-right: auto;
 
-//         &-nav {
-//             .header-logo {
-//                 display: none;
-//             }
+            ul {
+                display: flex;
+                flex-direction: column;
+                min-width: 300px;
 
-//             &-item {
-//                 display: none;
-//             }
+                li {
+                    margin-bottom: 24px;
+                    min-width: 100%;
 
-//             img {
-//                 max-width: 44px;
-//                 max-height: 44px;
-//                 margin-right: 0px;
-//             }
-//         }
+                    a {
+                        display: flex;
+                        min-width: 100%;
+                    }
+                }
+            }
 
-//         &__mobile {
-//             display: flex;
-//             justify-content: space-between;
-//             align-items: center;
+            .header__logo-mobile {
+                display: none;
+            }
 
-//             .header__logo-mobile {
-//                 display: inherit;
-//                 width: 44px;
-//                 height: 44px;
-//             }
-
-//             .header__burger {
-//                 display: inherit;
-//                 width: 24px;
-//                 height: 24px;
-//             }
-//         }
-
-//         &-button {
-//             display: none;
-//         }
-//     }
-// }
+            .header__burger {
+                display: none;
+            }
+        }
+    }
+}

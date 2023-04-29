@@ -44,9 +44,29 @@
     margin-bottom: 100px;
 
     .news__block-item {
-        img {
-            margin-bottom: 16px;
+
+
+        .news__label {
+            position: relative;
+
+            img {
+                margin-bottom: 16px;
+            }
+
+            &-title {
+                position: absolute;
+                padding: 2px 17px;
+                background-color: var(--color-primary);
+                top: 8px;
+                left: 8px;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 18px;
+                letter-spacing: 0.02em;
+                color: var(--color-secondary);
+            }
         }
+
 
         .text {
             display: flex;
