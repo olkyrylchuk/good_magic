@@ -20,6 +20,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
         max-width: 784px;
 
         .header__logo-mobile {
@@ -69,16 +70,18 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
     .header {
-        height: 60px;
+        height: 76px;
+        // width: 430px;
         border-bottom: none;
 
         .wrapper {
-            padding: 8px 24px;
+            padding: 8px 20px;
         }
 
         &-nav {
+
             .header-logo {
                 display: none;
             }
@@ -95,19 +98,20 @@
         }
 
         &__mobile {
-            min-width: 382px;
+            width: 100%;
+            // min-width: 350px;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             .header__logo-mobile {
-                display: inherit;
+                display: block;
                 width: 44px;
                 height: 44px;
             }
 
             .header__burger {
-                display: inherit;
+                display: block;
                 width: 24px;
                 height: 24px;
             }
@@ -118,3 +122,53 @@
         }
     }
 }
+
+
+// @media only screen and (min-width: 320px) and (max-width: 430px) {
+//     .header {
+//         height: 76px;
+//         border-bottom: none;
+
+//         .wrapper {
+//             padding: 8px 24px;
+//         }
+
+//         &-nav {
+//             .header-logo {
+//                 display: none;
+//             }
+
+//             &-item {
+//                 display: none;
+//             }
+
+//             img {
+//                 max-width: 44px;
+//                 max-height: 44px;
+//                 margin-right: 0px;
+//             }
+//         }
+
+//         &__mobile {
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+
+//             .header__logo-mobile {
+//                 display: inherit;
+//                 width: 44px;
+//                 height: 44px;
+//             }
+
+//             .header__burger {
+//                 display: inherit;
+//                 width: 24px;
+//                 height: 24px;
+//             }
+//         }
+
+//         &-button {
+//             display: none;
+//         }
+//     }
+// }

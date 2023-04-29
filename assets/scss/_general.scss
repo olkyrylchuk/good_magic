@@ -58,11 +58,11 @@ body {
     display: none;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
     .container {
-        max-width: 430px;
-        padding: 0 24px;
-        margin: 0 auto;
+        width: 100%;
+        max-width: 382px;
+        padding: 0 4px;
     }
 
     .desctop {

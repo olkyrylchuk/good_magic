@@ -76,9 +76,10 @@
         &-text {
             display: flex;
             justify-content: space-between;
+            vertical-align: middle;
 
             &-title {
-                max-width: 410px;
+
                 margin-bottom: 32px;
 
                 h2 {
@@ -87,6 +88,9 @@
                     line-height: 28px;
                     letter-spacing: 0.02em;
                     color: var(--color-secondary);
+                    display: flex;
+                    align-items: center;
+                    text-align: center
                 }
 
                 p {
@@ -100,10 +104,12 @@
 
             &-img {
                 display: flex;
+                max-width: 420px;
+                align-items: center;
 
                 img {
                     padding: 0;
-                    max-width: 135px;
+                    width: 33.33%;
                     height: auto;
                 }
             }

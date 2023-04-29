@@ -118,6 +118,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   max-width: 784px;
 }
 
@@ -2022,11 +2023,11 @@ body {
   color: #343434;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
   .container {
-    max-width: 430px;
-    padding: 0 24px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 382px;
+    padding: 0 4px;
   }
 
   .desctop {
@@ -2034,12 +2035,12 @@ body {
   }
 
   .header {
-    height: 60px;
+    height: 76px;
     border-bottom: none;
   }
 
   .header .wrapper {
-    padding: 8px 24px;
+    padding: 8px 20px;
   }
 
   .header-nav .header-logo {
@@ -2057,20 +2058,20 @@ body {
   }
 
   .header__mobile {
-    min-width: 382px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .header__mobile .header__logo-mobile {
-    display: inherit;
+    display: block;
     width: 44px;
     height: 44px;
   }
 
   .header__mobile .header__burger {
-    display: inherit;
+    display: block;
     width: 24px;
     height: 24px;
   }
@@ -2078,7 +2079,9 @@ body {
   .header-button {
     display: none;
   }
+}
 
+@media (min-width: 320px) and (max-width: 430px) {
   .home {
     max-height: 304px;
     padding-top: 56px;
@@ -2093,10 +2096,10 @@ body {
   .home-text {
     display: flex;
     justify-content: space-between;
+    vertical-align: middle;
   }
 
   .home-text-title {
-    max-width: 410px;
     margin-bottom: 32px;
   }
 
@@ -2106,6 +2109,9 @@ body {
     line-height: 28px;
     letter-spacing: 0.02em;
     color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 
   .home-text-title p {
@@ -2118,11 +2124,13 @@ body {
 
   .home-text-img {
     display: flex;
+    max-width: 420px;
+    align-items: center;
   }
 
   .home-text-img img {
     padding: 0;
-    max-width: 135px;
+    width: 33.33%;
     height: auto;
   }
 
@@ -2180,7 +2188,7 @@ body {
   }
 
   .about-wrapper-img img {
-    max-width: 382px;
+    max-width: 100%;
     border-radius: 44px 0 44px 0;
     margin-bottom: 36px;
   }
@@ -2247,11 +2255,6 @@ body {
     -webkit-text-stroke-width: 1px;
   }
 
-  .projects-row__second {
-    max-width: 296px;
-    position: relative;
-  }
-
   .projects-row__second p {
     font-weight: 300;
     font-size: 16px;
@@ -2285,7 +2288,7 @@ body {
   }
 
   .projects-two .projects-row__second {
-    min-width: 396px;
+    max-width: 396px;
   }
 
   .projects-two img {
@@ -2338,13 +2341,10 @@ body {
 
   .partners h2 {
     padding-top: 0;
-    margin-bottom: 50px;
-    font-family: "e-Ukraine";
-    font-style: normal;
+    margin-bottom: 24px;
     font-weight: 500;
     font-size: 28px;
     line-height: 36px;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #000000;
   }
@@ -2380,5 +2380,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  .partners-logo img {
+    width: 25%;
   }
 }

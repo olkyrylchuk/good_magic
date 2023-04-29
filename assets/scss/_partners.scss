@@ -57,13 +57,10 @@
 
         h2 {
             padding-top: 0;
-            margin-bottom: 50px;
-            font-family: 'e-Ukraine';
-            font-style: normal;
+            margin-bottom: 24px;
             font-weight: 500;
             font-size: 28px;
             line-height: 36px;
-            text-align: center;
             letter-spacing: 0.02em;
             color: #000000;
         }
@@ -95,13 +92,17 @@
                 line-height: 28px;
                 color: #343434;
             }
-
         }
 
         &-logo {
             display: flex;
             justify-content: space-between;
             margin-bottom: 50px;
+            flex-wrap: wrap;
+
+            img {
+                width: 25%;
+            }
         }
     }
 }
