@@ -3,7 +3,7 @@ $(".press__slider").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    dots: true,
+    dots: false,
     responsive: [
         {
             breakpoint: 1024,
@@ -24,7 +24,7 @@ $(".press__slider").slick({
         {
             breakpoint: 430,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: false,
                 dots: false,

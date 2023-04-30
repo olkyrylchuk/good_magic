@@ -44,10 +44,11 @@
             padding: 0 10px;
 
             .join-title {
+                min-width: inherit;
 
                 h5 {
-                    max-width: 400px;
-                    margin: 0 auto;
+                    // max-width: 400px;
+                    // margin: 0 auto;
                     display: flex;
                     text-align: center;
                     font-size: 16px;
