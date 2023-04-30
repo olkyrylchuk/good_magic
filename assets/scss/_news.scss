@@ -87,3 +87,92 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .news {
+        .container {
+            .button {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #343434;
+                padding: 8px 21px;
+            }
+        }
+
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+
+            h2 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+            }
+
+        }
+
+        &-block {
+            display: flex;
+            justify-content: space-between;
+
+            &-item {
+                max-width: 400px;
+
+                img {
+                    margin-bottom: 32px;
+                }
+
+                .label {
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        background-color: var(--color-primary);
+                        padding: 4px 12px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: 0.02em;
+                        color: #343434;
+                        top: 16px;
+                        right: 12px;
+                    }
+                }
+
+                h4 {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #343434;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                }
+            }
+        }
+    }
+}
