@@ -16,3 +16,24 @@
 //         .querySelector(".thanks-message")
 //         .classList.add("thanks-message-visible");
 // });
+
+// function foo() {
+//     if (window.innerWidth < 430) {
+//         /* все, что вы хотите здесь сделать */
+//         element.classList.add("news-block-resize");
+//     } else {
+//         element.classList.remove("news-block-resize");
+//     }
+// }
+
+// window.addEventListener("changesize", foo);
+
+// window.addEventListener("resize", function () {
+//     if (window.innerWidth <= 430) {
+//         // 0...768
+//         element.classList.add("news-block-resize");
+//     } else {
+//         // 769...Inf
+//         element.classList.remove("news-block-resize");
+//     }
+// });

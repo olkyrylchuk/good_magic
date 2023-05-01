@@ -8,11 +8,12 @@
         justify-content: space-between;
         align-items: center;
         max-width: 1050px;
+        width: 100%;
         margin: 0 auto;
-        padding: 0 10px;
+        // padding: 0 10px;
 
         .join-title {
-            min-width: 672px;
+            min-width: 660px;
 
             h5 {
                 font-weight: 500;

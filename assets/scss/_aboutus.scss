@@ -482,3 +482,465 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .foundation {
+        padding-top: 72px;
+
+        &__link {
+            margin-bottom: 36px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    margin-right: inherit;
+
+                    a {
+                        padding: 14px 16px;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        &__img {
+            max-width: 430px;
+            display: flex;
+            margin-bottom: 36px;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                max-width: 20%;
+            }
+        }
+
+        &__history {
+            max-width: inherit;
+
+            &-title {
+                margin-bottom: 32px;
+
+                h2 {
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 36px;
+                    letter-spacing: 0.02em;
+                }
+            }
+
+            &-text {
+                margin-bottom: 36px;
+
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                }
+            }
+        }
+    }
+
+    .timeline {
+        position: relative;
+        height: 416px;
+        background: #F4F4F4;
+        background-image: url(../img/svg/timeline/timeline_bg.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+
+        &__wrapper {
+
+            display: flex;
+            align-items: center;
+            max-width: 1440px;
+            margin: 0 auto;
+
+            .timeline__item {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+
+                .timeline__item-01 {
+                    position: absolute;
+                    top: -140px;
+                    left: -540px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.04em;
+                }
+
+                .timeline__item-02 {
+                    position: absolute;
+                    min-width: 225px;
+                    top: -170px;
+                    left: -275px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                }
+
+                .timeline__item-03 {
+                    position: absolute;
+                    min-width: 225px;
+                    top: -140px;
+                    left: 80px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.04em;
+                }
+
+                .timeline__item-04 {
+                    position: absolute;
+                    min-width: 296px;
+                    top: -170px;
+                    left: 340px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                }
+
+                .timeline__item-05 {
+                    position: absolute;
+                    min-width: 208px;
+                    top: 75px;
+                    left: -610px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                }
+
+                .timeline__item-06 {
+                    position: absolute;
+                    top: 115px;
+                    left: -210px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.04em;
+                }
+
+                .timeline__item-07 {
+                    position: absolute;
+                    min-width: 184px;
+                    top: 105px;
+                    left: 85px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                }
+
+                .timeline__item-08 {
+                    position: absolute;
+                    top: 115px;
+                    left: 455px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.04em;
+                }
+
+                .date {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.04em;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+
+                img {
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                p {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                    max-width: 208px;
+                }
+            }
+        }
+
+        &__item {
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                display: inline-block;
+            }
+
+            .date {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: 0.04em;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+
+            p {
+                font-family: 'e-Ukraine';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+
+    .timeline__item-img {
+        position: relative;
+
+        &-01 {
+            position: absolute;
+            left: -545px;
+            top: -40px;
+        }
+
+        &-02 {
+            position: absolute;
+            left: -210px;
+            top: -40px;
+        }
+
+        &-03 {
+            position: absolute;
+            left: 118px;
+            top: -40px;
+        }
+
+        &-04 {
+            position: absolute;
+            left: 445px;
+            top: -40px;
+        }
+    }
+
+    .founder {
+        padding-top: 72px;
+
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__img {
+            position: relative;
+            margin-right: inherit;
+
+            img {
+                max-width: 100%;
+                // width: 100%;
+            }
+
+            &-logo {
+                height: 105px;
+                width: auto;
+
+                img {
+                    position: absolute;
+                    left: 21px;
+                    top: 21px;
+                }
+            }
+        }
+
+        &__text {
+            max-width: inherit;
+
+            h1 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+                margin-bottom: 22px;
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .team {
+        padding-top: 36px;
+
+        .wrapper {
+            display: flex;
+        }
+
+        &__title {
+            h2 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+                margin-bottom: 32px;
+            }
+        }
+
+        .wrapp {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
+
+        &__text {
+            max-width: 610px;
+            margin-right: 126px;
+
+            p {
+                display: none;
+            }
+        }
+
+        &-part {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            img {
+                max-width: 115px;
+                max-height: 115px;
+                margin-right: 20px;
+            }
+        }
+
+        &__join {
+            h3 {
+                min-width: 248px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 28px;
+            }
+
+            .button-yellow {
+                font-size: 20px;
+                line-height: 28px;
+                padding: 14px 14px;
+                max-width: 248px;
+                width: 100%;
+                text-transform: none;
+            }
+        }
+
+        &__photo {
+            img {
+                width: 100%;
+                margin-bottom: 36px;
+            }
+        }
+
+        .wrapp {
+            display: flex;
+        }
+    }
+
+    .activity {
+        display: block;
+        padding-top: 36px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 0.02em;
+            margin-bottom: 24px;
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 64px;
+            padding-bottom: 36px;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid black;
+            }
+
+            &-date {
+                margin-bottom: 36px;
+            }
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            img {
+                border-radius: 44px 44px 44px 0;
+            }
+
+            .img__04 {
+                width: 100%;
+                margin-top: 25px;
+                border-radius: 0 44px 44px 44px;
+            }
+
+            .img__06 {
+                width: 100%;
+                margin-top: 115px;
+                border-radius: 0 44px 44px 44px;
+            }
+
+            .border {
+                color: #fff;
+                -webkit-text-stroke: #000;
+                -webkit-text-stroke-width: 1px;
+            }
+
+            .paragraph {
+                p {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    margin-right: 30px;
+                }
+            }
+
+            p {
+                width: 100%;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .img-block {
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -78,6 +78,7 @@ body {
   border-radius: 4px;
   background-color: var(--color-primary);
   border: none;
+  text-transform: uppercase;
 }
 
 .button-grey {
@@ -93,6 +94,10 @@ body {
 
 .mobile {
   display: none;
+}
+
+.desctop {
+  display: inherit;
 }
 
 .header {
@@ -387,12 +392,12 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1050px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .join-wrapper .join-title {
-  min-width: 672px;
+  min-width: 660px;
 }
 
 .join-wrapper .join-title h5 {
@@ -2932,5 +2937,452 @@ body {
     letter-spacing: 0.02em;
     color: #FFD249;
     margin-bottom: 16px;
+  }
+
+  .foundation {
+    padding-top: 72px;
+  }
+
+  .foundation__link {
+    margin-bottom: 36px;
+  }
+
+  .foundation__link ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foundation__link ul li {
+    margin-right: inherit;
+  }
+
+  .foundation__link ul li a {
+    padding: 14px 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .foundation__img {
+    max-width: 430px;
+    display: flex;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foundation__img img {
+    max-width: 20%;
+  }
+
+  .foundation__history {
+    max-width: inherit;
+  }
+
+  .foundation__history-title {
+    margin-bottom: 32px;
+  }
+
+  .foundation__history-title h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+  }
+
+  .foundation__history-text {
+    margin-bottom: 36px;
+  }
+
+  .foundation__history-text p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline {
+    position: relative;
+    height: 416px;
+    background: #F4F4F4;
+    background-image: url(../img/svg/timeline/timeline_bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .timeline__wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .timeline__wrapper .timeline__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .timeline__wrapper .timeline__item .timeline__item-01 {
+    position: absolute;
+    top: -140px;
+    left: -540px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline__wrapper .timeline__item .timeline__item-02 {
+    position: absolute;
+    min-width: 225px;
+    top: -170px;
+    left: -275px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline__wrapper .timeline__item .timeline__item-03 {
+    position: absolute;
+    min-width: 225px;
+    top: -140px;
+    left: 80px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline__wrapper .timeline__item .timeline__item-04 {
+    position: absolute;
+    min-width: 296px;
+    top: -170px;
+    left: 340px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline__wrapper .timeline__item .timeline__item-05 {
+    position: absolute;
+    min-width: 208px;
+    top: 75px;
+    left: -610px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline__wrapper .timeline__item .timeline__item-06 {
+    position: absolute;
+    top: 115px;
+    left: -210px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline__wrapper .timeline__item .timeline__item-07 {
+    position: absolute;
+    min-width: 184px;
+    top: 105px;
+    left: 85px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline__wrapper .timeline__item .timeline__item-08 {
+    position: absolute;
+    top: 115px;
+    left: 455px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline__wrapper .timeline__item .date {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .timeline__wrapper .timeline__item img {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .timeline__wrapper .timeline__item p {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    max-width: 208px;
+  }
+
+  .timeline__item {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline__item img {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .timeline__item .date {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .timeline__item p {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline__item-img {
+    position: relative;
+  }
+
+  .timeline__item-img-01 {
+    position: absolute;
+    left: -545px;
+    top: -40px;
+  }
+
+  .timeline__item-img-02 {
+    position: absolute;
+    left: -210px;
+    top: -40px;
+  }
+
+  .timeline__item-img-03 {
+    position: absolute;
+    left: 118px;
+    top: -40px;
+  }
+
+  .timeline__item-img-04 {
+    position: absolute;
+    left: 445px;
+    top: -40px;
+  }
+
+  .founder {
+    padding-top: 72px;
+  }
+
+  .founder .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .founder__img {
+    position: relative;
+    margin-right: inherit;
+  }
+
+  .founder__img img {
+    max-width: 100%;
+  }
+
+  .founder__img-logo {
+    height: 105px;
+    width: auto;
+  }
+
+  .founder__img-logo img {
+    position: absolute;
+    left: 21px;
+    top: 21px;
+  }
+
+  .founder__text {
+    max-width: inherit;
+  }
+
+  .founder__text h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 22px;
+  }
+
+  .founder__text p {
+    display: none;
+  }
+
+  .team {
+    padding-top: 36px;
+  }
+
+  .team .wrapper {
+    display: flex;
+  }
+
+  .team__title h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+
+  .team .wrapp {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .team__text {
+    max-width: 610px;
+    margin-right: 126px;
+  }
+
+  .team__text p {
+    display: none;
+  }
+
+  .team-part {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .team-part img {
+    max-width: 115px;
+    max-height: 115px;
+    margin-right: 20px;
+  }
+
+  .team__join h3 {
+    min-width: 248px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+
+  .team__join .button-yellow {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 14px 14px;
+    max-width: 248px;
+    width: 100%;
+    text-transform: none;
+  }
+
+  .team__photo img {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .team .wrapp {
+    display: flex;
+  }
+
+  .activity {
+    display: block;
+    padding-top: 36px;
+  }
+
+  .activity h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+  }
+
+  .activity__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    padding-bottom: 36px;
+  }
+
+  .activity__block:not(:last-child) {
+    border-bottom: 1px solid black;
+  }
+
+  .activity__block-date {
+    margin-bottom: 36px;
+  }
+
+  .activity__block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .activity__block img {
+    border-radius: 44px 44px 44px 0;
+  }
+
+  .activity__block .img__04 {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 0 44px 44px 44px;
+  }
+
+  .activity__block .img__06 {
+    width: 100%;
+    margin-top: 115px;
+    border-radius: 0 44px 44px 44px;
+  }
+
+  .activity__block .border {
+    color: #fff;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .activity__block .paragraph p {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #343434;
+    margin-right: 30px;
+  }
+
+  .activity__block p {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .img-block img {
+    width: 100%;
   }
 }

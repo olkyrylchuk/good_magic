@@ -41,6 +41,7 @@ body {
     border-radius: 4px;
     background-color: var(--color-primary);
     border: none;
+    text-transform: uppercase;
 }
 
 .button-grey {
@@ -56,6 +57,10 @@ body {
 
 .mobile {
     display: none;
+}
+
+.desctop {
+    display: inherit;
 }
 
 @media only screen and (max-width: 430px) {

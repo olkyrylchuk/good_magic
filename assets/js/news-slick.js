@@ -1,4 +1,4 @@
-$(".news-block").slick({
+$(".news-block-resize").slick({
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
