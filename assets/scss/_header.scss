@@ -104,8 +104,14 @@
                 overflow-y: hidden;
 
                 .submenu {
+                    display: none;
                     padding-top: 24px;
                     padding-left: 32px;
+                }
+
+                .submenu__active {
+                    display: block;
+                    transition: all 0.4s;
                 }
             }
 

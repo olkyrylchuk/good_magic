@@ -1,9 +1,14 @@
 let menuBtn = document.querySelector(".nav__burger");
 let menu = document.querySelector(".menu");
+let submenu = document.querySelector(".submenu");
+let down = document.querySelector(".aboutus__arrow-down");
 
 menuBtn.addEventListener("click", function () {
     menuBtn.classList.toggle("active");
     menu.classList.toggle("active");
+});
+down.addEventListener("click", function () {
+    submenu.classList.toggle("submenu__active");
 });
 
 // window.history.back();
