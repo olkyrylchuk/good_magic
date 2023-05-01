@@ -2548,9 +2548,12 @@ body {
 
   .join-wrapper .join-title {
     min-width: inherit;
+    max-width: 390px;
+    width: 100%;
   }
 
   .join-wrapper .join-title h5 {
+    width: 100%;
     display: flex;
     text-align: center;
     font-size: 16px;
