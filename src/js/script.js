@@ -1,3 +1,11 @@
+let menuBtn = document.querySelector(".nav__burger");
+let menu = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", function () {
+    menuBtn.classList.toggle("active");
+    menu.classList.toggle("active");
+});
+
 // window.history.back();
 // window.history.forward();
 
