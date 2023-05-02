@@ -24,3 +24,35 @@
         }
     }
 }
+
+@media only screen and (max-width: 430px) {
+    .slick-prev {
+        left: 0px;
+        /* left: -25px; */
+    }
+
+    [dir=rtl] .slick-prev {
+        left: auto;
+        right: 0px;
+        /* right: -25px; */
+    }
+
+    .slick-prev:before {
+        content: "<";
+    }
+
+    [dir=rtl] .slick-prev:before {
+        content: "";
+    }
+
+    .slick-next {
+        right: 0px;
+        /* right: -25px; */
+    }
+
+    [dir=rtl] .slick-next {
+        left: 0px;
+        /* left: -25px; */
+        right: auto;
+    }
+}
