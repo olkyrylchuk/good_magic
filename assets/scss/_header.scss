@@ -83,9 +83,6 @@
     }
 }
 
-
-
-
 @media only screen and (max-width: 430px) {
     .header {
         height: 76px;
@@ -166,6 +163,7 @@
             top: 0;
             background-color: #fff;
             width: 100%;
+            max-width: 430px;
             display: flex;
             justify-content: space-between;
             align-items: center;

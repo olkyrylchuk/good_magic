@@ -11,12 +11,80 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="container wrapper">
+            <div class="header-nav">
+                <div class="header__mobile">
+                    <div>
+                        <a href="../index.html"><img class="header__logo-mobile"
+                                src="../src/img/mobile_img/svg/header/m_logo.svg" alt=""></a>
+
+                    </div>
+                    <div class="nav__burger">
+                        <img class="header__burger" src="../src/img/mobile_img/svg/header/menu.svg" alt="">
+                    </div>
+                </div>
+                <a href="index.html">
+                    <img class="header-logo " src="../src/img/svg/logo.svg" alt="logo">
+                </a>
+                <div class="header-nav-item menu">
+                    <ul>
+                        <li>
+                            <a href="../html/aboutus.html">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="../html/allprojects.html">Проєкти</a>
+                        </li>
+                        <li>
+                            <a href="../html/news.html">Новини</a>
+                        </li>
+                        <li>
+                            <a href="../html/contact.html">Контакти</a>
+                        </li>
+                        <li class="mobile">
+                            <a href="../html/join.html">Долучитися
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-button">
+                <a href="../html/join.html" class="button">ДОЛУЧИТИСЯ
+                </a>
+            </div>
+        </div>
+    </header>
     <section class="fault">
-        <div class="container"><img src="../src/img/jpg/error/error.webp" alt="">
-            <h1>Наша магія не поширюється на цю сторінку...</h1><a href="../index.html"
-                class="button button-yellow fault__btn">Повернутися на головну</a>
+        <div class="container">
+            <img src="../src/img/jpg/error/error.webp" alt="">
+            <h1>Наша магія не поширюється на цю сторінку...</h1>
+            <a class="button button-yellow fault__btn" href="../index.html">Повернутися на головну</a>
         </div>
     </section>
+    <footer class="footer hidden__section">
+        <div class="container">
+            <div class="footer-support">
+                <h3>Підтримати</h3>
+                <p>Кожна пожертва важлива ! <br>Сьогодні я не вип'ю кави,<br>
+                    я створюю магію !</p>
+                <div class="support-send">
+                    <form class="support-send-form" method="get"><input type="text" class="support-send-form-send"
+                            placeholder="50 грн" name="search"><button class="button-yellow"
+                            type="submit"><span>Переказати</span></button></form>
+                    <p class="change">(змінити суму)</p>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3>Контакти</h3>
+                <div class="contacts__tel"><a href="mailto:">e-mail: markovec28@gmail.com</a><a href="tel:+">+38 095
+                        829 42 63</a><a href="tel:+">+38 096 075 37 38</a></div>
+                <div class="contacts__social"><a href="#">Шукай нас у Facebook</a><a href="#">Зв'язатись з нами</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,10 @@
 .contact {
     padding-top: 72px;
+    padding-bottom: 100px;
 
     .container {
         h2 {
             margin-bottom: 32px;
-            font-family: 'e-Ukraine';
-            font-style: normal;
             font-weight: 700;
             font-size: 32px;
             line-height: 40px;
@@ -14,43 +13,26 @@
         }
     }
 
-    &__adress,
+    &__info,
     &__details {
-        display: flex;
+        ul {
+            li {
+                margin-bottom: 15px;
+                display: flex;
 
-        &-leftside {
-            min-width: 257px;
-            margin-right: 56px;
-            margin-bottom: 58px;
-
-            p {
-                font-family: 'e-Ukraine';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.02em;
-                color: #000000;
-                margin-bottom: 12px;
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                }
             }
         }
 
-        &-rightside {
-            p {
-                font-family: 'e-Ukraine';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.02em;
-                color: #000000;
-                margin-bottom: 12px;
-            }
+        &-first {
+            min-width: 313px;
         }
-    }
-
-    &__details {
-        margin-bottom: 42px;
     }
 
     &__map {
@@ -59,5 +41,77 @@
             height: 556px;
             margin-bottom: 72px;
         }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .contact {
+        padding-top: 30px;
+        padding-bottom: 64px;
+
+        .container {
+            .bank {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.02em;
+
+                color: #000000;
+            }
+        }
+
+        &__info,
+        &__details {
+            ul {
+                li {
+                    margin-bottom: 15px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .contact__info-first {
+                        min-width: inherit;
+                        margin-bottom: 16px;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: #000;
+                    }
+
+                    .contact__info-second {
+                        max-width: 355px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        letter-spacing: 0.01em;
+                        color: #000000;
+                    }
+                }
+            }
+
+        }
+
+        .contact__info-tel {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__map {
+            .map {
+                width: 382px;
+                height: 382px;
+                padding-top: 25px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .bank {
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #000000;
     }
 }

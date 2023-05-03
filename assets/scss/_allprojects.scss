@@ -89,3 +89,186 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .foundation {
+        padding-top: 35px;
+
+        .container {
+            h1 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+                margin-bottom: 35px;
+            }
+        }
+
+        &__link {
+            margin-bottom: 40px;
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 20px;
+                }
+            }
+
+            .proj__leble {
+                padding: 8px 12px;
+            }
+
+            .proj__leble-active {
+                padding: 10px 12px;
+                border: none;
+                background: #FFD249;
+                border-radius: 4px;
+            }
+        }
+
+        &__img {
+            display: flex;
+            margin-bottom: 72px;
+            width: 100%;
+
+            img {
+                margin-right: -1px;
+            }
+        }
+
+        &__history {
+            max-width: 717px;
+
+            &-title {
+                margin-bottom: 32px;
+
+                h2 {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: 0.04em;
+                    color: #343434;
+                }
+            }
+
+            &-text {
+                margin-bottom: 64px;
+
+                p {
+                    font-family: 'e-Ukraine';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                }
+            }
+        }
+    }
+
+    .allprojects {
+        box-sizing: border-box;
+        margin-bottom: 100px;
+
+        &__wrapper {
+
+            ul {
+                margin-top: 64px;
+            }
+        }
+
+        &__wrap {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 464px;
+            width: 100%;
+            margin-bottom: 40px;
+
+            &:not(:last-child) {
+                border-bottom: none;
+            }
+
+            .project__firstside {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                max-width: 296px;
+                max-height: 295px;
+                width: 100%;
+                margin-right: 20px;
+
+                .project__status {
+                    position: absolute;
+                    top: 267px;
+                    left: 10px;
+                    width: 141px;
+                    height: 22px;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 18px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    padding: 2px 36px;
+                    background-color: #FFD249;
+                    border: none;
+                    border-radius: 4px;
+                }
+
+                .completed {
+                    background-color: #BCBCBC;
+                    color: #343434;
+                    padding: 0px 36px;
+                    border: 2px solid #BCBCBC;
+                }
+
+                h2 {
+                    padding-top: 5px;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    color: #070707;
+                }
+            }
+
+            .project__main {
+                max-width: 100%;
+
+                &__text {
+                    max-height: 40px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+
+                    p {
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.02em;
+                        color: #070707;
+                    }
+                }
+
+                a {
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .project__image {
+                .img {
+                    align-items: flex-end;
+                    border-radius: 22px 22px 22px 0px;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+}

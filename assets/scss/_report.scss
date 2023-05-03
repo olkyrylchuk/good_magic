@@ -107,3 +107,94 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .foundation {
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 24px;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    .report {
+        height: 156px;
+        width: 100%;
+        background-color: var(--color-primary);
+        margin-bottom: 24px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 24px;
+            max-width: 1046px;
+            width: 100%;
+
+            h1 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.02em;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+                text-align: center;
+            }
+        }
+    }
+
+    .reports {
+        padding-top: 24px;
+
+        h4 {
+            margin-bottom: 24px;
+        }
+
+        &__position {
+            max-width: 844px;
+            width: 100%;
+            margin-bottom: 64px;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px;
+
+                p {
+                    max-width: 210px;
+                }
+            }
+        }
+
+        &__download {
+            margin-bottom: 100px;
+
+            li {
+                display: flex;
+                margin-bottom: 24px;
+
+                p {
+                    max-width: 257px;
+                }
+
+                a {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: var(--color-secondary);
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}

@@ -84,6 +84,7 @@ body {
 .button-grey {
   background: #BCBCBC;
   border: none;
+  cursor: default;
 }
 
 .container {
@@ -429,19 +430,6 @@ body {
   padding-top: 72px;
 }
 
-.partners h2 {
-  padding-top: 16px;
-  margin-bottom: 50px;
-  font-family: "e-Ukraine";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 36px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-
 .partners-wrapper h2 {
   font-family: "e-Ukraine";
   font-style: normal;
@@ -462,11 +450,23 @@ body {
   margin-bottom: 111px;
 }
 
+.partners .join-info h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 56px;
+  align-items: center;
+}
+
 .partners .join-info a {
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
   color: #343434;
+  text-transform: inherit;
 }
 
 .partners-logo {
@@ -506,7 +506,7 @@ body {
 }
 
 .news-block-item {
-  max-width: 400px;
+  max-width: 30%;
 }
 
 .news-block-item img {
@@ -840,7 +840,16 @@ body {
 }
 
 .foundation {
-  padding-top: 72px;
+  padding-top: 60px;
+}
+
+.foundation .container h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #343434;
+  margin-bottom: 40px;
 }
 
 .foundation__link {
@@ -870,6 +879,17 @@ body {
 .foundation__link ul li .active {
   flex-direction: row;
   align-items: flex-start;
+  border: none;
+  background: #FFD249;
+  border-radius: 4px;
+}
+
+.foundation__link .proj__leble {
+  padding: 8px 40px;
+}
+
+.foundation__link .proj__leble-active {
+  padding: 10px 81px;
   border: none;
   background: #FFD249;
   border-radius: 4px;
@@ -1185,7 +1205,6 @@ body {
 
 .team__text {
   max-width: 610px;
-  margin-right: 126px;
 }
 
 .team__text p {
@@ -1315,12 +1334,11 @@ body {
 
 .contact {
   padding-top: 72px;
+  padding-bottom: 100px;
 }
 
 .contact .container h2 {
   margin-bottom: 32px;
-  font-family: "e-Ukraine";
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
@@ -1328,44 +1346,24 @@ body {
   color: #000000;
 }
 
-.contact__adress,
-.contact__details {
+.contact__info ul li,
+.contact__details ul li {
+  margin-bottom: 15px;
   display: flex;
 }
 
-.contact__adress-leftside,
-.contact__details-leftside {
-  min-width: 257px;
-  margin-right: 56px;
-  margin-bottom: 58px;
-}
-
-.contact__adress-leftside p,
-.contact__details-leftside p {
-  font-family: "e-Ukraine";
-  font-style: normal;
+.contact__info ul li p,
+.contact__details ul li p {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #000000;
-  margin-bottom: 12px;
 }
 
-.contact__adress-rightside p,
-.contact__details-rightside p {
-  font-family: "e-Ukraine";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #000000;
-  margin-bottom: 12px;
-}
-
-.contact__details {
-  margin-bottom: 42px;
+.contact__info-first,
+.contact__details-first {
+  min-width: 313px;
 }
 
 .contact__map .map {
@@ -1473,6 +1471,15 @@ body {
 
 .news__sec {
   padding-top: 72px;
+}
+
+.news__sec .container h1 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: var(--color-secondary);
+  margin-bottom: 24px;
 }
 
 .news__sec-link {
@@ -1641,6 +1648,10 @@ body {
 
 .news__block-items .el-7 {
   grid-area: el-7;
+}
+
+.news__block-items .el-8 {
+  display: none;
 }
 
 .main-news {
@@ -2193,8 +2204,91 @@ body {
   border: 1px solid var(--color-secondary);
 }
 
+.header {
+  height: 176px;
+  background-color: var(--color-white);
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.header .container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 15px 32px;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 784px;
+}
+
+.header-nav .header__logo-mobile {
+  display: none;
+}
+
+.header-nav .header__burger {
+  display: none;
+}
+
+.header-nav-item {
+  min-width: 538px;
+}
+
+.header-nav-item ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-item ul li a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  transition: 0.2s ease;
+}
+
+.header-nav-item ul li a:hover {
+  color: var(--color-primary);
+  transition: 0.2s ease;
+}
+
+.header-nav img {
+  width: 72px;
+  height: 72px;
+  margin-right: 136px;
+}
+
+.header-button {
+  border: 2px soled #343434;
+}
+
+.header .submenu {
+  display: none;
+}
+
+.header .proj__submenu {
+  display: none;
+}
+
+.header .aboutus__arrow-down,
+.header .projects__arrow-down {
+  display: none;
+}
+
 .fault {
-  padding-top: 232px;
+  padding-top: 200px;
 }
 
 .fault .container {
@@ -2222,6 +2316,11 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #343434;
+  text-transform: inherit;
+}
+
+.hidden__section {
+  display: none;
 }
 
 @media only screen and (max-width: 430px) {
@@ -2318,6 +2417,7 @@ body {
     top: 0;
     background-color: #fff;
     width: 100%;
+    max-width: 430px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2415,14 +2515,6 @@ body {
     left: auto;
     right: 0px;
     /* right: -25px; */
-  }
-
-  .slick-prev:before {
-    content: "<";
-  }
-
-  [dir=rtl] .slick-prev:before {
-    content: "";
   }
 
   .slick-next {
@@ -2731,11 +2823,20 @@ body {
     margin-bottom: 111px;
   }
 
-  .partners .join-info a {
-    font-weight: 700;
+  .partners .join-info h3 {
+    font-weight: 500;
     font-size: 20px;
     line-height: 28px;
+    text-align: center;
+    max-width: 365px;
+  }
+
+  .partners .join-info a {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
     color: #343434;
+    padding: 16px 7px;
   }
 
   .partners-logo {
@@ -3128,10 +3229,12 @@ body {
   }
 
   .timeline {
+    min-height: 1205px;
+    height: 100%;
     position: relative;
-    height: 416px;
-    background: #F4F4F4;
-    background-image: url(../img/svg/timeline/timeline_bg.svg);
+    background: inherit;
+    background-image: url(../img/mobile_img/svg/timeline_bg_mobile.svg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -3154,87 +3257,89 @@ body {
 
   .timeline__wrapper .timeline__item .timeline__item-01 {
     position: absolute;
-    top: -140px;
-    left: -540px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.04em;
+    top: -457px;
+    left: 87px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
   }
 
   .timeline__wrapper .timeline__item .timeline__item-02 {
     position: absolute;
-    min-width: 225px;
-    top: -170px;
-    left: -275px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    min-width: inherit;
+    max-width: 169px;
+    top: -93px;
+    left: -193px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.02em;
   }
 
   .timeline__wrapper .timeline__item .timeline__item-03 {
     position: absolute;
     min-width: 225px;
-    top: -140px;
-    left: 80px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.04em;
+    top: 76px;
+    left: 73px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
   }
 
   .timeline__wrapper .timeline__item .timeline__item-04 {
     position: absolute;
-    min-width: 296px;
-    top: -170px;
-    left: 340px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    min-width: inherit;
+    max-width: 156px;
+    top: 425px;
+    left: -187px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.02em;
   }
 
   .timeline__wrapper .timeline__item .timeline__item-05 {
     position: absolute;
     min-width: 208px;
-    top: 75px;
-    left: -610px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    top: -355px;
+    left: -10px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.02em;
   }
 
   .timeline__wrapper .timeline__item .timeline__item-06 {
     position: absolute;
-    top: 115px;
-    left: -210px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.04em;
+    top: -187px;
+    left: -187px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
   }
 
   .timeline__wrapper .timeline__item .timeline__item-07 {
     position: absolute;
-    min-width: 184px;
-    top: 105px;
-    left: 85px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    min-width: 163px;
+    top: 205px;
+    left: -18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.02em;
   }
 
   .timeline__wrapper .timeline__item .timeline__item-08 {
     position: absolute;
-    top: 115px;
-    left: 455px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.04em;
+    top: 343px;
+    left: -187px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
   }
 
   .timeline__wrapper .timeline__item .date {
@@ -3299,26 +3404,26 @@ body {
 
   .timeline__item-img-01 {
     position: absolute;
-    left: -545px;
-    top: -40px;
+    left: -60px;
+    top: -480px;
   }
 
   .timeline__item-img-02 {
     position: absolute;
-    left: -210px;
-    top: -40px;
+    left: -60px;
+    top: -211px;
   }
 
   .timeline__item-img-03 {
     position: absolute;
-    left: 118px;
-    top: -40px;
+    left: -60px;
+    top: 55px;
   }
 
   .timeline__item-img-04 {
     position: absolute;
-    left: 445px;
-    top: -40px;
+    left: -60px;
+    top: 322px;
   }
 
   .founder {
@@ -3510,5 +3615,596 @@ body {
 
   .img-block img {
     width: 100%;
+  }
+
+  .contact {
+    padding-top: 30px;
+    padding-bottom: 64px;
+  }
+
+  .contact .container .bank {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+
+  .contact__info ul li,
+  .contact__details ul li {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__info ul li .contact__info-first,
+  .contact__details ul li .contact__info-first {
+    min-width: inherit;
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #000;
+  }
+
+  .contact__info ul li .contact__info-second,
+  .contact__details ul li .contact__info-second {
+    max-width: 355px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #000000;
+  }
+
+  .contact .contact__info-tel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__map .map {
+    width: 382px;
+    height: 382px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .bank {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+
+  .back {
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .news__sec {
+    padding-top: 40px;
+  }
+
+  .news__sec .container h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+  }
+
+  .news__sec-link {
+    margin-bottom: 40px;
+  }
+
+  .news__sec-link ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news__sec-link ul li {
+    margin-right: inherit;
+  }
+
+  .news__sec-link ul li a {
+    padding: 13px 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    border-radius: 4px;
+  }
+
+  .news__block-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news__block-items .news__block-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news__block-items .news__block-item .news__label {
+    position: relative;
+  }
+
+  .news__block-items .news__block-item .news__label img {
+    margin-bottom: 16px;
+    height: 200px;
+    width: 382px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .news__block-items .news__block-item .news__label-title {
+    top: 170px;
+    left: 8px;
+  }
+
+  .news__block-items .news__block-item .text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 13px;
+  }
+
+  .news__block-items .news__block-item .text h4 {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #343434;
+    margin-bottom: 8px;
+  }
+
+  .news__block-items .news__block-item .text h3 {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #343434;
+    margin-bottom: 12px;
+  }
+
+  .news__block-items .el-1 {
+    grid-area: el-1;
+    order: 2;
+  }
+
+  .news__block-items .el-2 {
+    grid-area: el-2;
+    display: none;
+    flex-direction: column;
+    order: 5;
+  }
+
+  .news__block-items .el-2 img {
+    margin-right: 20px;
+  }
+
+  .news__block-items .el-3 {
+    grid-area: el-3;
+    display: none;
+    flex-direction: column;
+    order: 4;
+  }
+
+  .news__block-items .el-3 img {
+    margin-right: 20px;
+  }
+
+  .news__block-items .el-4 {
+    grid-area: el-4;
+    display: flex;
+    order: 0;
+  }
+
+  .news__block-items .el-5 {
+    grid-area: el-5;
+    order: 3;
+  }
+
+  .news__block-items .el-6 {
+    grid-area: el-6;
+    order: 9;
+  }
+
+  .news__block-items .el-7 {
+    display: none;
+    grid-area: el-7;
+    order: 7;
+  }
+
+  .news__block-items .el-8 {
+    padding-top: 36px;
+    display: flex;
+    order: 8;
+  }
+
+  .main-news h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+  }
+
+  .main-news button {
+    padding: 13px 20px;
+    margin-bottom: 40px;
+    background: #FFD249;
+    border: #FFD249;
+    border-radius: 4px;
+  }
+
+  .main-news button a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .main-news ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-news ul .chapter {
+    position: absolute;
+    top: 100px;
+    width: 116px;
+    height: 22px;
+    background: #FFD249;
+    border-radius: 4px;
+  }
+
+  .main-news ul .chapter p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: var(--color-secondary);
+    text-align: center;
+    padding-top: 2px;
+  }
+
+  .main-news ul .main-news__wrapper {
+    max-width: 929px;
+    display: flex;
+    padding-right: 5px;
+  }
+
+  .main-news ul .main-news__wrapper img {
+    max-width: 382px;
+    width: 100%;
+    max-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 20px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+  }
+
+  .main-news ul .main-news__wrapper .text {
+    position: relative;
+    display: flex;
+    max-width: 400px;
+    width: 104%;
+  }
+
+  .main-news ul .main-news__wrapper .text .chapter {
+    position: absolute;
+    top: -60px;
+    left: 8px;
+  }
+
+  .main-news ul .main-news__wrapper .text h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .foundation h2 {
+    margin-top: 50px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+  }
+
+  .report {
+    height: 156px;
+    width: 100%;
+    background-color: var(--color-primary);
+    margin-bottom: 24px;
+  }
+
+  .report__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 24px;
+    max-width: 1046px;
+    width: 100%;
+  }
+
+  .report__wrapper h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .report__wrapper span {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .reports {
+    padding-top: 24px;
+  }
+
+  .reports h4 {
+    margin-bottom: 24px;
+  }
+
+  .reports__position {
+    max-width: 844px;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .reports__position li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .reports__position li p {
+    max-width: 210px;
+  }
+
+  .reports__download {
+    margin-bottom: 100px;
+  }
+
+  .reports__download li {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .reports__download li p {
+    max-width: 257px;
+  }
+
+  .reports__download li a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-secondary);
+    transform: rotate(90deg);
+  }
+
+  .foundation {
+    padding-top: 35px;
+  }
+
+  .foundation .container h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 35px;
+  }
+
+  .foundation__link {
+    margin-bottom: 40px;
+  }
+
+  .foundation__link ul {
+    display: flex;
+  }
+
+  .foundation__link ul li {
+    margin-right: 20px;
+  }
+
+  .foundation__link .proj__leble {
+    padding: 8px 12px;
+  }
+
+  .foundation__link .proj__leble-active {
+    padding: 10px 12px;
+    border: none;
+    background: #FFD249;
+    border-radius: 4px;
+  }
+
+  .foundation__img {
+    display: flex;
+    margin-bottom: 72px;
+    width: 100%;
+  }
+
+  .foundation__img img {
+    margin-right: -1px;
+  }
+
+  .foundation__history {
+    max-width: 717px;
+  }
+
+  .foundation__history-title {
+    margin-bottom: 32px;
+  }
+
+  .foundation__history-title h2 {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    color: #343434;
+  }
+
+  .foundation__history-text {
+    margin-bottom: 64px;
+  }
+
+  .foundation__history-text p {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #343434;
+  }
+
+  .allprojects {
+    box-sizing: border-box;
+    margin-bottom: 100px;
+  }
+
+  .allprojects__wrapper ul {
+    margin-top: 64px;
+  }
+
+  .allprojects__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 464px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .allprojects__wrap:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .allprojects__wrap .project__firstside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 296px;
+    max-height: 295px;
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .allprojects__wrap .project__firstside .project__status {
+    position: absolute;
+    top: 267px;
+    left: 10px;
+    width: 141px;
+    height: 22px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #343434;
+    padding: 2px 36px;
+    background-color: #FFD249;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .allprojects__wrap .project__firstside .completed {
+    background-color: #BCBCBC;
+    color: #343434;
+    padding: 0px 36px;
+    border: 2px solid #BCBCBC;
+  }
+
+  .allprojects__wrap .project__firstside h2 {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #070707;
+  }
+
+  .allprojects__wrap .project__main {
+    max-width: 100%;
+  }
+
+  .allprojects__wrap .project__main__text {
+    max-height: 40px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .allprojects__wrap .project__main__text p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #070707;
+  }
+
+  .allprojects__wrap .project__main a {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .allprojects__wrap .project__image .img {
+    align-items: flex-end;
+    border-radius: 22px 22px 22px 0px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .fault {
+    padding-top: 60px;
+    margin-bottom: 78px;
+  }
+
+  .fault .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fault .container img {
+    min-width: 382px;
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 32px;
+  }
+
+  .fault .container h1 {
+    display: none;
+  }
+
+  .fault .container a {
+    padding: 14px 45px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-secondary);
+    text-transform: lowercase;
+  }
+
+  .hidden__section {
+    display: flex;
   }
 }
