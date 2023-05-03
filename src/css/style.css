@@ -2326,8 +2326,8 @@ body {
 @media only screen and (max-width: 430px) {
   .container {
     width: 100%;
-    max-width: 382px;
-    padding: 0 4px;
+    max-width: 430;
+    padding: 0 24px;
   }
 
   .desctop {
@@ -3175,7 +3175,6 @@ body {
   }
 
   .foundation__link ul {
-    display: flex;
     justify-content: space-between;
   }
 
@@ -3279,7 +3278,7 @@ body {
 
   .timeline__wrapper .timeline__item .timeline__item-03 {
     position: absolute;
-    min-width: 225px;
+    min-width: inherit;
     top: 76px;
     left: 73px;
     font-weight: 500;
@@ -4015,7 +4014,7 @@ body {
   }
 
   .foundation__link ul li {
-    margin-right: 20px;
+    margin-right: inherit;
   }
 
   .foundation__link .proj__leble {

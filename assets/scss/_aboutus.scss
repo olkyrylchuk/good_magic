@@ -20,8 +20,6 @@
 
             li {
                 margin-right: 20px;
-                // min-width: 195px;
-                // min-height: 44px;
 
                 a {
                     padding: 16px 64px;
@@ -507,7 +505,6 @@
     }
 }
 
-
 @media (min-width: 320px) and (max-width: 430px) {
     .foundation {
         padding-top: 72px;
@@ -516,7 +513,6 @@
             margin-bottom: 36px;
 
             ul {
-                display: flex;
                 justify-content: space-between;
 
                 li {
@@ -572,7 +568,6 @@
     }
 
     .timeline {
-
         min-height: 1205px;
         height: 100%;
         position: relative;
@@ -623,7 +618,7 @@
 
                 .timeline__item-03 {
                     position: absolute;
-                    min-width: 225px;
+                    min-width: inherit;
                     top: 76px;
                     left: 73px;
                     font-weight: 500;
