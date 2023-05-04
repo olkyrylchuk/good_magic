@@ -33,15 +33,18 @@ body {
 }
 
 .button-yellow {
+    display: flex;
+    padding: 16px 68px;
     flex-direction: row;
-    align-items: flex-start;
-    // width: 296px;
+    align-items: center;
+    margin: 0 auto;
     border: none;
     background: #FFD249;
     border-radius: 4px;
     background-color: var(--color-primary);
     border: none;
     text-transform: uppercase;
+
 }
 
 .button-grey {
@@ -68,7 +71,7 @@ body {
     .container {
         width: 100%;
         max-width: 430;
-        padding: 0 24px;
+        padding: 0 15px;
     }
 
     .desctop {

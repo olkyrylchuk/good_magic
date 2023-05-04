@@ -42,3 +42,39 @@ $(".press__slider").slick({
         },
     ],
 });
+
+$(".n-slider").slick({
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 430,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+            },
+        },
+    ],
+});
+
+$(".news-block").slick({
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 430,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+            },
+        },
+    ],
+});

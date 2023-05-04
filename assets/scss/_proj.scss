@@ -5,8 +5,6 @@
         display: flex;
         width: 1132px;
 
-
-
         &-img {
             img {
                 border-radius: 22px 22px 0 0;
@@ -45,6 +43,8 @@
         a {
             display: flex;
             margin-top: 64px;
+            max-width: 296px;
+            margin-left: 0;
         }
 
         .location {
@@ -85,5 +85,116 @@
         letter-spacing: 0.02em;
         color: #343434;
         margin-bottom: 64px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .news__hub {
+        margin-bottom: 64px;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            width: inherit;
+
+            &-img {
+                img {
+                    border-radius: 22px 22px 0 0;
+                    max-width: 400px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .news__one-img {
+            max-width: 400px;
+            height: auto;
+            width: 100%;
+        }
+
+        &-text {
+            max-width: 556px;
+            max-height: 460px;
+            margin-right: 72px;
+
+            h2 {
+                margin-bottom: 8px;
+                margin-bottom: 32px;
+                max-width: 370px;
+            }
+
+            p {
+                margin-bottom: 16px;
+                margin-left: 55px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #343434;
+                max-width: 370px;
+            }
+
+            a {
+                display: flex;
+                margin-top: 64px;
+                max-width: 296px;
+                margin-left: 0;
+            }
+
+            .location {
+                display: flex;
+                position: relative;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: 10px;
+                }
+            }
+
+            .fb {
+                display: flex;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+    .proj-info {
+        max-width: 430px;
+        margin: 0 auto;
+
+        p {
+            font-family: 'e-Ukraine';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #343434;
+            margin-bottom: 64px;
+        }
+    }
+
+    .news__slider {
+        .container {
+            margin: inherit;
+            max-width: 400px;
+
+        }
+
+        .n-slider {
+            img {
+                max-width: 400px;
+                width: 100%;
+                margin: 0;
+            }
+        }
     }
 }

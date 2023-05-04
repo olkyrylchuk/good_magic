@@ -71,8 +71,11 @@ body {
 }
 
 .button-yellow {
+  display: flex;
+  padding: 16px 68px;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+  margin: 0 auto;
   border: none;
   background: #FFD249;
   border-radius: 4px;
@@ -230,6 +233,7 @@ body {
   display: flex;
   margin-bottom: 32px;
   max-width: 296px;
+  margin-left: 0;
 }
 
 .home-text-img img {
@@ -1238,6 +1242,11 @@ body {
   margin-bottom: 48px;
 }
 
+.team__join a {
+  max-width: 296px;
+  margin-left: 0;
+}
+
 .team__photo img {
   border-radius: 44px 0;
 }
@@ -1857,6 +1866,8 @@ body {
 .news__hub-text a {
   display: flex;
   margin-top: 64px;
+  max-width: 296px;
+  margin-left: 0;
 }
 
 .news__hub-text .location {
@@ -2327,7 +2338,7 @@ body {
   .container {
     width: 100%;
     max-width: 430;
-    padding: 0 24px;
+    padding: 0 15px;
   }
 
   .desctop {
@@ -3707,11 +3718,11 @@ body {
   }
 
   .news__sec-link ul li a {
-    padding: 13px 8px;
+    padding: 13px 7px;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     border-radius: 4px;
   }
 
@@ -3732,7 +3743,7 @@ body {
   .news__block-items .news__block-item .news__label img {
     margin-bottom: 16px;
     height: 200px;
-    width: 382px;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -3904,6 +3915,108 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .news__hub {
+    margin-bottom: 64px;
+  }
+
+  .news__hub-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: inherit;
+  }
+
+  .news__hub-wrapper-img img {
+    border-radius: 22px 22px 0 0;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .news__hub .news__one-img {
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+  }
+
+  .news__hub-text {
+    max-width: 556px;
+    max-height: 460px;
+    margin-right: 72px;
+  }
+
+  .news__hub-text h2 {
+    margin-bottom: 8px;
+    margin-bottom: 32px;
+    max-width: 370px;
+  }
+
+  .news__hub-text p {
+    margin-bottom: 16px;
+    margin-left: 55px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #343434;
+    max-width: 370px;
+  }
+
+  .news__hub-text a {
+    display: flex;
+    margin-top: 64px;
+    max-width: 296px;
+    margin-left: 0;
+  }
+
+  .news__hub-text .location {
+    display: flex;
+    position: relative;
+  }
+
+  .news__hub-text .location img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .news__hub-text .fb {
+    display: flex;
+    position: relative;
+  }
+
+  .news__hub-text .fb img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+  }
+
+  .proj-info {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .proj-info p {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #343434;
+    margin-bottom: 64px;
+  }
+
+  .news__slider .container {
+    margin: inherit;
+    max-width: 400px;
+  }
+
+  .news__slider .n-slider img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0;
   }
 
   .foundation h2 {
@@ -4154,10 +4267,16 @@ body {
   }
 
   .allprojects__wrap .project__main a {
-    width: 100%;
+    max-width: 397px;
+    padding: auto;
     height: 60px;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .allprojects__wrap .project__image {
+    margin-top: 30px;
   }
 
   .allprojects__wrap .project__image .img {
