@@ -36,11 +36,78 @@
     }
 
     &__map {
-        .map {
+        #map {
             width: 556px;
             height: 556px;
             margin-bottom: 72px;
         }
+    }
+}
+
+.contact__info-tel {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        margin-bottom: 5px;
+    }
+}
+
+.mail__item {
+    display: flex;
+    align-items: center;
+
+    .mail {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hint {
+    position: absolute;
+    bottom: 108%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    line-height: 1.2;
+    background: #333333;
+    color: #fff;
+    border-radius: 1.5em;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.5s;
+
+    &_show {
+        height: 2.2em;
+        width: auto;
+        padding: 0.5em 1em;
+        padding: 0 1em 0.2em;
+        opacity: 1;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+}
+
+.copytext {
+    opacity: 0;
+    height: 0px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    z-index: -1;
+    padding: 0;
+    font-size: 1px;
+
+    &_link {
+        position: relative;
+        // overflow: hidden;
     }
 }
 
@@ -97,7 +164,7 @@
         }
 
         &__map {
-            .map {
+            #map {
                 width: 382px;
                 height: 382px;
                 padding-top: 25px;
@@ -107,7 +174,6 @@
     }
 
     .bank {
-
         font-weight: 500;
         font-size: 20px;
         line-height: 28px;

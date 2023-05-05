@@ -38,3 +38,47 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .joinus {
+        padding-top: 72px;
+        margin-bottom: 70px;
+
+        .container {
+            h2 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__blocks {
+            &-item {
+                a {
+                    text-transform: none;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
+                &:not(:first-child) {
+                    display: none;
+                }
+
+                .block-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    img {
+                        max-height: 100%;
+                        width: 100%;
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,6 +8,12 @@
     <title>Магія добра</title>
     <link rel="stylesheet" href="../libs/reset.css">
     <link rel="stylesheet" href="../src/css/style.min.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+
 </head>
 
 <body>
@@ -92,19 +98,56 @@
                             <a class="contact__info-second" href="tel:+380960753738">+380960753738</a>
                         </div>
 
+
+
+
+
+
+
+
+
                     </li>
-                    <li>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li class="mail__item">
                         <p class="contact__info-first">Email:</p>
-                        <a class="contact__info-second" href="mailto:markovec28@gmail.com">markovec28@gmail.com</a>
+                        <div class="copy">
+                            <a class="contact__info-second inputtext"
+                                href="mailto:markovec28@gmail.com">markovec28@gmail.com</a>
+                            <div class="">
+                                <img src="../src/img/svg/Icons/copy.svg" alt="">
+                            </div>
+
+                        </div>
+
                     </li>
+
+
+
+
+
+
+
+
+
+
+
+
                 </ul>
             </div>
+            <!-- Google maps -->
             <div class="contact__map">
-                <!-- настроить карту! -->
-                <iframe class="map" style="border:0" loading="lazy" allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-    &q=Space+Needle,Seattle+WA">
-                </iframe>
+                <div id="map"></div>
             </div>
             <h2 class="bank">Банківські реквізити</h2>
             <div class="contact__details">
@@ -168,6 +211,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&v=weekly" defer></script>
+    <script src="../src/js/map.js"></script>
+    <script src="../src/js/copy.js"></script>
     <script src="../src/js/script.js"></script>
 </body>
 
