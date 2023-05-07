@@ -1407,6 +1407,11 @@ body {
   align-items: center;
 }
 
+.copy {
+  display: flex;
+  align-items: center;
+}
+
 .joinus {
   padding-top: 72px;
   margin-bottom: 100px;
@@ -2425,7 +2430,7 @@ body {
     display: none;
     padding-top: 24px;
     padding-left: 32px;
-    transition: transform 0.5s;
+    transition: all 0.3s;
   }
 
   .header-nav .menu .proj__submenu {
@@ -2442,12 +2447,17 @@ body {
 
   .header-nav .menu .proj__submenu__active {
     display: block;
-    transition: transform 0.5s;
+    transition: 0.5s;
   }
 
   .header-nav .menu .aboutus__arrow-down,
   .header-nav .menu .projects__arrow-down {
     display: inherit;
+  }
+
+  .header-nav .menu .rotate {
+    transform: rotate(180deg);
+    transition: all 0.3s;
   }
 
   .header-nav .menu.active {

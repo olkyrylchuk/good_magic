@@ -63,6 +63,11 @@
     }
 }
 
+.copy {
+    display: flex;
+    align-items: center
+}
+
 @media (min-width: 320px) and (max-width: 430px) {
     .contact {
         padding-top: 30px;
@@ -74,7 +79,6 @@
                 font-size: 20px;
                 line-height: 28px;
                 letter-spacing: 0.02em;
-
                 color: #000000;
             }
         }

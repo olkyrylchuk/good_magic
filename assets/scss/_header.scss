@@ -117,7 +117,7 @@
                     display: none;
                     padding-top: 24px;
                     padding-left: 32px;
-                    transition: transform 0.5s;
+                    transition: all 0.3s;
                 }
 
                 .proj__submenu {
@@ -134,13 +134,17 @@
 
                 .proj__submenu__active {
                     display: block;
-                    // transition: 0.8s ease-in;
-                    transition: transform 0.5s;
+                    transition: 0.5s;
                 }
 
                 .aboutus__arrow-down,
                 .projects__arrow-down {
                     display: inherit;
+                }
+
+                .rotate {
+                    transform: rotate(180deg);
+                    transition: all 0.3s;
                 }
             }
 
