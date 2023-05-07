@@ -1,161 +1,208 @@
 <!DOCTYPE html>
 <html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Магія добра</title>
+        <link rel="stylesheet" href="../libs/reset.css" />
+        <link rel="stylesheet" href="../src/css/style.min.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магія добра</title>
-    <link rel="stylesheet" href="../libs/reset.css">
-    <link rel="stylesheet" href="../src/css/style.min.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container wrapper">
-            <div class="header-nav">
-                <div class="header__mobile">
-                    <div class="">
-                        <a href="../index.html">
-                            <img class="header__logo-mobile" src="../src/img/mobile_img/svg/header/m_logo.svg" alt="">
-                        </a>
+    <body>
+        <header class="header">
+            <div class="container wrapper">
+                <div class="header-nav">
+                    <div class="header__mobile">
+                        <div class="">
+                            <a href="../index.html">
+                                <img
+                                    class="header__logo-mobile"
+                                    src="../src/img/mobile_img/svg/header/m_logo.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="nav__burger">
+                            <img
+                                class="header__burger"
+                                src="../src/img/mobile_img/svg/header/menu.svg"
+                                alt=""
+                            />
+                        </div>
                     </div>
-                    <div class="nav__burger">
-                        <img class="header__burger" src="../src/img/mobile_img/svg/header/menu.svg" alt="">
+                    <a href="../index.html">
+                        <img
+                            class="header-logo"
+                            src="../src/img/svg/logo.svg"
+                            alt="logo"
+                        />
+                    </a>
+                    <div class="header-nav-item menu">
+                        <ul>
+                            <li>
+                                <div class="aboutus">
+                                    <a href="../html/aboutus.html">Про нас</a>
+                                    <img
+                                        class="aboutus__arrow-down"
+                                        src="../src/img/mobile_img/svg/header/arrow_down.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="../html/aboutus.html">Фонд</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/partners.html"
+                                            >Партнери</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="../html/report.html">Звіти</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="project">
+                                    <a href="../html/allprojects.html"
+                                        >Проєкти</a
+                                    >
+                                    <img
+                                        class="projects__arrow-down"
+                                        src="../src/img/mobile_img/svg/header/arrow_down.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <ul class="proj__submenu">
+                                    <li><a href="#">Усі</a></li>
+                                    <li><a href="#">Актуальні</a></li>
+                                    <li><a href="#">Завершені</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../html/news.html">Новини</a>
+                            </li>
+                            <li>
+                                <a href="../html/contact.html">Контакти</a>
+                            </li>
+                            <li class="mobile">
+                                <a href="../html/join.html">Долучитися </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <a href="../index.html">
-                    <img class="header-logo " src="../src/img/svg/logo.svg" alt="logo">
-                </a>
-                <div class="header-nav-item menu">
+                <div class="header-button">
+                    <a href="../html/join.html" class="button">ДОЛУЧИТИСЯ </a>
+                </div>
+            </div>
+        </header>
+        <section class="back">
+            <div class="container">
+                <div class="back__wrapp">
+                    <a href="../html/join.html">
+                        <img src="../src/img/svg/arrow.svg" alt="" />
+                    </a>
+                    <a href="../html/join.html">
+                        <p>Долучитися</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="pay">
+            <div class="container">
+                <h2>Оберіть спосіб оплати</h2>
+                <div class="pay__button">
                     <ul>
                         <li>
-                            <div class="aboutus">
-                                <a href="../html/aboutus.html">Про нас</a>
-                                <img class="aboutus__arrow-down" src="../src/img/mobile_img/svg/header/arrow_down.svg"
-                                    alt="">
-                            </div>
-                            <ul class="submenu ">
-                                <li><a href="../html/aboutus.html">Фонд</a></li>
-                                <li><a href="../html/partners.html">Партнери</a></li>
-                                <li><a href="../html/report.html">Звіти</a></li>
-                            </ul>
+                            <a class="active" href="#">Оплата карткою</a>
                         </li>
                         <li>
-                            <div class="project">
-                                <a href="../html/allprojects.html">Проєкти</a>
-                                <img class="projects__arrow-down" src="../src/img/mobile_img/svg/header/arrow_down.svg"
-                                    alt="">
-                            </div>
-                            <ul class="proj__submenu">
-                                <li><a href="#">Усі</a></li>
-                                <li><a href="#">Актуальні</a></li>
-                                <li><a href="#">Завершені</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../html/news.html">Новини</a>
-                        </li>
-                        <li>
-                            <a href="../html/contact.html">Контакти</a>
-                        </li>
-                        <li class="mobile">
-                            <a href="../html/join.html">Долучитися </a>
+                            <a class="mono" href="#"
+                                ><img src="../src/img/svg/monobank.svg" alt=""
+                            /></a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="header-button"><a href="../html/join.html" class="button">ДОЛУЧИТИСЯ </a></div>
-        </div>
-    </header>
-    <section class="back">
-        <div class="container">
-            <div class="back__wrapp">
-                <a href="../html/join.html">
-                    <img src="../src/img/svg/arrow.svg" alt="">
-                </a>
-                <a href="../html/join.html">
-                    <p>Долучитися</p>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="pay">
-        <div class="container">
-            <h2>Оберіть спосіб оплати</h2>
-            <div class="pay__button">
-                <ul>
-                    <li>
-                        <a class="active" href="#">Оплата карткою</a>
-                    </li>
-                    <li>
-                        <a class="mono" href="#"><img src="../src/img/svg/monobank.svg" alt=""></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-            <h2>Банківські реквізити</h2>
-            <div class="contact__details">
-                <div class="contact__details-leftside">
-                    <ul>
-                        <li>
-                            <p class="contact__info-first">Найменування організації</p>
-                            <p>БО “Благодійний фонд “Магія добра”</p>
-                        </li>
-                        <li>
-                            <p class="contact__info-first">ЄДРПОУ</p>
-                            <p>44230076</p>
-                        </li>
-                        <li>
-                            <p class="contact__info-first">Назва банку </p>
-                            <p>АТ КБ "ПРИВАТБАНК" <br>
-                                (ЄДРПОУ банку 14360570, код банку 352479)</p>
-                        </li>
-                        <li>
-                            <p class="contact__info-first">Рахунок отримувача <br> у форматі IBAN</p>
-                            <p>UA533524790000026005052232352 </p>
-                        </li>
-                        <li>
-                            <p class="contact__info-first">Валюта</p>
-                            <p>Гривня</p>
-                        </li>
-                    </ul>
+            <div class="container">
+                <h2>Банківські реквізити</h2>
+                <div class="contact__details">
+                    <div class="contact__details-leftside">
+                        <ul>
+                            <li>
+                                <p class="contact__info-first">
+                                    Найменування організації
+                                </p>
+                                <p>БО “Благодійний фонд “Магія добра”</p>
+                            </li>
+                            <li>
+                                <p class="contact__info-first">ЄДРПОУ</p>
+                                <p>44230076</p>
+                            </li>
+                            <li>
+                                <p class="contact__info-first">Назва банку</p>
+                                <p>
+                                    АТ КБ "ПРИВАТБАНК" <br />
+                                    (ЄДРПОУ банку 14360570, код банку 352479)
+                                </p>
+                            </li>
+                            <li>
+                                <p class="contact__info-first">
+                                    Рахунок отримувача <br />
+                                    у форматі IBAN
+                                </p>
+                                <p>UA533524790000026005052232352</p>
+                            </li>
+                            <li>
+                                <p class="contact__info-first">Валюта</p>
+                                <p>Гривня</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-support">
-                <h3>Підтримати</h3>
-                <p>Кожна пожертва важлива! <br>
-                    Сьогодні я не вип'ю кави,<br>
-                    я створюю магію!</p>
-                <div class="support-send">
-                    <form class="support-send-form" method="get">
-                        <input type="text" class="support-send-form-send" placeholder="50 грн" name="search">
-                        <button class="button-yellow" type="submit"><span>ПЕРЕКАЗАТИ</span>
-                        </button>
-                    </form>
-                    <p class="change">(змінити суму)</p>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-support">
+                    <h3>Підтримати</h3>
+                    <p>
+                        Кожна пожертва важлива! <br />
+                        Сьогодні я не вип'ю кави,<br />
+                        я створюю магію!
+                    </p>
+                    <div class="support-send">
+                        <form class="support-send-form" method="get">
+                            <input
+                                type="text"
+                                class="support-send-form-send"
+                                placeholder="50 грн"
+                                name="search"
+                            />
+                            <button class="button-yellow" type="submit">
+                                <span>ПЕРЕКАЗАТИ</span>
+                            </button>
+                        </form>
+                        <p class="change">(змінити суму)</p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h3>Контакти</h3>
+                    <div class="contacts__tel">
+                        <a href="mailto: markovec28@gmail.com"
+                            >e-mail: markovec28@gmail.com</a
+                        >
+                        <a href="tel:+38 095829 42 63">+38 095829 42 63</a>
+                        <a href="tel:+38 095829 42 63">+38 096 075 37 38</a>
+                    </div>
+                    <div class="contacts__social">
+                        <a href="#">Шукай нас у Facebook</a>
+                        <a href="#">Зв'язатись з нами</a>
+                    </div>
                 </div>
             </div>
-            <div class="contacts">
-                <h3>Контакти</h3>
-                <div class="contacts__tel">
-                    <a href="mailto:">e-mail: markovec28@gmail.com</a>
-                    <a href="tel:+">+38 095 829 42 63</a>
-                    <a href="tel:+">+38 096 075 37 38</a>
-                </div>
-                <div class="contacts__social">
-                    <a href="#">Шукай нас у Facebook</a>
-                    <a href="#">Зв'язатись з нами</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="../src/js/script.js"></script>
-</body>
-
+        </footer>
+        <script src="../src/js/script.js"></script>
+    </body>
 </html>

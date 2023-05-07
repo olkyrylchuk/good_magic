@@ -275,8 +275,6 @@ body {
 }
 
 .about-wrapper-text h3 {
-  font-family: "e-Ukraine";
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
@@ -2270,8 +2268,17 @@ body {
 }
 
 .feedback .textarea {
+  max-height: 168px;
   margin-bottom: 56px;
   border: 1px solid var(--color-secondary);
+}
+
+.feedback .textarea ::-moz-placeholder {
+  color: red;
+}
+
+.feedback .textarea ::placeholder {
+  color: red;
 }
 
 .header {
@@ -2666,10 +2673,8 @@ body {
   }
 
   .about {
-    padding-top: 48px;
     margin-bottom: 36px;
     padding-bottom: 0;
-    background-color: #fff;
   }
 
   .about__title {
@@ -2705,11 +2710,6 @@ body {
   }
 
   .about-wrapper-text p {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #343434;
     padding-bottom: 0;
     max-width: 358px;
   }
@@ -3431,8 +3431,6 @@ body {
   }
 
   .timeline__wrapper .timeline__item p {
-    font-family: "e-Ukraine";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -3453,8 +3451,6 @@ body {
   }
 
   .timeline__item .date {
-    font-family: "e-Ukraine";
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -3464,8 +3460,6 @@ body {
   }
 
   .timeline__item p {
-    font-family: "e-Ukraine";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -4516,11 +4510,8 @@ body {
   }
 
   .feedback .form {
-    display: flex;
-    flex-direction: column;
-    width: 715px;
-    height: 676px;
-    max-width: 400px;
+    width: inherit;
+    height: inherit;
   }
 
   .feedback .form .button {
@@ -4549,36 +4540,15 @@ body {
   }
 
   .feedback input {
-    max-width: 400px;
-  }
-
-  .feedback ::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: var(--color-secondary);
-  }
-
-  .feedback :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: var(--color-secondary);
-  }
-
-  .feedback ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: var(--color-secondary);
-  }
-
-  .feedback :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: var(--color-secondary);
-  }
-
-  .feedback input {
-    min-width: 400px;
+    min-width: 300px;
+    max-width: 380px;
+    width: 100%;
     border: 0px solid transparent;
     border-bottom: 1px solid var(--color-secondary);
   }
 
   .feedback .textarea {
+    max-width: 400px;
     margin-bottom: 56px;
     border: 1px solid var(--color-secondary);
   }

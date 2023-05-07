@@ -26,8 +26,6 @@
             max-width: 571px;
 
             h3 {
-                font-family: 'e-Ukraine';
-                font-style: normal;
                 font-weight: 700;
                 font-size: 32px;
                 line-height: 40px;
@@ -56,10 +54,8 @@
 
 @media (min-width: 320px) and (max-width: 430px) {
     .about {
-        padding-top: 48px;
         margin-bottom: 36px;
         padding-bottom: 0;
-        background-color: #fff;
 
         &__title {
             display: none;
@@ -94,11 +90,6 @@
                 }
 
                 p {
-                    font-weight: 300;
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: 0.02em;
-                    color: #343434;
                     padding-bottom: 0;
                     max-width: 358px;
                 }

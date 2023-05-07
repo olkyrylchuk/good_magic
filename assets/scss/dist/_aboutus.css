@@ -1,0 +1,830 @@
+.foundation {
+  padding-top: 60px;
+}
+.foundation .container h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #343434;
+  margin-bottom: 40px;
+}
+.foundation__link {
+  margin-bottom: 80px;
+}
+.foundation__link ul {
+  display: flex;
+}
+.foundation__link ul li {
+  margin-right: 20px;
+}
+.foundation__link ul li a {
+  padding: 16px 64px;
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #343434;
+  border: 2px solid #343434;
+  border-radius: 4px;
+}
+.foundation__link ul li .active {
+  flex-direction: row;
+  align-items: flex-start;
+  border: none;
+  background: #FFD249;
+  border-radius: 4px;
+}
+.foundation__link .proj__leble {
+  padding: 8px 40px;
+}
+.foundation__link .proj__leble-active {
+  border: none;
+  background: #FFD249;
+  border-radius: 4px;
+}
+.foundation__img {
+  display: flex;
+  margin-bottom: 72px;
+}
+.foundation__img img {
+  margin-right: -1px;
+}
+.foundation__history {
+  max-width: 717px;
+}
+.foundation__history-title {
+  margin-bottom: 32px;
+}
+.foundation__history-title h2 {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #343434;
+}
+.foundation__history-text {
+  margin-bottom: 64px;
+}
+.foundation__history-text p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #343434;
+}
+
+.timeline {
+  position: relative;
+  height: 416px;
+  background: #F4F4F4;
+  background-image: url(../img/svg/timeline/timeline_bg.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.timeline__wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.timeline__wrapper .timeline__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.timeline__wrapper .timeline__item .timeline__item-01 {
+  position: absolute;
+  top: -140px;
+  left: -540px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+.timeline__wrapper .timeline__item .timeline__item-02 {
+  position: absolute;
+  min-width: 225px;
+  top: -170px;
+  left: -275px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+.timeline__wrapper .timeline__item .timeline__item-03 {
+  position: absolute;
+  min-width: 225px;
+  top: -140px;
+  left: 80px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+.timeline__wrapper .timeline__item .timeline__item-04 {
+  position: absolute;
+  min-width: 296px;
+  top: -170px;
+  left: 340px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+.timeline__wrapper .timeline__item .timeline__item-05 {
+  position: absolute;
+  min-width: 208px;
+  top: 75px;
+  left: -610px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+.timeline__wrapper .timeline__item .timeline__item-06 {
+  position: absolute;
+  top: 115px;
+  left: -210px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+.timeline__wrapper .timeline__item .timeline__item-07 {
+  position: absolute;
+  min-width: 184px;
+  top: 105px;
+  left: 85px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+.timeline__wrapper .timeline__item .timeline__item-08 {
+  position: absolute;
+  top: 115px;
+  left: 455px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+.timeline__wrapper .timeline__item .date {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.timeline__wrapper .timeline__item img {
+  width: 100%;
+  display: inline-block;
+}
+.timeline__wrapper .timeline__item p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  max-width: 208px;
+}
+.timeline__item {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.timeline__item img {
+  width: 100%;
+  display: inline-block;
+}
+.timeline__item .date {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.timeline__item p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+.timeline__item-img {
+  position: relative;
+}
+.timeline__item-img-01 {
+  position: absolute;
+  left: -545px;
+  top: -40px;
+}
+.timeline__item-img-02 {
+  position: absolute;
+  left: -210px;
+  top: -40px;
+}
+.timeline__item-img-03 {
+  position: absolute;
+  left: 118px;
+  top: -40px;
+}
+.timeline__item-img-04 {
+  position: absolute;
+  left: 445px;
+  top: -40px;
+}
+
+.founder {
+  padding-top: 72px;
+}
+.founder .container {
+  display: flex;
+}
+.founder__img {
+  position: relative;
+  margin-right: 128px;
+}
+.founder__img-logo {
+  height: 105px;
+  width: auto;
+}
+.founder__img-logo img {
+  position: absolute;
+  left: 21px;
+  top: 21px;
+}
+.founder__text {
+  max-width: 628px;
+}
+.founder__text h1 {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #343434;
+  margin-bottom: 46px;
+}
+.founder__text p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #343434;
+}
+
+.team {
+  padding-top: 72px;
+}
+.team .wrapper {
+  display: flex;
+}
+.team__title h2 {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #343434;
+  margin-bottom: 32px;
+}
+.team .wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+.team__text {
+  max-width: 610px;
+}
+.team__text p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #343434;
+  margin-bottom: 42px;
+}
+.team-part {
+  display: flex;
+  flex-direction: row;
+}
+.team-part img {
+  margin-right: 49px;
+}
+.team__join h3 {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #343434;
+  margin-bottom: 48px;
+}
+.team__join a {
+  max-width: 296px;
+  margin-left: 0;
+}
+.team__photo img {
+  border-radius: 44px 0;
+}
+.team .wrapp {
+  display: flex;
+}
+
+.activity {
+  display: block;
+  padding-top: 72px;
+}
+.activity h2 {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #343434;
+  margin-bottom: 40px;
+}
+.activity__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+}
+.activity__block:nth-child(2) {
+  border-bottom: 1px solid black;
+}
+.activity__block:nth-child(3) {
+  border-bottom: 1px solid black;
+}
+.activity__block:nth-child(5) {
+  border-bottom: 1px solid black;
+}
+.activity__block-text {
+  display: flex;
+  justify-content: space-between;
+}
+.activity__block img {
+  border-radius: 44px 44px 44px 0;
+  max-height: 320px;
+}
+.activity__block .img__04 {
+  border-radius: 0 44px 44px 44px;
+}
+.activity__block .img__06 {
+  margin-top: 115px;
+  border-radius: 0 44px 44px 44px;
+}
+.activity__block-date {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.02em;
+  color: #FFD249;
+  margin-right: 50px;
+  min-width: 161px;
+}
+.activity__block .border {
+  color: #fff;
+  -webkit-text-stroke: #000;
+  -webkit-text-stroke-width: 1px;
+}
+.activity__block .paragraph p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #343434;
+  margin-right: 30px;
+}
+.activity__block p {
+  font-family: "e-Ukraine";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #343434;
+  margin-right: 30px;
+}
+.activity .block-03 {
+  margin-top: -100px;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .foundation {
+    padding-top: 72px;
+  }
+  .foundation__link {
+    margin-bottom: 36px;
+  }
+  .foundation__link ul {
+    justify-content: space-between;
+  }
+  .foundation__link ul li {
+    margin-right: inherit;
+  }
+  .foundation__link ul li a {
+    padding: 14px 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .foundation__img {
+    max-width: 430px;
+    display: flex;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .foundation__img img {
+    max-width: 20%;
+  }
+  .foundation__history {
+    max-width: inherit;
+  }
+  .foundation__history-title {
+    margin-bottom: 32px;
+  }
+  .foundation__history-title h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+  }
+  .foundation__history-text {
+    margin-bottom: 36px;
+  }
+  .foundation__history-text p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline {
+    min-height: 1205px;
+    height: 100%;
+    position: relative;
+    background: inherit;
+    background-image: url(../img/mobile_img/svg/timeline_bg_mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  .timeline__wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  .timeline__wrapper .timeline__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .timeline__wrapper .timeline__item .timeline__item-01 {
+    position: absolute;
+    top: -457px;
+    left: 87px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+  .timeline__wrapper .timeline__item .timeline__item-02 {
+    position: absolute;
+    min-width: inherit;
+    max-width: 169px;
+    top: -93px;
+    left: -193px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .timeline__wrapper .timeline__item .timeline__item-03 {
+    position: absolute;
+    min-width: inherit;
+    top: 76px;
+    left: 73px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+  .timeline__wrapper .timeline__item .timeline__item-04 {
+    position: absolute;
+    min-width: inherit;
+    max-width: 156px;
+    top: 425px;
+    left: -187px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .timeline__wrapper .timeline__item .timeline__item-05 {
+    position: absolute;
+    min-width: 208px;
+    top: -355px;
+    left: -17px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .timeline__wrapper .timeline__item .timeline__item-06 {
+    position: absolute;
+    top: -187px;
+    left: -187px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+  .timeline__wrapper .timeline__item .timeline__item-07 {
+    position: absolute;
+    min-width: 163px;
+    top: 205px;
+    left: -18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .timeline__wrapper .timeline__item .timeline__item-08 {
+    position: absolute;
+    top: 343px;
+    left: -187px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+  .timeline__wrapper .timeline__item .date {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .timeline__wrapper .timeline__item img {
+    width: 100%;
+    display: inline-block;
+  }
+  .timeline__wrapper .timeline__item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    max-width: 208px;
+  }
+  .timeline__item {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .timeline__item img {
+    width: 100%;
+    display: inline-block;
+  }
+  .timeline__item .date {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .timeline__item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline__item-img {
+    position: relative;
+  }
+  .timeline__item-img-01 {
+    position: absolute;
+    left: -60px;
+    top: -480px;
+  }
+  .timeline__item-img-02 {
+    position: absolute;
+    left: -60px;
+    top: -211px;
+  }
+  .timeline__item-img-03 {
+    position: absolute;
+    left: -60px;
+    top: 55px;
+  }
+  .timeline__item-img-04 {
+    position: absolute;
+    left: -60px;
+    top: 322px;
+  }
+
+  .founder {
+    padding-top: 72px;
+  }
+  .founder .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .founder__img {
+    position: relative;
+    margin-right: inherit;
+  }
+  .founder__img img {
+    max-width: 100%;
+  }
+  .founder__img-logo {
+    height: 105px;
+    width: auto;
+  }
+  .founder__img-logo img {
+    position: absolute;
+    left: 21px;
+    top: 21px;
+  }
+  .founder__text {
+    max-width: inherit;
+  }
+  .founder__text h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 22px;
+  }
+  .founder__text p {
+    display: none;
+  }
+
+  .team {
+    padding-top: 36px;
+  }
+  .team .wrapper {
+    display: flex;
+  }
+  .team__title h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+  .team .wrapp {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .team__text {
+    max-width: 610px;
+    margin-right: 126px;
+  }
+  .team__text p {
+    display: none;
+  }
+  .team-part {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .team-part img {
+    max-width: 115px;
+    max-height: 115px;
+    margin-right: 13px;
+  }
+  .team__join {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  .team__join h3 {
+    min-width: 248px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: inherit;
+  }
+  .team__join .button-yellow {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 14px 0px;
+    max-width: 248px;
+    width: 100%;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .team__photo img {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+  .team .wrapp {
+    display: flex;
+  }
+
+  .activity {
+    display: block;
+    padding-top: 36px;
+  }
+  .activity h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+  }
+  .activity__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-bottom: 36px;
+  }
+  .activity__block-date {
+    margin-bottom: 36px;
+  }
+  .activity__block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .activity__block img {
+    border-radius: 44px 44px 44px 0;
+  }
+  .activity__block .img__04 {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 0 44px 44px 44px;
+  }
+  .activity__block .img__06 {
+    width: 100%;
+    margin-top: 115px;
+    border-radius: 0 44px 44px 44px;
+  }
+  .activity__block .border {
+    color: #fff;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 1px;
+  }
+  .activity__block .paragraph p {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #343434;
+    margin-right: 30px;
+  }
+  .activity__block p {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .img-block img {
+    width: 100%;
+  }
+}

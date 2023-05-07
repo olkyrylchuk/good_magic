@@ -1,189 +1,237 @@
 <!DOCTYPE html>
 <html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Магія добра</title>
+        <link rel="stylesheet" href="../libs/reset.css" />
+        <link rel="stylesheet" href="../src/css/style.min.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магія добра</title>
-    <link rel="stylesheet" href="../libs/reset.css">
-    <link rel="stylesheet" href="../src/css/style.min.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container wrapper">
-            <div class="header-nav">
-                <div class="header__mobile">
-                    <div class="">
-                        <a href="../index.html">
-                            <img class="header__logo-mobile" src="../src/img/mobile_img/svg/header/m_logo.svg" alt="">
-                        </a>
+    <body>
+        <header class="header">
+            <div class="container wrapper">
+                <div class="header-nav">
+                    <div class="header__mobile">
+                        <div class="">
+                            <a href="../index.html">
+                                <img
+                                    class="header__logo-mobile"
+                                    src="../src/img/mobile_img/svg/header/m_logo.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="nav__burger">
+                            <img
+                                class="header__burger"
+                                src="../src/img/mobile_img/svg/header/menu.svg"
+                                alt=""
+                            />
+                        </div>
                     </div>
-                    <div class="nav__burger">
-                        <img class="header__burger" src="../src/img/mobile_img/svg/header/menu.svg" alt="">
+                    <a href="../index.html">
+                        <img
+                            class="header-logo"
+                            src="../src/img/svg/logo.svg"
+                            alt="logo"
+                        />
+                    </a>
+                    <div class="header-nav-item menu">
+                        <ul>
+                            <li>
+                                <div class="aboutus">
+                                    <a href="../html/aboutus.html">Про нас</a>
+                                    <img
+                                        class="aboutus__arrow-down"
+                                        src="../src/img/mobile_img/svg/header/arrow_down.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="../html/aboutus.html">Фонд</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/partners.html"
+                                            >Партнери</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="../html/report.html">Звіти</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="project">
+                                    <a href="../html/allprojects.html"
+                                        >Проєкти</a
+                                    >
+                                    <img
+                                        class="projects__arrow-down"
+                                        src="../src/img/mobile_img/svg/header/arrow_down.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <ul class="proj__submenu">
+                                    <li>
+                                        <a href="#">Усі</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Актуальні</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Завершені</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../html/news.html">Новини</a>
+                            </li>
+                            <li>
+                                <a href="../html/contact.html">Контакти</a>
+                            </li>
+                            <li class="mobile">
+                                <a href="../html/join.html">Долучитися </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <a href="../index.html">
-                    <img class="header-logo " src="../src/img/svg/logo.svg" alt="logo">
-                </a>
-                <div class="header-nav-item menu">
+                <div class="header-button">
+                    <a href="../html/join.html" class="button">ДОЛУЧИТИСЯ </a>
+                </div>
+            </div>
+        </header>
+        <section class="foundation">
+            <div class="container">
+                <div class="foundation__link">
                     <ul>
                         <li>
-                            <div class="aboutus">
-                                <a href="../html/aboutus.html">Про нас</a>
-                                <img class="aboutus__arrow-down" src="../src/img/mobile_img/svg/header/arrow_down.svg"
-                                    alt="">
-                            </div>
-                            <ul class="submenu ">
-                                <li>
-                                    <a href="../html/aboutus.html">Фонд</a>
-                                </li>
-                                <li>
-                                    <a href="../html/partners.html">Партнери</a>
-                                </li>
-                                <li>
-                                    <a href="../html/report.html">Звіти</a>
-                                </li>
-                            </ul>
+                            <a href="../html/aboutus.html">Фонд</a>
                         </li>
                         <li>
-                            <div class="project">
-                                <a href="../html/allprojects.html">Проєкти</a>
-                                <img class="projects__arrow-down" src="../src/img/mobile_img/svg/header/arrow_down.svg"
-                                    alt="">
-                            </div>
-                            <ul class="proj__submenu">
-                                <li>
-                                    <a href="#">Усі</a>
-                                </li>
-                                <li>
-                                    <a href="#">Актуальні</a>
-                                </li>
-                                <li>
-                                    <a href="#">Завершені</a>
-                                </li>
-                            </ul>
+                            <a href="../html/partners.html">Партнери</a>
                         </li>
                         <li>
-                            <a href="../html/news.html">Новини</a>
+                            <a class="active" href="../html/report.html"
+                                >Звіти</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <h2>Звіти</h2>
+            </div>
+        </section>
+        <section class="report">
+            <div class="container">
+                <div class="report__wrapper">
+                    <h1>
+                        Загальна сума надходжень <br />
+                        за 2022 рік
+                    </h1>
+                    <span>1 300 688, 82 грн</span>
+                </div>
+            </div>
+        </section>
+        <section class="reports">
+            <div class="container">
+                <h4>Джерела надходжень</h4>
+                <div class="reports__position">
+                    <ul>
+                        <li>
+                            <p>
+                                «Ініціативний центр сприяння активності та
+                                розвитку громадського почину «Єднання»
+                            </p>
+                            <span>365 000 грн</span>
                         </li>
                         <li>
-                            <a href="../html/contact.html">Контакти</a>
+                            <p>ФОП «Золотая Находка»</p>
+                            <span>250 000 грн</span>
                         </li>
-                        <li class="mobile">
-                            <a href="../html/join.html">Долучитися </a>
+                        <li>
+                            <p>
+                                «Ініціативний центр сприяння активності та
+                                розвитку громадського почину «Єднання»
+                            </p>
+                            <span>600 000 грн</span>
+                        </li>
+                        <li>
+                            <p>
+                                Громадська організація «Фонд професійний
+                                розвиток» Дніпро, Благодійна організація WJR,
+                                Оксана Михайленко та благодійники
+                            </p>
+                            <span>85 688,82 грн</span>
+                        </li>
+                    </ul>
+                </div>
+                <h4>Ознайомитися з документами</h4>
+                <div class="reports__download">
+                    <ul>
+                        <li>
+                            <p>Фінансовий звіт за 2022 рік</p>
+                            <a href="#">
+                                <img
+                                    src="../src/img/svg/arrow.svg"
+                                    alt="стршлка для завантаження файлу"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <p>Статут Благодійного фонду “Магія добра”</p>
+                            <a href="#">
+                                <img
+                                    src="../src/img/svg/arrow.svg"
+                                    alt="стрілка для завантаження файлу"
+                                />
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="header-button">
-                <a href="../html/join.html" class="button">ДОЛУЧИТИСЯ </a>
-            </div>
-        </div>
-    </header>
-    <section class="foundation">
-        <div class="container">
-            <div class="foundation__link">
-                <ul>
-                    <li>
-                        <a href="../html/aboutus.html">Фонд</a>
-                    </li>
-                    <li>
-                        <a href="../html/partners.html">Партнери</a>
-                    </li>
-                    <li>
-                        <a class="active" href="../html/report.html">Звіти</a>
-                    </li>
-                </ul>
-            </div>
-            <h2>Звіти</h2>
-        </div>
-    </section>
-    <section class="report">
-        <div class="container">
-            <div class="report__wrapper">
-                <h1>Загальна сума надходжень <br>
-                    за 2022 рік</h1>
-                <span>1 300 688, 82 грн</span>
-            </div>
-        </div>
-    </section>
-    <section class="reports">
-        <div class="container">
-            <h4>Джерела надходжень</h4>
-            <div class="reports__position">
-                <ul>
-                    <li>
-                        <p>«Ініціативний центр сприяння активності та розвитку громадського почину «Єднання»</p>
-                        <span>365 000 грн</span>
-                    </li>
-                    <li>
-                        <p>ФОП «Золотая Находка»</p>
-                        <span>250 000 грн</span>
-                    </li>
-                    <li>
-                        <p>«Ініціативний центр сприяння активності та розвитку громадського почину «Єднання»</p>
-                        <span>600 000 грн</span>
-                    </li>
-                    <li>
-                        <p>Громадська організація «Фонд професійний розвиток» Дніпро, Благодійна організація WJR, Оксана
-                            Михайленко та благодійники</p>
-                        <span>85 688,82 грн</span>
-                    </li>
-                </ul>
-            </div>
-            <h4>Ознайомитися з документами </h4>
-            <div class="reports__download">
-                <ul>
-                    <li>
-                        <p>Фінансовий звіт за 2022 рік</p>
-                        <a href="#">
-                            <img src="../src/img/svg/arrow.svg" alt="стршлка для завантаження файлу">
-                        </a>
-                    </li>
-                    <li>
-                        <p>Статут Благодійного фонду “Магія добра”</p>
-                        <a href="#">
-                            <img src="../src/img/svg/arrow.svg" alt="стрілка для завантаження файлу">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-support">
-                <h3>Підтримати</h3>
-                <p>Кожна пожертва важлива! <br>
-                    Сьогодні я не вип'ю кави,<br>
-                    я створюю магію!</p>
-                <div class="support-send">
-                    <form class="support-send-form" method="get">
-                        <input type="text" class="support-send-form-send" placeholder="50 грн" name="search">
-                        <button class="button-yellow" type="submit"><span>ПЕРЕКАЗАТИ</span>
-                        </button>
-                    </form>
-                    <p class="change">(змінити суму)</p>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-support">
+                    <h3>Підтримати</h3>
+                    <p>
+                        Кожна пожертва важлива! <br />
+                        Сьогодні я не вип'ю кави,<br />
+                        я створюю магію!
+                    </p>
+                    <div class="support-send">
+                        <form class="support-send-form" method="get">
+                            <input
+                                type="text"
+                                class="support-send-form-send"
+                                placeholder="50 грн"
+                                name="search"
+                            />
+                            <button class="button-yellow" type="submit">
+                                <span>ПЕРЕКАЗАТИ</span>
+                            </button>
+                        </form>
+                        <p class="change">(змінити суму)</p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h3>Контакти</h3>
+                    <div class="contacts__tel">
+                        <a href="mailto: markovec28@gmail.com"
+                            >e-mail: markovec28@gmail.com</a
+                        >
+                        <a href="tel:+38 095829 42 63">+38 095829 42 63</a>
+                        <a href="tel:+38 095829 42 63">+38 096 075 37 38</a>
+                    </div>
+                    <div class="contacts__social">
+                        <a href="#">Шукай нас у Facebook</a>
+                        <a href="../html/feedback.html">Зв'язатись з нами</a>
+                    </div>
                 </div>
             </div>
-            <div class="contacts">
-                <h3>Контакти</h3>
-                <div class="contacts__tel">
-                    <a href="mailto:">e-mail: markovec28@gmail.com</a>
-                    <a href="tel:+">+38 095 829 42 63</a>
-                    <a href="tel:+">+38 096 075 37 38</a>
-                </div>
-                <div class="contacts__social">
-                    <a href="#">Шукай нас у Facebook</a>
-                    <a href="../html/feedback.html">Зв'язатись з нами</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="../src/js/script.js"></script>
-</body>
-
+        </footer>
+        <script src="../src/js/script.js"></script>
+    </body>
 </html>

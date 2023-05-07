@@ -588,14 +588,12 @@
         min-height: 1205px;
         height: 100%;
         position: relative;
-
         background: inherit;
         background-image: url(../img/mobile_img/svg/timeline_bg_mobile.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;
-
         display: flex;
         align-items: center;
 
@@ -712,8 +710,6 @@
                 }
 
                 p {
-                    font-family: 'e-Ukraine';
-                    font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 19px;
@@ -735,8 +731,6 @@
             }
 
             .date {
-                font-family: 'e-Ukraine';
-                font-style: normal;
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 29px;
@@ -746,8 +740,6 @@
             }
 
             p {
-                font-family: 'e-Ukraine';
-                font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 19px;
