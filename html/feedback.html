@@ -38,9 +38,15 @@
                                     alt="">
                             </div>
                             <ul class="submenu ">
-                                <li><a href="../html/aboutus.html">Фонд</a></li>
-                                <li><a href="../html/partners.html">Партнери</a></li>
-                                <li><a href="../html/report.html">Звіти</a></li>
+                                <li>
+                                    <a href="../html/aboutus.html">Фонд</a>
+                                </li>
+                                <li>
+                                    <a href="../html/partners.html">Партнери</a>
+                                </li>
+                                <li>
+                                    <a href="../html/report.html">Звіти</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -50,9 +56,15 @@
                                     alt="">
                             </div>
                             <ul class="proj__submenu">
-                                <li><a href="#">Усі</a></li>
-                                <li><a href="#">Актуальні</a></li>
-                                <li><a href="#">Завершені</a></li>
+                                <li>
+                                    <a href="#">Усі</a>
+                                </li>
+                                <li>
+                                    <a href="#">Актуальні</a>
+                                </li>
+                                <li>
+                                    <a href="#">Завершені</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -67,7 +79,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="header-button"><a href="../html/join.html" class="button">ДОЛУЧИТИСЯ </a></div>
+            <div class="header-button">
+                <a href="../html/join.html" class="button">ДОЛУЧИТИСЯ </a>
+            </div>
         </div>
     </header>
     <section class="back">
@@ -86,16 +100,18 @@
         <div class="container ">
             <div class="feedback__wrapper">
                 <h2>Залишіть Ваші контакти </h2>
-                <form action="" class="form" method="get">
-                    <input type="text" class="feedback-input" placeholder="Ваше ім'я" name="name" id="userName">
+                <form id="form" class="form" method="post">
+                    <input type="text" class="feedback-input" placeholder="Ваше ім'я" name="name" id="userName"
+                        required>
                     <label for="phone">
                         <input type="text" class="feedback-input feedback-tel" placeholder="+38 000 000 00 00"
-                            id="userPhone">
+                            name="phone" id="userPhone">
                     </label>
                     <input type="email" class="feedback-input" placeholder="Email" name="email" id="userMail">
                     <input type="text" class="feedback-input" placeholder="Тема" name="theme" id="userTheme">
                     <textarea name="textarea" class="feedback-input textarea" placeholder=" Введіть текст..." cols="30"
-                        rows="10" id="userText"></textarea>
+                        rows="10" id="userText">
+                    </textarea>
                     <button type="button" id="sendMail" class="button button-yellow input__btn"
                         value="Надіслати">Надіслати</button>
                 </form>
@@ -131,7 +147,7 @@
                 </div>
                 <div class="contacts__social">
                     <a href="#">Шукай нас у Facebook</a>
-                    <a href="#">Зв'язатись з нами</a>
+                    <a href="../html/feedback.html">Зв'язатись з нами</a>
                 </div>
             </div>
         </div>

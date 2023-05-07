@@ -89,13 +89,15 @@
         }
     }
 
+    .unvisible {
+        display: none;
+    }
+
     .visible {
         display: flex;
     }
 
-    .unvisible {
-        display: none;
-    }
+
 }
 
 @media (min-width: 320px) and (max-width: 430px) {

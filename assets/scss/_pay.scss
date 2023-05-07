@@ -1,0 +1,39 @@
+.pay {
+  .contact__details {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .pay {
+    .container {
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+      }
+    }
+
+    &__button {
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        li {
+          margin-bottom: 54px;
+
+          a {
+            min-width: 296px;
+            min-width: 100%;
+          }
+        }
+      }
+
+      .mono {
+        padding: 16px 87px;
+      }
+    }
+  }
+}
