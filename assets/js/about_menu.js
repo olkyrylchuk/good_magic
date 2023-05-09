@@ -15,8 +15,17 @@ all.addEventListener("click", function () {
 });
 
 all.onclick = function () {
-    document.querySelectorAll(".project__ended").forEach((el) => {
-        el.classList.remove("unvisible");
+    document.querySelectorAll(".project__working").forEach((el) => {
+        el.classList.remove("visible");
+        document.querySelectorAll(".project__working").forEach((el) => {
+            el.classList.remove("unvisible");
+            document.querySelectorAll(".project__ended").forEach((el) => {
+                el.classList.remove("unvisible");
+                document.querySelectorAll(".project__ended").forEach((el) => {
+                    el.classList.remove("visible");
+                });
+            });
+        });
     });
 };
 
@@ -29,9 +38,25 @@ active.addEventListener("click", function () {
 
 active.onclick = function () {
     document.querySelectorAll(".project__working").forEach((el) => {
-        el.classList.add("visible");
-        document.querySelectorAll(".project__ended").forEach((el) => {
-            el.classList.add("unvisible");
+        el.classList.remove("visible");
+        document.querySelectorAll(".project__working").forEach((el) => {
+            el.classList.remove("unvisible");
+            document.querySelectorAll(".project__ended").forEach((el) => {
+                el.classList.remove("unvisible");
+                document.querySelectorAll(".project__ended").forEach((el) => {
+                    el.classList.remove("visible");
+                    document
+                        .querySelectorAll(".project__working")
+                        .forEach((el) => {
+                            el.classList.add("visible");
+                            document
+                                .querySelectorAll(".project__ended")
+                                .forEach((el) => {
+                                    el.classList.add("unvisible");
+                                });
+                        });
+                });
+            });
         });
     });
 };
@@ -45,9 +70,15 @@ finished.addEventListener("click", function () {
 
 finished.onclick = function () {
     document.querySelectorAll(".project__working").forEach((el) => {
-        el.classList.add("unvisible");
+        el.classList.remove("visible");
         document.querySelectorAll(".project__ended").forEach((el) => {
-            el.classList.add("visible");
+            el.classList.remove("unvisible");
+            document.querySelectorAll(".project__working").forEach((el) => {
+                el.classList.add("unvisible");
+                document.querySelectorAll(".project__ended").forEach((el) => {
+                    el.classList.add("visible");
+                });
+            });
         });
     });
 };
