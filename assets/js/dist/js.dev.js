@@ -8,7 +8,11 @@ var down = document.querySelector(".aboutus__arrow-down");
 var pDown = document.querySelector(".projects__arrow-down");
 var rotate = document.querySelector(".rotate");
 var mass = document.querySelector(".thanks-message");
-var sendMail = document.getElementById("sendMail");
+var sendMail = document.getElementById("sendMail"); //
+
+sendMail.addEventListener("click", function () {
+  mass.classList.add("thanks-message-visible");
+});
 menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
   menu.classList.toggle("active");

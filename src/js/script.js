@@ -8,11 +8,6 @@ let rotate = document.querySelector(".rotate");
 let mass = document.querySelector(".thanks-message");
 let sendMail = document.getElementById("sendMail");
 
-//
-sendMail.addEventListener("click", function () {
-    mass.classList.add("thanks-message-visible");
-});
-
 menuBtn.addEventListener("click", function () {
     menuBtn.classList.toggle("active");
     menu.classList.toggle("active");

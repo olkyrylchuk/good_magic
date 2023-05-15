@@ -1,0 +1,205 @@
+.feedback {
+  margin-bottom: 100px;
+}
+.feedback__wrapper {
+  width: 812px;
+}
+.feedback .container {
+  display: flex;
+}
+.feedback .container img {
+  width: 559px;
+  height: 506px;
+}
+.feedback .container h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: var(--color-secondary);
+  margin-bottom: 32px;
+}
+.feedback .container h1 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #343434;
+}
+.feedback .container .thanks-message {
+  display: none;
+  transition: 0.3s all;
+}
+.feedback .container .thanks-message-visible {
+  display: flex;
+  transition: 0.3s all;
+}
+.feedback .form {
+  display: flex;
+  flex-direction: column;
+  width: 715px;
+  height: 676px;
+}
+.feedback .form .button {
+  margin-bottom: 64px;
+  margin-left: 0;
+  border: 0px solid transparent;
+  text-transform: none;
+}
+.feedback-input {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  padding: 8px;
+  border: 0px solid transparent;
+  border-bottom: 1px solid var(--color-secondary);
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+.feedback .input__btn {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #343434;
+}
+.feedback input {
+  max-width: 400px;
+}
+.feedback ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--color-secondary);
+}
+.feedback :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--color-secondary);
+}
+.feedback ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--color-secondary);
+}
+.feedback :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--color-secondary);
+}
+.feedback input {
+  min-width: 400px;
+  border: 0px solid transparent;
+  border-bottom: 1px solid var(--color-secondary);
+}
+.feedback .textarea {
+  max-height: 168px;
+  margin-bottom: 56px;
+  border: 1px solid var(--color-secondary);
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .feedback {
+    margin-bottom: 100px;
+  }
+  .feedback__wrapper {
+    width: inherit;
+    max-width: 400px;
+  }
+  .feedback .container {
+    display: flex;
+  }
+  .feedback .container img {
+    width: 559px;
+    height: 506px;
+    display: none;
+  }
+  .feedback .container h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+  .feedback .container h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #343434;
+  }
+  .feedback .container .thanks-message-visible {
+    display: none;
+  }
+  .feedback .container .modal {
+    z-index: 1000;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background: rgba(188, 188, 188, 0.3);
+    padding: 15px;
+    cursor: pointer;
+    display: none;
+  }
+  .feedback .container .modal__main {
+    position: relative;
+    max-width: 390px;
+    width: 100%;
+    min-height: 220px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 22px;
+    padding: 32px;
+    cursor: default;
+  }
+  .feedback .container .modal__contant {
+    max-width: 310px;
+  }
+  .feedback .container .modal__contant h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #343434;
+  }
+  .feedback .container .modal__img {
+    display: flex;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 16px;
+  }
+  .feedback .form {
+    width: inherit;
+    height: inherit;
+  }
+  .feedback .form .button {
+    margin-bottom: 64px;
+    border: 0px solid transparent;
+  }
+  .feedback-input {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    padding: 8px;
+    color: #343434;
+    border: 0px solid transparent;
+    border-bottom: 1px solid var(--color-secondary);
+    margin-bottom: 40px;
+    background-color: #fff;
+  }
+  .feedback .input__btn {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #343434;
+  }
+  .feedback input {
+    min-width: 300px;
+    max-width: 380px;
+    width: 100%;
+    border: 0px solid transparent;
+    border-bottom: 1px solid var(--color-secondary);
+  }
+  .feedback .textarea {
+    max-width: 400px;
+    margin-bottom: 56px;
+    border: 1px solid var(--color-secondary);
+  }
+}
