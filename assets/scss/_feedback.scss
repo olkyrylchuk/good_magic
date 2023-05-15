@@ -61,7 +61,7 @@
         line-height: 24px;
         letter-spacing: 0.02em;
         padding: 8px;
-        color: #343434;
+        // color: #343434;
         border: 0px solid transparent;
         border-bottom: 1px solid var(--color-secondary);
         margin-bottom: 40px;
@@ -109,10 +109,6 @@
         max-height: 168px;
         margin-bottom: 56px;
         border: 1px solid var(--color-secondary);
-
-        ::placeholder {
-            color: red;
-        }
     }
 }
 
@@ -149,14 +145,51 @@
                 color: #343434;
             }
 
-            .thanks-message {
+            .thanks-message-visible {
                 display: none;
-                transition: 0.3s all;
             }
 
-            .thanks-message-visible {
-                display: flex;
-                transition: 0.3s all;
+            .modal {
+                z-index: 1000;
+                height: 100vh;
+                position: fixed;
+                inset: 0;
+                background: rgba(188, 188, 188, 0.3);
+                padding: 15px;
+                cursor: pointer;
+                display: none;
+
+                &__main {
+                    position: relative;
+                    max-width: 390px;
+                    width: 100%;
+                    min-height: 220px;
+                    background-color: #fff;
+                    margin: auto;
+                    border-radius: 22px;
+                    padding: 32px;
+                    cursor: default;
+                }
+
+                &__contant {
+                    max-width: 310px;
+                    h3 {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 28px;
+                        text-align: center;
+                        letter-spacing: 0.02em;
+                        color: #343434;
+                    }
+                }
+
+                &__img {
+                    display: flex;
+                    margin: 0 auto;
+                    height: 60px;
+                    width: 60px;
+                    margin-bottom: 16px;
+                }
             }
         }
 
@@ -189,27 +222,6 @@
             line-height: 28px;
             color: #343434;
         }
-
-        // ::-webkit-input-placeholder {
-        //     /* WebKit browsers */
-        //     color: var(--color-secondary);
-
-        // }
-
-        // :-moz-placeholder {
-        //     /* Mozilla Firefox 4 to 18 */
-        //     color: var(--color-secondary);
-        // }
-
-        // ::-moz-placeholder {
-        //     /* Mozilla Firefox 19+ */
-        //     color: var(--color-secondary);
-        // }
-
-        // :-ms-input-placeholder {
-        //     /* Internet Explorer 10+ */
-        //     color: var(--color-secondary);
-        // }
 
         input {
             min-width: 300px;

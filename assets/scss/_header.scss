@@ -42,7 +42,7 @@
                     a {
                         text-decoration: none;
                         color: var(--color-secondary);
-                        font-family: 'e-Ukraine';
+                        font-family: "e-Ukraine";
                         font-style: normal;
                         font-weight: 400;
                         font-size: 18px;
@@ -81,6 +81,17 @@
     .projects__arrow-down {
         display: none;
     }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .home-text-img {
+        img {
+            width: 170px;
+        }
+    }
+}
+@media (min-width: 431px) and (max-width: 991px) {
+    /* стили для sm-устройств */
 }
 
 @media only screen and (max-width: 430px) {
@@ -195,7 +206,6 @@
 // бургер меню
 @media only screen and (max-width: 430px) {
     .header {
-
         &-nav {
             flex-direction: column;
         }

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   --color-primary: #FFD249;
   --color-secondary: #343434;
@@ -743,7 +745,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.02em;
-  color: #FFD249;
+  color: #ffd249;
   margin-bottom: 16px;
 }
 
@@ -754,7 +756,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 16px;
 }
 
@@ -772,8 +774,8 @@ body {
   position: inherit;
   width: 96px;
   min-height: 62px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 12px #F5F5F5;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 12px #f5f5f5;
   border-radius: 12px;
   margin-right: 40px;
   font-family: "e-Ukraine";
@@ -803,7 +805,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer .contacts {
@@ -817,7 +819,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
-  color: #FFD249;
+  color: #ffd249;
   margin-bottom: 16px;
 }
 
@@ -836,7 +838,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer .contacts__social {
@@ -851,7 +853,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #FFD249;
+  color: #ffd249;
   margin-bottom: 16px;
 }
 
@@ -896,7 +898,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   border: none;
-  background: #FFD249;
+  background: #ffd249;
   border-radius: 4px;
 }
 
@@ -906,7 +908,7 @@ body {
 
 .foundation__link .proj__leble-active {
   border: none;
-  background: #FFD249;
+  background: #ffd249;
   border-radius: 4px;
 }
 
@@ -917,6 +919,7 @@ body {
 
 .foundation__img img {
   margin-right: -1px;
+  max-width: 20%;
 }
 
 .foundation__history {
@@ -954,7 +957,7 @@ body {
 .timeline {
   position: relative;
   height: 416px;
-  background: #F4F4F4;
+  background: #f4f4f4;
   background-image: url(../img/svg/timeline/timeline_bg.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -1327,7 +1330,7 @@ body {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.02em;
-  color: #FFD249;
+  color: #ffd249;
   margin-right: 50px;
   min-width: 161px;
 }
@@ -2223,7 +2226,6 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   padding: 8px;
-  color: #343434;
   border: 0px solid transparent;
   border-bottom: 1px solid var(--color-secondary);
   margin-bottom: 40px;
@@ -2271,14 +2273,6 @@ body {
   max-height: 168px;
   margin-bottom: 56px;
   border: 1px solid var(--color-secondary);
-}
-
-.feedback .textarea ::-moz-placeholder {
-  color: red;
-}
-
-.feedback .textarea ::placeholder {
-  color: red;
 }
 
 .header {
@@ -2615,6 +2609,16 @@ body {
   }
 }
 
+@media (min-width: 991px) and (max-width: 1200px) {
+  .home-text-img img {
+    width: 170px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+}
+
 @media (min-width: 320px) and (max-width: 430px) {
   .home {
     max-height: 304px;
@@ -2834,7 +2838,7 @@ body {
   }
 
   .join {
-    min-height: 192px;
+    max-height: inherit;
     background-color: var(--color-primary);
     padding: 32px 0;
   }
@@ -3160,10 +3164,10 @@ body {
     position: inherit;
     width: 96px;
     min-height: 44px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 12px #F5F5F5;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 12px #f5f5f5;
     border-radius: 12px;
-    margin-right: 40px;
+    margin-right: 20px;
     font-family: "e-Ukraine";
     font-style: normal;
     font-weight: 700;
@@ -3189,7 +3193,7 @@ body {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer .contacts {
@@ -3203,7 +3207,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
-    color: #FFD249;
+    color: #ffd249;
     margin-bottom: 16px;
   }
 
@@ -3222,7 +3226,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer .contacts__social {
@@ -3237,7 +3241,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #FFD249;
+    color: #ffd249;
     margin-bottom: 16px;
   }
 
@@ -4499,14 +4503,52 @@ body {
     color: #343434;
   }
 
-  .feedback .container .thanks-message {
+  .feedback .container .thanks-message-visible {
     display: none;
-    transition: 0.3s all;
   }
 
-  .feedback .container .thanks-message-visible {
+  .feedback .container .modal {
+    z-index: 1000;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background: rgba(188, 188, 188, 0.3);
+    padding: 15px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .feedback .container .modal__main {
+    position: relative;
+    max-width: 390px;
+    width: 100%;
+    min-height: 220px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 22px;
+    padding: 32px;
+    cursor: default;
+  }
+
+  .feedback .container .modal__contant {
+    max-width: 310px;
+  }
+
+  .feedback .container .modal__contant h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #343434;
+  }
+
+  .feedback .container .modal__img {
     display: flex;
-    transition: 0.3s all;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 16px;
   }
 
   .feedback .form {

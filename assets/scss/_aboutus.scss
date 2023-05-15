@@ -23,7 +23,7 @@
 
                 a {
                     padding: 16px 64px;
-                    font-family: 'e-Ukraine';
+                    font-family: "e-Ukraine";
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
@@ -37,7 +37,7 @@
                     flex-direction: row;
                     align-items: flex-start;
                     border: none;
-                    background: #FFD249;
+                    background: #ffd249;
                     border-radius: 4px;
                 }
             }
@@ -50,7 +50,7 @@
         .proj__leble-active {
             // padding: 10px 81px;
             border: none;
-            background: #FFD249;
+            background: #ffd249;
             border-radius: 4px;
         }
     }
@@ -61,6 +61,7 @@
 
         img {
             margin-right: -1px;
+            max-width: 20%;
         }
     }
 
@@ -71,7 +72,7 @@
             margin-bottom: 32px;
 
             h2 {
-                font-family: 'e-Ukraine';
+                font-family: "e-Ukraine";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 32px;
@@ -85,7 +86,7 @@
             margin-bottom: 64px;
 
             p {
-                font-family: 'e-Ukraine';
+                font-family: "e-Ukraine";
                 font-style: normal;
                 font-weight: 300;
                 font-size: 16px;
@@ -100,7 +101,7 @@
 .timeline {
     position: relative;
     height: 416px;
-    background: #F4F4F4;
+    background: #f4f4f4;
     background-image: url(../img/svg/timeline/timeline_bg.svg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -110,7 +111,6 @@
     align-items: center;
 
     &__wrapper {
-
         display: flex;
         align-items: center;
         max-width: 1440px;
@@ -221,7 +221,7 @@
             }
 
             p {
-                font-family: 'e-Ukraine';
+                font-family: "e-Ukraine";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -244,7 +244,7 @@
         }
 
         .date {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
@@ -255,7 +255,7 @@
         }
 
         p {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -320,7 +320,7 @@
         max-width: 628px;
 
         h1 {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 500;
             font-size: 32px;
@@ -331,7 +331,7 @@
         }
 
         p {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
@@ -351,7 +351,7 @@
 
     &__title {
         h2 {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 700;
             font-size: 32px;
@@ -372,7 +372,7 @@
         // margin-right: 126px;
 
         p {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
@@ -394,7 +394,7 @@
 
     &__join {
         h3 {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 500;
             font-size: 28px;
@@ -426,7 +426,7 @@
     padding-top: 72px;
 
     h2 {
-        font-family: 'e-Ukraine';
+        font-family: "e-Ukraine";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -475,13 +475,13 @@
         }
 
         &-date {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
             line-height: 58px;
             letter-spacing: 0.02em;
-            color: #FFD249;
+            color: #ffd249;
             margin-right: 50px;
             min-width: 161px;
         }
@@ -494,7 +494,7 @@
 
         .paragraph {
             p {
-                font-family: 'e-Ukraine';
+                font-family: "e-Ukraine";
                 font-style: normal;
                 font-weight: 300;
                 font-size: 16px;
@@ -506,7 +506,7 @@
         }
 
         p {
-            font-family: 'e-Ukraine';
+            font-family: "e-Ukraine";
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
@@ -924,7 +924,6 @@
             margin-bottom: 50px;
             padding-bottom: 36px;
 
-
             &-date {
                 margin-bottom: 36px;
             }
@@ -959,7 +958,7 @@
 
             .paragraph {
                 p {
-                    font-family: 'e-Ukraine';
+                    font-family: "e-Ukraine";
                     font-style: normal;
                     font-weight: 300;
                     font-size: 16px;
