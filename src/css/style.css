@@ -2163,6 +2163,7 @@ body {
 }
 
 .feedback {
+  position: relative;
   margin-bottom: 100px;
 }
 
@@ -2174,7 +2175,7 @@ body {
   display: flex;
 }
 
-.feedback .container img {
+.feedback .container .feedback__bg {
   width: 559px;
   height: 506px;
 }
@@ -2218,6 +2219,10 @@ body {
   margin-left: 0;
   border: 0px solid transparent;
   text-transform: none;
+}
+
+.feedback .modal__img {
+  display: none;
 }
 
 .feedback-input {
@@ -4471,6 +4476,7 @@ body {
 
   .feedback {
     margin-bottom: 100px;
+    position: relative;
   }
 
   .feedback__wrapper {
@@ -4482,9 +4488,7 @@ body {
     display: flex;
   }
 
-  .feedback .container img {
-    width: 559px;
-    height: 506px;
+  .feedback .container .feedback__bg {
     display: none;
   }
 
@@ -4507,50 +4511,6 @@ body {
     display: none;
   }
 
-  .feedback .container .modal {
-    z-index: 1000;
-    height: 100vh;
-    position: fixed;
-    inset: 0;
-    background: rgba(188, 188, 188, 0.3);
-    padding: 15px;
-    cursor: pointer;
-    display: none;
-  }
-
-  .feedback .container .modal__main {
-    position: relative;
-    max-width: 390px;
-    width: 100%;
-    min-height: 220px;
-    background-color: #fff;
-    margin: auto;
-    border-radius: 22px;
-    padding: 32px;
-    cursor: default;
-  }
-
-  .feedback .container .modal__contant {
-    max-width: 310px;
-  }
-
-  .feedback .container .modal__contant h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #343434;
-  }
-
-  .feedback .container .modal__img {
-    display: flex;
-    margin: 0 auto;
-    height: 60px;
-    width: 60px;
-    margin-bottom: 16px;
-  }
-
   .feedback .form {
     width: inherit;
     height: inherit;
@@ -4559,6 +4519,62 @@ body {
   .feedback .form .button {
     margin-bottom: 64px;
     border: 0px solid transparent;
+  }
+
+  .feedback .modal {
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    cursor: pointer;
+    display: none;
+    overflow-y: hidden;
+  }
+
+  .feedback .modal__main {
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 22px;
+    padding: 32px;
+    cursor: default;
+    overflow-y: hidden;
+  }
+
+  .feedback .modal__contant {
+    margin: 0 auto;
+    max-width: 310px;
+  }
+
+  .feedback .modal__contant .thanks-message-visible {
+    display: none;
+  }
+
+  .feedback .modal__contant h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #343434;
+  }
+
+  .feedback .modal__img {
+    display: flex;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 16px;
+  }
+
+  .feedback .modal-visible {
+    display: flex;
+    opacity: 1;
+    transition: all 0.3s;
   }
 
   .feedback-input {
