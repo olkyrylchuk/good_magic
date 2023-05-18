@@ -6,10 +6,8 @@ let down = document.querySelector(".aboutus__arrow-down");
 let pDown = document.querySelector(".projects__arrow-down");
 let rotate = document.querySelector(".rotate");
 let mass = document.querySelector(".thanks-message");
-const sendMail = document.getElementById("sendMail");
+
 const modalElem = document.querySelector(".modal");
-const burger = document.querySelector(".header__burger");
-const close = document.querySelector(".header__close");
 
 menuBtn.addEventListener("click", function () {
     menuBtn.classList.toggle("active");
@@ -24,12 +22,6 @@ pDown.addEventListener("click", function () {
     pDown.classList.toggle("rotate");
 });
 
-// виводить повідомлення після відправки контактної форми
-sendMail.addEventListener("click", function () {
-    mass.classList.add("thanks-message-visible");
-    modalElem.classList.add("modal-visible");
-});
-
 document.addEventListener("click", (e) => {
     // const withinBoundaries = e.composedPath().includes(modalElem);
     const target = e.target;
@@ -41,13 +33,17 @@ document.addEventListener("click", (e) => {
     }
 });
 
-// заміна іконки бургер на хрестик
+var burger = document.querySelector(".header__burger");
+var close = document.querySelector(".header__close");
+
 burger.addEventListener("click", function () {
+    console.log("ok");
     burger.style.display = "none";
     close.style.display = "flex";
 });
 
 close.addEventListener("click", function () {
+    console.log("close");
     close.style.display = "none";
     burger.style.display = "flex";
 });
