@@ -10,15 +10,15 @@
 // transition: opacity 0.3s ease-in-out;
 // `;
 
-const closeModal = (event) => {
-    const target = event.target;
-    if (target === modalElem) {
-        modalElem.style.opacity = 0;
-        setTimeout(() => {
-            modalElem.style.visibility = "hidden";
-        }, 300);
-    }
-};
+// const closeModal = (event) => {
+//     const target = event.target;
+//     if (target === modalElem) {
+//         modalElem.style.opacity = 0;
+//         setTimeout(() => {
+//             modalElem.style.visibility = "hidden";
+//         }, 300);
+//     }
+// };
 
 // const openModal = () => {
 //     modalElem.style.visibility = "visible";

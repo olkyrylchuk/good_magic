@@ -141,6 +141,10 @@ body {
   display: none;
 }
 
+.header-nav .header__close {
+  display: none;
+}
+
 .header-nav-item {
   min-width: 538px;
 }
@@ -2517,6 +2521,12 @@ body {
 
   .header__mobile .header__burger {
     display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__mobile .header__close {
+    display: none;
     width: 24px;
     height: 24px;
   }

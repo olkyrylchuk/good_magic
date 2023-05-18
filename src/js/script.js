@@ -6,8 +6,10 @@ let down = document.querySelector(".aboutus__arrow-down");
 let pDown = document.querySelector(".projects__arrow-down");
 let rotate = document.querySelector(".rotate");
 let mass = document.querySelector(".thanks-message");
-let sendMail = document.getElementById("sendMail");
+const sendMail = document.getElementById("sendMail");
 const modalElem = document.querySelector(".modal");
+const burger = document.querySelector(".header__burger");
+const close = document.querySelector(".header__close");
 
 menuBtn.addEventListener("click", function () {
     menuBtn.classList.toggle("active");
@@ -20,6 +22,34 @@ down.addEventListener("click", function () {
 pDown.addEventListener("click", function () {
     projSubmenu.classList.toggle("proj__submenu__active");
     pDown.classList.toggle("rotate");
+});
+
+// виводить повідомлення після відправки контактної форми
+sendMail.addEventListener("click", function () {
+    mass.classList.add("thanks-message-visible");
+    modalElem.classList.add("modal-visible");
+});
+
+document.addEventListener("click", (e) => {
+    // const withinBoundaries = e.composedPath().includes(modalElem);
+    const target = e.target;
+    if (target === modalElem) {
+        modalElem.style.opacity = 0;
+        setTimeout(() => {
+            location.reload();
+        }, 300);
+    }
+});
+
+// заміна іконки бургер на хрестик
+burger.addEventListener("click", function () {
+    burger.style.display = "none";
+    close.style.display = "flex";
+});
+
+close.addEventListener("click", function () {
+    close.style.display = "none";
+    burger.style.display = "flex";
 });
 
 // блок відповідає за розкріття відгуків
@@ -43,20 +73,3 @@ pDown.addEventListener("click", function () {
 // opinanItemTherd.addEventListener("click", function () {
 //     opinanItemThree.classList.toggle("opinions-text__resize");
 // });
-
-// виводить повідомлення після відправки контактної форми
-sendMail.addEventListener("click", function () {
-    mass.classList.add("thanks-message-visible");
-    modalElem.classList.add("modal-visible");
-});
-
-document.addEventListener("click", (e) => {
-    // const withinBoundaries = e.composedPath().includes(modalElem);
-    const target = e.target;
-    if (target === modalElem) {
-        modalElem.style.opacity = 0;
-        setTimeout(() => {
-            location.reload();
-        }, 300);
-    }
-});

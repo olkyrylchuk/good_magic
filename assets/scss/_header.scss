@@ -31,6 +31,10 @@
             display: none;
         }
 
+        .header__close {
+            display: none;
+        }
+
         &-item {
             min-width: 538px;
 
@@ -90,6 +94,7 @@
         }
     }
 }
+
 @media (min-width: 431px) and (max-width: 991px) {
     /* стили для sm-устройств */
 }
@@ -192,6 +197,12 @@
 
             .header__burger {
                 display: block;
+                width: 24px;
+                height: 24px;
+            }
+
+            .header__close {
+                display: none;
                 width: 24px;
                 height: 24px;
             }

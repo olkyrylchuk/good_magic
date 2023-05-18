@@ -1,12 +1,13 @@
-var element = document.getElementById("userPhone");
-var maskOptions = {
+let element = document.getElementById("userPhone");
+let maskOptions = {
     mask: "+38 000 000 00 00",
     lazy: true,
 };
-var mask = new IMask(element, maskOptions);
 
-var element2 = document.getElementById("userMail");
-var maskOptions2 = {
+let mask = new IMask(element, maskOptions);
+
+let element2 = document.getElementById("userMail");
+let maskOptions2 = {
     mask: function (value) {
         if (/^[a-z0-9_\.-]+$/.test(value)) return true;
         if (/^[a-z0-9_\.-]+@$/.test(value)) return true;
@@ -20,4 +21,4 @@ var maskOptions2 = {
     },
     lazy: false,
 };
-var mask2 = new IMask(element2, maskOptions2);
+let mask2 = new IMask(element2, maskOptions2);
