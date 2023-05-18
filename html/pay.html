@@ -11,6 +11,9 @@
     <link type="image/x-icon" href="../src/img/jpg/favicon/favicon.ico" rel="shortcut icon" />
     <link rel="stylesheet" href="../libs/reset.css" />
     <link rel="stylesheet" href="../src/css/style.min.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="module" src="../index.js"></script>
 </head>
 
 <body>
@@ -124,29 +127,62 @@
                             <p class="contact__info-first">
                                 Найменування організації
                             </p>
-                            <p>БО “Благодійний фонд “Магія добра”</p>
+                            <div class="copy">
+                                <p id="name_id">
+                                    БО “Благодійний фонд “Магія добра”
+                                </p>
+                                <div class="">
+                                    <img class="copy__img" data-fromid="name_id" data-from="innerHTML"
+                                        src="../src/img/svg/Icons/copy.svg" alt="" />
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <p class="contact__info-first">ЄДРПОУ</p>
-                            <p>44230076</p>
+                            <div class="copy">
+                                <p id="code_id">44230076</p>
+                                <div class="">
+                                    <img class="copy__img" data-fromid="code_id" data-from="innerHTML"
+                                        src="../src/img/svg/Icons/copy.svg" alt="" />
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <p class="contact__info-first">Назва банку</p>
-                            <p>
-                                АТ КБ "ПРИВАТБАНК" <br />
-                                (ЄДРПОУ банку 14360570, код банку 352479)
-                            </p>
+                            <div class="copy">
+                                <p id="bank_id">
+                                    АТ КБ "ПРИВАТБАНК"<br />(ЄДРПОУ банку
+                                    14360570, код банку 352479)
+                                </p>
+                                <div class="">
+                                    <img class="copy__img" data-fromid="bank_id" data-from="innerHTML"
+                                        src="../src/img/svg/Icons/copy.svg" alt="" />
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <p class="contact__info-first">
-                                Рахунок отримувача <br />
-                                у форматі IBAN
+                                Рахунок отримувача <br />у форматі IBAN
                             </p>
-                            <p>UA533524790000026005052232352</p>
+                            <div class="copy">
+                                <p id="iban_id">
+                                    UA533524790000026005052232352
+                                </p>
+                                <div class="">
+                                    <img class="copy__img" data-fromid="iban_id" data-from="innerHTML"
+                                        src="../src/img/svg/Icons/copy.svg" alt="" />
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <p class="contact__info-first">Валюта</p>
-                            <p>Гривня</p>
+                            <div class="copy">
+                                <p id="currency_id">Гривня</p>
+                                <div class="">
+                                    <img class="copy__img" data-fromid="currency_id" data-from="innerHTML"
+                                        src="../src/img/svg/Icons/copy.svg" alt="" />
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -186,6 +222,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://dwweb.ru/js/dw_copy.js"></script>
     <script src="../src/js/script.js"></script>
 </body>
 
