@@ -62,18 +62,20 @@ $(".n-slider").slick({
 });
 
 $(".news-block").slick({
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    dots: true,
+    dots: false,
     responsive: [
         {
             breakpoint: 430,
             settings: {
+                autoplay: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
+                dots: true,
             },
         },
     ],
