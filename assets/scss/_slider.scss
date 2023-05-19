@@ -1,0 +1,33 @@
+.slick-next:before {
+  content: ">";
+  color: var(--color-secondary);
+  font-family: inherit;
+}
+
+.slick-prev:before {
+  content: "<";
+  color: var(--color-secondary);
+  font-family: inherit;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
