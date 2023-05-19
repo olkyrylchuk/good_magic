@@ -37,13 +37,11 @@ var burger = document.querySelector(".header__burger");
 var close = document.querySelector(".header__close");
 
 burger.addEventListener("click", function () {
-    console.log("ok");
     burger.style.display = "none";
     close.style.display = "flex";
 });
 
 close.addEventListener("click", function () {
-    console.log("close");
     close.style.display = "none";
     burger.style.display = "flex";
 });

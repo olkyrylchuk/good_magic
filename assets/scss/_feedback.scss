@@ -57,11 +57,11 @@
     }
 
     .modal {
-        &__main {}
-
-        &__contant {}
-
         &__img {
+            display: none;
+        }
+
+        h3 {
             display: none;
         }
     }

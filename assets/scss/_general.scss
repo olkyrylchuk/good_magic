@@ -30,6 +30,8 @@ body {
     border-radius: 4px;
     font-weight: 700;
     cursor: pointer;
+    text-decoration: none;
+
 }
 
 .button-yellow {
@@ -39,7 +41,7 @@ body {
     align-items: center;
     margin: 0 auto;
     border: none;
-    background: #FFD249;
+    color: var(--color-secondary);
     border-radius: 4px;
     background-color: var(--color-primary);
     border: none;
