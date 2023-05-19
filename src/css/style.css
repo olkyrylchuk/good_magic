@@ -515,12 +515,11 @@ body {
 }
 
 .news-block-item {
-  max-width: 32%;
+  max-width: 30%;
 }
 
 .news-block-item img {
   margin-bottom: 32px;
-  width: 100%;
 }
 
 .news-block-item .label {
