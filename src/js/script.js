@@ -23,7 +23,6 @@ pDown.addEventListener("click", function () {
 });
 
 document.addEventListener("click", (e) => {
-    // const withinBoundaries = e.composedPath().includes(modalElem);
     const target = e.target;
     if (target === modalElem) {
         modalElem.style.opacity = 0;

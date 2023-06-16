@@ -306,7 +306,7 @@ body {
   border-bottom: 2px solid var(--color-secondary);
 }
 
-.projects .container h2 {
+.projects h2 {
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
@@ -445,6 +445,7 @@ body {
   color: #343434;
   margin-bottom: 56px;
   text-align: left;
+  padding-top: 40px;
 }
 
 .partners .join-info {
