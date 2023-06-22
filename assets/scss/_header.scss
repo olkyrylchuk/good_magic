@@ -36,7 +36,10 @@
         }
 
         &-item {
-            min-width: 538px;
+            max-width: 538px;
+            min-width: inherit;
+            width: 100%;
+            margin-right: 30px;
 
             ul {
                 display: flex;
@@ -87,17 +90,46 @@
     }
 }
 
-@media (min-width: 991px) and (max-width: 1200px) {
+@media only screen and (max-width: 991px) {
+    .header-nav {
+        margin-right: 20px;
+
+        img {
+            margin-right: 120px;
+        }
+    }
+
+    .button {
+        // padding: 16px 30px;
+        font-size: 18px;
+    }
+
     .home-text-img {
         img {
-            width: 170px;
+            width: 120px;
+        }
+    }
+
+    .home-text-title {
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .home-text {
+        .home-img {
+            img {
+                width: 550px;
+            }
         }
     }
 }
 
-@media (min-width: 431px) and (max-width: 991px) {
-    /* стили для sm-устройств */
-}
+
 
 @media only screen and (max-width: 430px) {
     .header {
@@ -227,6 +259,7 @@
             margin-right: auto;
             overflow-x: hidden;
             overflow-y: hidden;
+            min-width: inherit;
 
             .aboutus {
                 display: flex;

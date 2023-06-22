@@ -147,7 +147,10 @@ body {
 }
 
 .header-nav-item {
-  min-width: 538px;
+  max-width: 538px;
+  min-width: inherit;
+  width: 100%;
+  margin-right: 30px;
 }
 
 .header-nav-item ul {
@@ -2290,91 +2293,8 @@ body {
   border: 1px solid var(--color-secondary);
 }
 
-.header {
-  height: 176px;
-  background-color: var(--color-white);
-  border-bottom: 2px solid var(--color-secondary);
-}
-
-.header .container {
-  max-width: 1270px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.header .wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 72px 15px 32px;
-  align-items: center;
-}
-
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 784px;
-}
-
-.header-nav .header__logo-mobile {
-  display: none;
-}
-
-.header-nav .header__burger {
-  display: none;
-}
-
-.header-nav-item {
-  min-width: 538px;
-}
-
-.header-nav-item ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-nav-item ul li a {
-  text-decoration: none;
-  color: var(--color-secondary);
-  font-family: "e-Ukraine";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0.01em;
-  transition: 0.2s ease;
-}
-
-.header-nav-item ul li a:hover {
-  color: var(--color-primary);
-  transition: 0.2s ease;
-}
-
-.header-nav img {
-  width: 72px;
-  height: 72px;
-  margin-right: 136px;
-}
-
-.header-button {
-  border: 2px soled #343434;
-}
-
-.header .submenu {
-  display: none;
-}
-
-.header .proj__submenu {
-  display: none;
-}
-
-.header .aboutus__arrow-down,
-.header .projects__arrow-down {
-  display: none;
-}
-
 .fault {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .fault .container {
@@ -2445,6 +2365,36 @@ body {
   opacity: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 991px) {
+  .header-nav {
+    margin-right: 20px;
+  }
+
+  .header-nav img {
+    margin-right: 120px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+  .home-text-img img {
+    width: 120px;
+  }
+
+  .home-text-title h2 {
+    font-size: 30px;
+  }
+
+  .home-text-title p {
+    font-size: 14px;
+  }
+
+  .home-text .home-img img {
+    width: 550px;
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -2585,6 +2535,7 @@ body {
     margin-right: auto;
     overflow-x: hidden;
     overflow-y: hidden;
+    min-width: inherit;
   }
 
   .header-nav-item .aboutus {
@@ -2662,16 +2613,6 @@ body {
     /* left: -25px; */
     right: auto;
   }
-}
-
-@media (min-width: 991px) and (max-width: 1200px) {
-  .home-text-img img {
-    width: 170px;
-  }
-}
-
-@media (min-width: 431px) and (max-width: 991px) {
-  /* стили для sm-устройств */
 }
 
 @media (min-width: 320px) and (max-width: 430px) {
