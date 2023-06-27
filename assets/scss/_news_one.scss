@@ -3,7 +3,8 @@
 
     &-wrapper {
         display: flex;
-        width: 1132px;
+        justify-content: space-between;
+        // width: 1132px;
     }
 
     &-text {
@@ -44,6 +45,7 @@
 
         img {
             width: 100%;
+            object-fit: cover;
             border-radius: 44px 0;
         }
     }

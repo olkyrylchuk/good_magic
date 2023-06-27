@@ -23,6 +23,14 @@
             margin: 0 auto;
         }
     }
+
+    .slick-prev {
+        left: -15px;
+    }
+
+    .slick-next {
+        right: -15px;
+    }
 }
 
 @media only screen and (max-width: 430px) {

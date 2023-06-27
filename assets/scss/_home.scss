@@ -46,16 +46,17 @@
         }
 
         &-img {
+            margin-right: 5px;
+
             img {
-                margin-right: -3px;
+                margin-right: -5px;
+                width: 32%;
             }
         }
 
         .home-img {
             img {
-                // max-height: 472px;
                 max-width: 584px;
-                // width: 100%;
                 height: auto;
                 border-radius: 60px 60px 60px 0
             }
