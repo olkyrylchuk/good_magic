@@ -96,8 +96,52 @@
     .visible {
         display: flex;
     }
+}
+
+@media only screen and (max-width: 1080px) {
+    .allprojects {
 
 
+        &__wrapper {
+            ul {}
+        }
+
+        &__wrap {
+
+
+            &:not(:last-child) {}
+
+            .project__firstside {
+
+
+                .project__status {}
+
+                .completed {}
+
+                h2 {}
+            }
+
+            .project__main {
+
+
+                p {}
+
+                a {}
+            }
+
+            .project__image {
+                .img {}
+            }
+        }
+
+        .unvisible {
+            display: none;
+        }
+
+        .visible {
+            display: flex;
+        }
+    }
 }
 
 @media (min-width: 320px) and (max-width: 430px) {

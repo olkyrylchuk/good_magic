@@ -13,7 +13,8 @@
         // padding: 0 10px;
 
         .join-title {
-            min-width: 660px;
+            max-width: 660px;
+            width: 100%;
 
             h5 {
                 font-weight: 500;
@@ -26,6 +27,20 @@
 
         .button-yellow {
             border: 2px solid #343434;
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .join {
+        padding: 48px 12px;
+    }
+
+    .join-wrapper {
+        .join-title {
+            h5 {
+                font-size: 22px;
+            }
         }
     }
 }

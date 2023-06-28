@@ -212,10 +212,12 @@ body {
 .home-text {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .home-text-title {
-  max-width: 622px;
+  max-width: 50%;
+  width: 100%;
 }
 
 .home-text-title h2 {
@@ -257,6 +259,7 @@ body {
 
 .home-text .home-img img {
   max-width: 584px;
+  width: 100%;
   height: auto;
   border-radius: 60px 60px 60px 0;
 }
@@ -283,6 +286,7 @@ body {
 .about-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .about-wrapper-text {
@@ -430,7 +434,8 @@ body {
 }
 
 .join-wrapper .join-title {
-  min-width: 660px;
+  max-width: 660px;
+  width: 100%;
 }
 
 .join-wrapper .join-title h5 {
@@ -489,6 +494,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.partners-logo img {
+  width: 10%;
 }
 
 .news {
@@ -627,10 +636,13 @@ body {
 
 .opinions-block-item {
   position: relative;
-  max-width: 33%;
+  max-width: 32%;
   border: 2px solid var(--color-primary);
   padding: 48px 20px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .opinions-block-item-title {
@@ -1464,8 +1476,6 @@ body {
 }
 
 .joinus .container h2 {
-  font-family: "e-Ukraine";
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
@@ -1479,6 +1489,10 @@ body {
   justify-content: space-between;
 }
 
+.joinus__blocks-item {
+  max-width: 33%;
+}
+
 .joinus__blocks-item a {
   text-transform: none;
 }
@@ -1489,9 +1503,8 @@ body {
   text-align: center;
 }
 
-.joinus__blocks-item .block-wrap img {
-  max-height: 100%;
-  margin-bottom: 32px;
+.joinus__blocks-item .block-wrap .button {
+  padding: 16px 40px;
 }
 
 .back {
@@ -2387,6 +2400,59 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (max-width: 1080px) {
+  .projects-wrapper img {
+    margin-left: 10px;
+  }
+
+  .projects-row__first h3 {
+    font-size: 24px;
+  }
+
+  .projects-row__second p {
+    font-size: 14px;
+  }
+
+  .join {
+    padding: 48px 12px;
+  }
+
+  .join-wrapper .join-title h5 {
+    font-size: 22px;
+  }
+
+  .opinions-block-item {
+    width: 33%;
+  }
+
+  .opinions-block-item-title h5 {
+    font-size: 18px;
+  }
+
+  .opinions-block-item-title p {
+    font-size: 12px;
+  }
+
+  .opinions-block-item-wrapper img {
+    width: 30%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .opinions-text p {
+    font-size: 13px;
+  }
+
+  .allprojects .unvisible {
+    display: none;
+  }
+
+  .allprojects .visible {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .header-nav {
     margin-right: 20px;
@@ -2394,6 +2460,10 @@ body {
 
   .header-nav img {
     margin-right: 120px;
+  }
+
+  .header-nav-item ul li a {
+    font-size: 15px;
   }
 
   .button {
@@ -2412,8 +2482,32 @@ body {
     font-size: 14px;
   }
 
+  .home-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .home-text .home-img img {
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .header-nav img {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .about-wrapper-text p {
+    font-size: 14px;
+  }
+
+  .projects-row__first h3 {
+    font-size: 22px;
+  }
+
+  .projects-row__second p {
+    font-size: 12px;
   }
 }
 
@@ -2654,7 +2748,7 @@ body {
   }
 
   .home-text-title {
-    margin-bottom: 32px;
+    max-width: 100%;
   }
 
   .home-text-title h2 {
@@ -2684,7 +2778,7 @@ body {
 
   .home-text-img img {
     padding: 0;
-    width: 33.33%;
+    width: 35%;
     height: auto;
   }
 
@@ -2731,7 +2825,6 @@ body {
 
   .about-wrapper-text p {
     padding-bottom: 0;
-    max-width: 358px;
   }
 
   .about-wrapper-img img {
@@ -2762,6 +2855,8 @@ body {
     border-radius: 44px 44px 44px 0;
     margin-top: 55px;
     margin-bottom: 36px;
+    max-width: inherit;
+    width: inherit;
   }
 
   .projects-row {
@@ -2823,7 +2918,6 @@ body {
     font-size: 20px;
     line-height: 28px;
     color: #343434;
-    margin-bottom: 40px;
   }
 
   .projects-two {
@@ -3060,6 +3154,7 @@ body {
   .opinions-block-item {
     position: relative;
     max-width: 388px;
+    width: 100%;
     border: 2px solid var(--color-primary);
     padding: 48px 10px;
   }
@@ -3784,6 +3879,10 @@ body {
     line-height: 36px;
     letter-spacing: 0.02em;
     margin-bottom: 24px;
+  }
+
+  .joinus__blocks-item {
+    max-width: inherit;
   }
 
   .joinus__blocks-item a {

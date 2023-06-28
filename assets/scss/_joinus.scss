@@ -4,8 +4,6 @@
 
     .container {
         h2 {
-            font-family: 'e-Ukraine';
-            font-style: normal;
             font-weight: 700;
             font-size: 32px;
             line-height: 40px;
@@ -20,6 +18,8 @@
         justify-content: space-between;
 
         &-item {
+            max-width: 33%;
+
             a {
                 text-transform: none;
             }
@@ -27,13 +27,11 @@
             .block-wrap {
                 display: flex;
                 flex-direction: column;
-
-                img {
-                    max-height: 100%;
-                    margin-bottom: 32px;
-                }
-
                 text-align: center;
+
+                .button {
+                    padding: 16px 40px;
+                }
             }
         }
     }
@@ -56,6 +54,8 @@
 
         &__blocks {
             &-item {
+                max-width: inherit;
+
                 a {
                     text-transform: none;
                     font-weight: 700;

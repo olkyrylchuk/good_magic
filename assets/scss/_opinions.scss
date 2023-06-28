@@ -45,10 +45,13 @@
 
         &-item {
             position: relative;
-            max-width: 33%;
+            max-width: 32%;
             border: 2px solid var(--color-primary);
             padding: 48px 20px;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             &-title {
                 margin-bottom: 24px;
@@ -138,6 +141,39 @@
     }
 }
 
+@media only screen and (max-width: 1080px) {
+    .opinions {
+        &-block {
+            &-item {
+                width: 33%;
+
+                &-title {
+                    h5 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+
+                &-wrapper {
+                    img {
+                        width: 30%;
+                        height: fit-content;
+                    }
+                }
+            }
+        }
+
+        &-text {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
 @media (min-width: 320px) and (max-width: 430px) {
     .opinions {
         padding-top: 36px;
@@ -174,6 +210,7 @@
             &-item {
                 position: relative;
                 max-width: 388px;
+                width: 100%;
                 border: 2px solid var(--color-primary);
                 padding: 48px 10px;
 
