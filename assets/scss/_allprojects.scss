@@ -98,39 +98,67 @@
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1230px) {
     .allprojects {
-
-
-        &__wrapper {
-            ul {}
-        }
-
         &__wrap {
-
-
-            &:not(:last-child) {}
-
             .project__firstside {
+                width: 290px;
+                margin-right: 20px;
 
-
-                .project__status {}
-
-                .completed {}
-
-                h2 {}
+                h2 {
+                    font-size: 25px;
+                }
             }
 
             .project__main {
-
-
-                p {}
-
-                a {}
+                margin-right: 20px;
             }
 
             .project__image {
-                .img {}
+                .img {
+                    width: 100%;
+                    height: fit-content;
+                }
+            }
+        }
+
+        .unvisible {
+            display: none;
+        }
+
+        .visible {
+            display: flex;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .allprojects {
+        &__wrap {
+            .project__firstside {
+                width: 290px;
+                margin-right: 20px;
+
+                h2 {
+                    font-size: 22px;
+                }
+            }
+
+            .project__main {
+                margin-right: 20px;
+
+                &__text {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .project__image {
+                .img {
+                    width: 100%;
+                    height: fit-content;
+                }
             }
         }
 
