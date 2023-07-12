@@ -51,9 +51,41 @@
 
         img {
             width: 10%;
+            height: 100%;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+            img {
+                margin: 0 auto;
+                display: block;
+                max-height: 124px;
+                width: auto;
+            }
         }
     }
 }
+
+// .foundation {
+//     .partners {
+//         &-slider {
+//             display: flex;
+//             justify-content: space-between;
+//             margin-bottom: 50px;
+
+//             img {
+//                 width: 65%;
+//                 height: 100%;
+//             }
+//         }
+//     }
+// }
 
 @media (min-width: 320px) and (max-width: 430px) {
     .partners {
