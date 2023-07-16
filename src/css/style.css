@@ -1927,6 +1927,8 @@ body {
 }
 
 .news__hub-wrapper-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 22px 22px 0 0;
 }
 
@@ -4835,7 +4837,8 @@ body {
     align-items: flex-end;
     border-radius: 22px 22px 22px 0px;
     max-width: 100%;
-    height: fit-contentd;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   .feedback {
