@@ -4837,8 +4837,8 @@ body {
     align-items: flex-end;
     border-radius: 22px 22px 22px 0px;
     max-width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    max-height: inherit;
+    height: auto;
   }
 
   .feedback {

@@ -355,8 +355,9 @@
                     align-items: flex-end;
                     border-radius: 22px 22px 22px 0px;
                     max-width: 100%;
-                    // height: fit-contentd;
-                    object-fit: contain;
+                    max-height: inherit;
+                    height: auto;
+
                 }
             }
         }
