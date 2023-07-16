@@ -1,15 +1,15 @@
 $(".partners__slider").slick({
     autoplay: true,
-    slidesToShow: 6,
+    slidesToShow: 7,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: false,
     responsive: [
         {
             breakpoint: 1440,
             settings: {
                 autoplay: true,
-                slidesToShow: 6,
+                slidesToShow: 7,
                 slidesToScroll: 1,
                 arrows: false,
                 dots: false,
@@ -18,7 +18,7 @@ $(".partners__slider").slick({
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,
