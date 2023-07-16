@@ -2407,36 +2407,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (max-width: 1230px) {
-  .allprojects__wrap .project__firstside {
-    width: 290px;
-    margin-right: 20px;
-  }
-
-  .allprojects__wrap .project__firstside h2 {
-    font-size: 25px;
-  }
-
-  .allprojects__wrap .project__main {
-    margin-right: 20px;
-  }
-
-  .allprojects__wrap .project__image .img {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .allprojects .unvisible {
-    display: none;
-  }
-
-  .allprojects .visible {
-    display: flex;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   .timeline__wrapper {
     height: 300px;
@@ -2655,38 +2625,6 @@ body {
 
   .activity__block p {
     font-size: 14px;
-  }
-
-  .allprojects__wrap .project__firstside {
-    width: 290px;
-    margin-right: 20px;
-  }
-
-  .allprojects__wrap .project__firstside h2 {
-    font-size: 22px;
-  }
-
-  .allprojects__wrap .project__main {
-    margin-right: 20px;
-  }
-
-  .allprojects__wrap .project__main__text p {
-    font-size: 14px;
-  }
-
-  .allprojects__wrap .project__image .img {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .allprojects .unvisible {
-    display: none;
-  }
-
-  .allprojects .visible {
-    display: flex;
   }
 }
 
