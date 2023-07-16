@@ -3094,6 +3094,7 @@ body {
     margin-bottom: 36px;
     max-width: inherit;
     width: inherit;
+    height: auto;
   }
 
   .projects-row {
