@@ -47,6 +47,8 @@
 
 .news__block-items {
     display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
     grid-template-areas: "el-1 el-1 el-2 el-2"
         "el-1 el-1  el-3 el-3"
         "el-4 el-5 el-6 el-7";
@@ -114,6 +116,12 @@
                 letter-spacing: 0.02em;
                 color: #343434;
                 margin-bottom: 16px;
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
             }
 
             .two {
@@ -125,6 +133,12 @@
                 letter-spacing: 0.02em;
                 color: #343434;
                 margin-bottom: 16px;
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
             }
 
             span {

@@ -98,39 +98,39 @@
     }
 }
 
-// @media only screen and (max-width: 1230px) {
-//     .allprojects {
-//         &__wrap {
-//             .project__firstside {
-//                 width: 290px;
-//                 margin-right: 20px;
+@media only screen and (max-width: 1230px) {
+    .allprojects {
+        &__wrap {
+            .project__firstside {
+                width: 290px;
+                margin-right: 20px;
 
-//                 h2 {
-//                     font-size: 25px;
-//                 }
-//             }
+                h2 {
+                    font-size: 25px;
+                }
+            }
 
-//             .project__main {
-//                 margin-right: 20px;
-//             }
+            .project__main {
+                margin-right: 20px;
+            }
 
-//             .project__image {
-//                 .img {
-//                     width: 100%;
-//                     height: fit-content;
-//                 }
-//             }
-//         }
+            .project__image {
+                .img {
+                    width: 100%;
+                    height: fit-content;
+                }
+            }
+        }
 
-//         .unvisible {
-//             display: none;
-//         }
+        .unvisible {
+            display: none;
+        }
 
-//         .visible {
-//             display: flex;
-//         }
-//     }
-// }
+        .visible {
+            display: flex;
+        }
+    }
+}
 
 // @media only screen and (max-width: 992px) {
 //     .allprojects {

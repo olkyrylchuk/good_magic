@@ -551,6 +551,7 @@ body {
 .news-block-item img {
   margin-bottom: 32px;
   max-width: 99%;
+  width: 100%;
 }
 
 .news-block-item .label {
@@ -1619,6 +1620,8 @@ body {
 
 .news__block-items {
   display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
   grid-template-areas: "el-1 el-1 el-2 el-2" "el-1 el-1  el-3 el-3" "el-4 el-5 el-6 el-7";
   grid-column-gap: 20px;
   grid-row-gap: 30px;
@@ -1682,6 +1685,11 @@ body {
   letter-spacing: 0.02em;
   color: #343434;
   margin-bottom: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .news__block-items .news__block-item .text .two {
@@ -1693,6 +1701,11 @@ body {
   letter-spacing: 0.02em;
   color: #343434;
   margin-bottom: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .news__block-items .news__block-item .text span {
@@ -1847,8 +1860,11 @@ body {
 }
 
 .news__one-text {
-  max-width: 556px;
-  max-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  min-height: 460px;
   margin-right: 72px;
 }
 
@@ -1876,6 +1892,7 @@ body {
   letter-spacing: 0.02em;
   color: #000000;
   padding-right: 51px;
+  margin-bottom: 20px;
 }
 
 .news__one-img {
@@ -2405,6 +2422,36 @@ body {
   opacity: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 1230px) {
+  .allprojects__wrap .project__firstside {
+    width: 290px;
+    margin-right: 20px;
+  }
+
+  .allprojects__wrap .project__firstside h2 {
+    font-size: 25px;
+  }
+
+  .allprojects__wrap .project__main {
+    margin-right: 20px;
+  }
+
+  .allprojects__wrap .project__image .img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .allprojects .unvisible {
+    display: none;
+  }
+
+  .allprojects .visible {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
