@@ -1858,6 +1858,31 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.pagination {
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.pagination__items {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__items a {
+  color: var(--color-secondary);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.pagination__items a.active {
+  background-color: var(--color-primary);
+}
+
+.pagination__items a:hover:not(.active) {
+  background-color: #ddd;
+}
+
 .news__one {
   margin-bottom: 64px;
 }
