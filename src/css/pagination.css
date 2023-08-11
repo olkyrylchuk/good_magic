@@ -1,0 +1,17 @@
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #000;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+}
+
+.page-link {
+  color: var(--color-secondary);
+}
