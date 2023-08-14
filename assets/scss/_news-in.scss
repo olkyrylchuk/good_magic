@@ -46,8 +46,10 @@
 }
 
 .news__block-items {
+    max-width: 1207px;
+    padding: 0 15px;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 24% 24% 24% 24%;
     grid-template-rows: 1fr 1fr 2fr;
     grid-template-areas: "el-1 el-1 el-2 el-2"
         "el-1 el-1  el-3 el-3"
@@ -57,7 +59,6 @@
     margin-bottom: 100px;
 
     .news__block-item {
-
 
         .news__label {
             position: relative;
@@ -167,6 +168,7 @@
     .el-1 {
         grid-area: el-1;
 
+
     }
 
     .el-2 {
@@ -175,6 +177,7 @@
 
         img {
             margin-right: 20px;
+            max-width: 280px;
         }
     }
 
@@ -185,27 +188,58 @@
 
         img {
             margin-right: 20px;
+            max-width: 280px;
         }
     }
 
     .el-4 {
         grid-area: el-4;
+
+        img {
+            max-width: 296px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     .el-5 {
         grid-area: el-5;
+
+        img {
+            max-width: 296px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     .el-6 {
         grid-area: el-6;
+
+        img {
+            max-width: 296px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     .el-7 {
         grid-area: el-7;
+
+        img {
+            max-width: 296px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     .el-8 {
         display: none;
+
+        img {
+            max-width: 296px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
 

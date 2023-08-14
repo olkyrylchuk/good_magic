@@ -103,6 +103,7 @@
     height: 416px;
     background: #f4f4f4;
     background-image: url(../../src/img/jpg/timeline/timeline_bg.webp);
+    background-color: #F4F4F4;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -703,14 +704,423 @@
             &-text {
                 .activity__block-date {
                     margin-right: 15px;
-                    min-width: 148px;
-                    font-size: 44px;
+                    min-width: 120px;
+                    font-size: 35px;
                 }
             }
 
             p {
                 font-size: 14px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .founder {
+        padding-top: 72px;
+
+        &__img {
+            margin-right: 30px;
+        }
+
+        &__text {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .team {
+        &__photo {
+            img {
+                border-radius: 44px 0;
+                margin-bottom: 30px;
+            }
+        }
+
+        .wrapp {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+    }
+
+    .activity {
+        display: block;
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+
+            &-text {
+                // max-width: 1240px;
+                display: flex;
+                justify-content: space-between;
+                min-width: 120px;
+                font-size: 35px;
+            }
+
+            img {
+                border-radius: 44px 44px 44px 0;
+                max-height: 320px;
+                width: 100%;
+                object-fit: contain;
+                margin-top: 30px;
+            }
+
+            .img__04 {
+                border-radius: 0 44px 44px 44px;
+            }
+
+            .img__06 {
+                margin-top: 115px;
+                border-radius: 0 44px 44px 44px;
+            }
+
+            &-date {
+                font-family: "e-Ukraine";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 58px;
+                letter-spacing: 0.02em;
+                color: #ffd249;
+                margin-right: 50px;
+                min-width: 120px;
+            }
+
+            .border {
+                color: #fff;
+                -webkit-text-stroke: #000;
+                -webkit-text-stroke-width: 1px;
+            }
+
+            .paragraph {
+                p {
+                    font-family: "e-Ukraine";
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    margin-right: 30px;
+                }
+            }
+
+            p {
+                font-family: "e-Ukraine";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #343434;
+                margin-right: 30px;
+            }
+        }
+
+        .block-03 {
+            margin-top: -100px;
+        }
+    }
+
+    .timeline__wrapper {
+        height: 290px;
+
+        .timeline__item {
+            .timeline__item-01 {
+                min-width: 26%;
+                padding-left: 100px;
+                font-size: 21px;
+            }
+
+            .timeline__item-02 {
+                min-width: 225px;
+                font-size: 12px;
+                padding-left: 40px;
+            }
+
+            .timeline__item-03 {
+                min-width: 21%;
+                padding-left: 36px;
+                font-size: 21px;
+            }
+
+            .timeline__item-04 {
+                min-width: 270px;
+                padding-left: 30px;
+                font-size: 12px;
+            }
+
+            .timeline__item-05 {
+                min-width: 200px;
+                font-size: 12px;
+            }
+
+            .timeline__item-06 {
+                min-width: 15%;
+                font-size: 21px;
+            }
+
+            .timeline__item-07 {
+                width: 154px;
+                font-size: 12px;
+            }
+
+            .timeline__item-08 {
+                min-width: 17%;
+                font-size: 21px;
+                padding-left: 35px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .timeline {
+        min-height: 1205px;
+        height: 100%;
+        position: relative;
+        background: inherit;
+        background-image: url(../img/mobile_img/svg/timeline_bg_mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        display: flex;
+        align-items: center;
+
+        &__wrapper {
+            display: flex;
+
+            flex-direction: inherit;
+            justify-content: inherit;
+
+            align-items: center;
+            max-width: 430px;
+            margin: 0 auto;
+
+            .timeline__item {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                width: inherit;
+
+                .timeline__item-01 {
+                    position: absolute;
+                    top: -457px;
+                    left: 87px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    padding-left: 0;
+                }
+
+                .timeline__item-02 {
+                    position: absolute;
+                    min-width: inherit;
+                    max-width: 169px;
+                    top: -93px;
+                    left: -193px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    padding-left: 0;
+                }
+
+                .timeline__item-03 {
+                    position: absolute;
+                    min-width: inherit;
+                    top: 76px;
+                    left: 73px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    padding-left: 0;
+                }
+
+                .timeline__item-04 {
+                    position: absolute;
+                    min-width: inherit;
+                    max-width: 156px;
+                    top: 425px;
+                    left: -187px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    padding-left: 0;
+                }
+
+                .timeline__item-05 {
+                    position: absolute;
+                    min-width: 208px;
+                    top: -355px;
+                    left: -17px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    padding-left: 0;
+                }
+
+                .timeline__item-06 {
+                    position: absolute;
+                    top: -187px;
+                    left: -187px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    padding-left: 0;
+                }
+
+                .timeline__item-07 {
+                    position: absolute;
+                    min-width: 163px;
+                    top: 205px;
+                    left: -18px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    padding-left: 0;
+                }
+
+                .timeline__item-08 {
+                    position: absolute;
+                    top: 343px;
+                    left: -187px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    padding-left: 0;
+                }
+
+                .date {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.04em;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+
+                img {
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                    max-width: 208px;
+                }
+            }
+        }
+
+        &__item {
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                display: inline-block;
+            }
+
+            .date {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: 0.04em;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+
+    .timeline__item-img {
+        position: relative;
+
+        &-01 {
+            position: absolute;
+            left: -60px;
+            top: -480px;
+        }
+
+        &-02 {
+            position: absolute;
+            left: -60px;
+            top: -211px;
+        }
+
+        &-03 {
+            position: absolute;
+            left: -60px;
+            top: 55px;
+        }
+
+        &-04 {
+            position: absolute;
+            left: -60px;
+            top: 322px;
+        }
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    .foundation {
+        &__link {
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                        padding: 16px 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .founder {
+        padding-top: 72px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .team {
+        &__photo {
+            img {
+                border-radius: 44px 0;
+                margin-bottom: 30px;
+            }
+        }
+
+        .wrapp {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
         }
     }
 }

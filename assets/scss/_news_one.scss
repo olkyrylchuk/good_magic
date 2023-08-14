@@ -90,8 +90,9 @@
 
 @media (min-width: 320px) and (max-width: 430px) {
     .news__one {
-        margin-bottom: 225px;
+        // margin-bottom: 225px;
         max-width: 430px;
+        margin-bottom: inherit;
 
         &-wrapper {
             max-width: 430px;
@@ -101,12 +102,12 @@
 
         &-text {
             max-width: 556px;
-            max-height: 460px;
+            // max-height: 460px;
             margin-right: 72px;
-            margin-bottom: 170px;
-            margin-bottom: 20px;
+            // margin-bottom: 170px;
+            // margin-bottom: 20px;
 
-            h2 {
+            min-h h2 {
                 width: 102%;
             }
 
@@ -118,7 +119,6 @@
                 padding-right: inherit;
                 max-width: 120%;
                 width: 117%;
-                padding-bottom: 40px;
             }
         }
 

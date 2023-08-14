@@ -133,6 +133,34 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 850px) {
+    .footer {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-support {
+            margin-right: 100px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 850px) {
+    .footer {
+
+        .container {
+            display: flex;
+            // flex-direction: column;
+        }
+
+        &-support {
+            margin-right: 100px;
+        }
+    }
+}
+
 @media (min-width: 320px) and (max-width: 430px) {
     .footer {
         padding-bottom: 64px;
