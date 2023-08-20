@@ -51,6 +51,7 @@
                 max-height: 402px;
                 margin: 0 0 20px 20px;
                 float: right;
+                outline: 2px solid lightgray;
             }
         }
     }
@@ -85,8 +86,6 @@
         }
     }
 }
-
-
 
 @media (min-width: 320px) and (max-width: 430px) {
     .news__one {

@@ -53,8 +53,12 @@
         }
 
         &__blocks {
+            display: flex;
+            flex-direction: column;
+
             &-item {
                 max-width: inherit;
+                padding-bottom: 60px;
 
                 a {
                     text-transform: none;
@@ -63,9 +67,9 @@
                     line-height: 28px;
                 }
 
-                &:not(:first-child) {
-                    display: none;
-                }
+                // &:not(:first-child) {
+                //     display: none;
+                // }
 
                 .block-wrap {
                     display: flex;
